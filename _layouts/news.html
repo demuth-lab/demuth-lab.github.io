@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<article class="content">
+  <div class="muted">{{ page.date | date: "%B %-d, %Y" }}</div>
+  {% if page.summary %}<div class="lede">{{ page.summary }}</div>{% endif %}
+  {{ content }}
+</article>

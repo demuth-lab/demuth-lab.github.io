@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="content">
+  {% if page.hero_image %}
+    <div class="hero-image">
+      <img src="{{ page.hero_image | relative_url }}" alt="" loading="lazy" />
+    </div>
+  {% endif %}
+
+  <div class="lede">{{ page.summary }}</div>
+
+  {{ content }}
+
+  {% if page.key_pubs %}
+  <h2>Key papers</h2>
+  <ul class="pub-list">
+    {% for p in page.key_pubs %}
+      <li>
+        <div class="pub-title">{{ p.title }}</div>
+        <div class="pub-meta">{{ p.citation }}</div>
+        <div class="pub-links">
+          {% if p.doi %}<a target="_blank" rel="noopener" href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+          {% if p.url %}<a target="_blank" rel="noopener" href="{{ p.url }}">Link</a>{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>

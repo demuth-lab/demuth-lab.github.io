@@ -1,0 +1,15 @@
+# This file is intentionally small to start.
+# Option A (easiest): maintain this list by hand.
+# Option B (recommended): export your Scholar profile to BibTeX occasionally and run scripts/bib2yaml.py to regenerate.
+- year: 2006
+  title: "CAFE: a computational tool for the study of gene family evolution"
+  authors: "De Bie T, Cristianini N, Demuth JP, Hahn MW"
+  venue: "Bioinformatics"
+  doi: "10.1093/bioinformatics/btl097"
+  tags: ["gene-family-evolution", "computational"]
+- year: 2006
+  title: "Evolutionary and biomedical insights from the rhesus macaque genome"
+  authors: "Gibbs RA, Rogers J, Katze MG, et al."
+  venue: "Science"
+  url: "https://scholar.google.com/citations?hl=en&user=YFugZqwAAAAJ"
+  tags: ["comparative-genomics"]

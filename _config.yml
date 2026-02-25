@@ -1,0 +1,40 @@
+title: "Demuth Lab"
+description: "Evolutionary genetics and genomics at UT Arlington"
+url: "" # set to your full site URL, e.g. https://demuthlab.github.io
+baseurl: "" # set if using a project site, e.g. /demuthlab
+
+timezone: America/Chicago
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+  news:
+    output: true
+    permalink: /news/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "research"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news"
+
+exclude:
+  - scripts
+  - README.md
+  - Gemfile
+  - Gemfile.lock
