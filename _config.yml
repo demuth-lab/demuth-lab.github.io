@@ -1,6 +1,6 @@
 title: "Demuth Lab"
 description: "Evolutionary genetics and genomics at UT Arlington"
-url: "" # set to your full site URL, e.g. https://demuthlab.github.io
+url: "https://demuthlab.github.io" # set to your full site URL, e.g. https://demuthlab.github.io
 baseurl: "" # set if using a project site, e.g. /demuthlab
 
 timezone: America/Chicago
