@@ -1,50 +1,49 @@
 ---
-title: "People"
+layout: page
+title: People
+permalink: /people/
 ---
 
-<div class="section-title"><h2>Principal Investigator</h2></div>
-<div class="grid-2">
-  <div class="person">
-    <img src="{{ site.data.people.pi.photo | relative_url }}" alt="{{ site.data.people.pi.name }}" loading="lazy" />
-    <div class="name">{{ site.data.people.pi.name }}</div>
-    <div class="role">{{ site.data.people.pi.role }}</div>
-    <div class="interests">{{ site.data.people.pi.interests }}</div>
-    <div class="links">
-      <a href="mailto:{{ site.data.people.pi.email }}">Email</a>
-      {% for l in site.data.people.pi.links %}
-        <a target="_blank" rel="noopener" href="{{ l.url }}">{{ l.label }}</a>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="card">
-    <h3>Interested in joining?</h3>
-    <p>We’re always excited to talk with curious, rigorous scientists who enjoy genetics, evolution, and/or computation.</p>
-    <p><a class="button primary" href="{{ '/join/' | relative_url }}">How to apply</a></p>
-  </div>
-</div>
+## Principal Investigator
 
-<div class="section-title"><h2>Graduate students</h2></div>
+![Jeff Demuth](/assets/img/people/Demuth_Headshot_2023.jpg)
+
+### Jeff Demuth  
+**Associate Professor, Department of Biology, University of Texas at Arlington**
+
+Jeff Demuth is an evolutionary geneticist studying how sex chromosomes and genome architecture shape behavioral responses to social conflict. His research integrates comparative genomics, regulatory evolution, and behavioral genetics in horned beetles and related systems. He received his PhD from Indiana University and joined UTA in 2006.
+
+Email: jpdemuth@uta.edu  
+[Google Scholar](#) | [ORCID](#) | [CV](#)
+
+---
+
+## Graduate Students
+
 <div class="people-grid">
-  {% for p in site.data.people.current_grads %}
-    <div class="person">
-      <img src="{{ p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy" />
-      <div class="name">{{ p.name }}</div>
-      <div class="role">{{ p.role }}</div>
-      {% if p.interests %}<div class="interests">{{ p.interests }}</div>{% endif %}
+{% for person in site.data.people %}
+  {% if person.level == "graduate" %}
+    <div class="person-card">
+      <img src="{{ person.photo }}" alt="{{ person.name }}">
+      <h4>{{ person.name }}</h4>
+      <p>{{ person.description }}</p>
     </div>
-  {% endfor %}
+  {% endif %}
+{% endfor %}
 </div>
 
-<div class="section-title"><h2>Undergraduate researchers</h2></div>
+---
+
+## Undergraduate Researchers
+
 <div class="people-grid">
-  {% for p in site.data.people.undergrads %}
-    <div class="person">
-      <img src="{{ p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy" />
-      <div class="name">{{ p.name }}</div>
-      <div class="role">{{ p.role }}</div>
+{% for person in site.data.people %}
+  {% if person.level == "undergraduate" %}
+    <div class="person-card">
+      <img src="{{ person.photo }}" alt="{{ person.name }}">
+      <h4>{{ person.name }}</h4>
+      <p>{{ person.description }}</p>
     </div>
-  {% endfor %}
+  {% endif %}
+{% endfor %}
 </div>
-
-<div class="section-title"><h2>Alumni</h2></div>
-<p class="muted">{{ site.data.people.alumni_note }}</p>
