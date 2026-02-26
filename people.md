@@ -7,7 +7,7 @@ permalink: /people/
 ## Principal Investigator
 
 <div class="pi-wrap">
-  <img class="pi-photo" src="/assets/img/people/Demuth_Headshot_2023.jpg" alt="Jeff Demuth">
+  <img class="pi-photo" src="/assets/img/people/Demuth_Headshot.jpg" alt="Jeff Demuth">
   <div class="pi-text">
     <h3>Jeff Demuth</h3>
     <p><strong>Associate Professor, Department of Biology, University of Texas at Arlington</strong></p>
