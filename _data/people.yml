@@ -23,9 +23,9 @@
   photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.jpg
   description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
 
-- name: James Lam
+- name: Linh Ngo
   level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/James_Lam.webp
+  photo: /assets/img/people/UndergraduateStudents/Linh_Ngo.jpg
   description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
 
 - name: Michelle Nguyen
@@ -43,6 +43,11 @@
   photo: /assets/img/people/UndergraduateStudents/Raed_Sharib.jpeg
   description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
 
+- name: James Lam
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/James_Lam.webp
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  
 - name: Elizabeth Tran
   level: undergraduate
   photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
@@ -57,7 +62,6 @@
   level: undergraduate
   photo: /assets/img/people/UndergraduateStudents/Thao_Nguyen.jpg
   description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-
 
 - name: Polycarp Uzoigwe
   level: undergraduate
