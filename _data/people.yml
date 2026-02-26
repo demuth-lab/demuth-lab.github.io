@@ -1,23 +1,58 @@
 # Graduate Students
 
-- name: Student Name 1
+- name: Shana Pau
   level: graduate
-  photo: /assets/img/people/GraduateStudents/Student_Name_1.jpg
-  description: Studies evolutionary genomics of sex chromosomes and regulatory architecture in horned beetles.
+  photo: /assets/img/people/GraduateStudents/Shana_Pau.jpg
+  description: Studies sex chromosome evolution.
 
-- name: Student Name 2
+  - name: Olivia Williams
   level: graduate
-  photo: /assets/img/people/GraduateStudents/Student_Name_2.jpg
-  description: Investigates the genetic basis of social defeat and behavioral responses to conflict.
+  photo: /assets/img/people/GraduateStudents/Shana_Pau.jpg
+  description: Studies loser effect behaviors in horned beetles.
 
 # Undergraduate Researchers
 
-- name: Student Name 3
+- name: Katelin Ho
   level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Student_Name_3.jpg
-  description: Assists with behavioral assays and genomic data analysis related to social stress.
+  photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
 
-- name: Student Name 4
+- name: Mariam Khaleel
   level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Student_Name_4.jpg
-  description: Contributes to molecular and computational analyses of sex chromosome evolution.
+  photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.jpg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: James Lam
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/James_Lam.webp
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Michelle Nguyen
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Michelle_Nguyen.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Blessedone Opara
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Blessedone_Opara.jpg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Raed Sharib
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Raed_Sharib.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Elizabeth Tran
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Ava Trinh
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Ava_Trinh.JPG
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Polycarp Uzoigwe
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
