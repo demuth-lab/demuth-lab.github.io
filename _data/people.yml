@@ -3,14 +3,20 @@
 - name: Shana Pau
   level: graduate
   photo: /assets/img/people/GraduateStudents/Shana_Pau.jpg
-  description: Studies sex chromosome evolution and gene regulation in horned beetles.
+  description: Studies sex chromosome evolution and gene regulation.
+
+- name: Olivia Williams
+  level: graduate
+  photo: /assets/img/people/GraduateStudents/Olivia_Williams.png
+  description: Studies the genetics of behavior.
+
 
 # Undergraduate Researchers
 
 - name: Katelin Ho
   level: undergraduate
   photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.jpeg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  description: Assists with behavioral assays and genomic analyses related to social defeat.
 
 - name: Mariam Khaleel
   level: undergraduate
