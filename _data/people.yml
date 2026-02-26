@@ -1,46 +1,23 @@
-pi:
-  name: "Jeff Demuth"
-  role: "Associate Professor of Biology (UTA)"
-  email: "jpdemuth@uta.edu"
-  photo: "/assets/img/people/jeff-demuth.jpg"
-  interests: "Evolutionary genetics & genomics; population divergence and speciation; Tribolium"
-  links:
-    - label: "Google Scholar"
-      url: "https://scholar.google.com/citations?hl=en&user=YFugZqwAAAAJ"
-    - label: "ORCID"
-      url: "https://orcid.org/0000-0002-0471-3679"
-    - label: "CV (PDF)"
-      url: "https://demuthlab.uta.edu/Docs/JPD-CV.pdf"
+# Graduate Students
 
-current_grads:
-  - name: "Catherine Rodgers"
-    role: "PhD student"
-    photo: "/assets/img/people/placeholder.jpg"
-    interests: "Maternal effect embryonic arrest (MEDEA); selfish genetic elements"
-  - name: "Marquerite (Maya) Herzog"
-    role: "PhD student"
-    photo: "/assets/img/people/placeholder.jpg"
-    interests: "Molecular basis of behavior; loser-effect behavior"
-  - name: "Balan Ramesh"
-    role: "PhD student"
-    photo: "/assets/img/people/placeholder.jpg"
-    interests: "Sex chromosome evolution & gene expression; computational biology"
+- name: Student Name 1
+  level: graduate
+  photo: /assets/img/people/GraduateStudents/Student_Name_1.jpg
+  description: Studies evolutionary genomics of sex chromosomes and regulatory architecture in horned beetles.
 
-undergrads:
-  - name: "Emily Hale"
-    role: "Undergraduate researcher"
-    photo: "/assets/img/people/placeholder.jpg"
-  - name: "Beena Margabandu"
-    role: "Undergraduate researcher"
-    photo: "/assets/img/people/placeholder.jpg"
-  - name: "Kayla Wilhoit"
-    role: "Undergraduate researcher"
-    photo: "/assets/img/people/placeholder.jpg"
-  - name: "Alaisha Woodson"
-    role: "Undergraduate researcher"
-    photo: "/assets/img/people/placeholder.jpg"
-  - name: "Maria Maldonado"
-    role: "Undergraduate researcher"
-    photo: "/assets/img/people/placeholder.jpg"
+- name: Student Name 2
+  level: graduate
+  photo: /assets/img/people/GraduateStudents/Student_Name_2.jpg
+  description: Investigates the genetic basis of social defeat and behavioral responses to conflict.
 
-alumni_note: "Add alumni entries here (names, years, current positions)."
+# Undergraduate Researchers
+
+- name: Student Name 3
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Student_Name_3.jpg
+  description: Assists with behavioral assays and genomic data analysis related to social stress.
+
+- name: Student Name 4
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Student_Name_4.jpg
+  description: Contributes to molecular and computational analyses of sex chromosome evolution.
