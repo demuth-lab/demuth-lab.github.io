@@ -6,7 +6,7 @@ show_title: false
 <section class="hero">
   <div class="hero-grid">
     <div>
-      <h1>Evolutionary genetics and genomics of population divergence</h1>
+      <h1>Evolutionary genetics and genomics</h1>
       <p>We study how genes and genomes evolve to generate population differences and, ultimately, new species. Most of our experimental work uses flour beetles (<em>Tribolium</em>), and we combine experimental and computational approaches.</p>
       <div class="hero-actions">
         <a class="button primary" href="{{ '/join/' | relative_url }}">Join the Lab</a>
