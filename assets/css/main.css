@@ -71,3 +71,99 @@ a:hover{text-decoration:underline}
   .cards{grid-template-columns:1fr}
   .people-grid{grid-template-columns:1fr}
 }
+
+/* =========================
+   People page
+   ========================= */
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: start;
+}
+
+.person-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin: 0 auto 0.75rem auto;
+  display: block;
+}
+
+.person-card h4 {
+  margin: 0.25rem 0 0.25rem 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.person-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  max-width: 28ch;
+  opacity: 0.9;
+}
+
+/* Slightly tighter on small screens */
+@media (max-width: 480px) {
+  .person-card img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* =========================
+   PI block
+   ========================= */
+
+.pi-wrap {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.25rem 0 2rem 0;
+}
+
+.pi-photo {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+}
+
+.pi-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.pi-text p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.pi-links {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .pi-wrap {
+    grid-template-columns: 1fr;
+  }
+  .pi-photo {
+    width: 220px;
+    height: 220px;
+  }
+}
