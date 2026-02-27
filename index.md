@@ -44,7 +44,7 @@ show_title: false
 </div>
 
 <ul class="pub-list">
-  {% assign pubs = site.data.publications | sort: 'year' | reverse %}
+  {% assign pubs = site.data.publications %}
   {% for p in pubs limit:3 %}
     <li>
       <div class="pub-title">{{ p.title }}</div>
