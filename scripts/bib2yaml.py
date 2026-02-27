@@ -79,6 +79,14 @@ def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]
 
 
 def dump_yaml(pubs: List[Dict[str, object]]) -> str:
+    def esc(s: str) -> str:
+        # Escape backslashes first, then quotes (YAML double-quoted style)
+        return str(s).replace("\\", "\\\\").replace('"', '\\"')
+
+    def dump_list(items) -> str:
+        # YAML inline list: ["a", "b", "c"]
+        return "[{}]".format(", ".join(f'"{esc(x)}"' for x in items))
+
     lines: List[str] = []
     lines.append("# Generated from data/publications.bib")
     for p in pubs:
@@ -88,10 +96,9 @@ def dump_yaml(pubs: List[Dict[str, object]]) -> str:
                 continue
             v = p[k]
             if isinstance(v, list):
-                lines.append(f"  {k}: [{', '.join('"' + str(x).replace('"','\\"') + '"' for x in v)}]")
+                lines.append(f"  {k}: {dump_list(v)}")
             else:
-                s = str(v).replace('"', '\\"')
-                lines.append(f"  {k}: \"{s}\"")
+                lines.append(f'  {k}: "{esc(v)}"')
     lines.append("")
     return "\n".join(lines)
 
