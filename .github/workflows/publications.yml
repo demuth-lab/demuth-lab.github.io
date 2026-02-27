@@ -22,7 +22,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pyyaml bibtexparser
+        run: pip install requests pyyaml bibtexparser
 
       - name: Run publication script
         run: python scripts/bib2yaml.py
