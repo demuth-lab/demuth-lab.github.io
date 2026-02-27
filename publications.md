@@ -14,16 +14,25 @@ title: "Publications"
 
 <ul class="pub-list">
   {% assign pubs = site.data.publications | sort: 'year' | reverse %}
-  {% for p in pubs %}
-    <li>
-      <div class="pub-title">{{ p.title }}</div>
-      <div class="pub-meta">{{ p.authors }} · {{ p.venue }} · {{ p.year }}</div>
-      <div class="pub-links">
-        {% if p.doi %}<a target="_blank" rel="noopener" href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
-        {% if p.url %}<a target="_blank" rel="noopener" href="{{ p.url }}">Link</a>{% endif %}
-        {% if p.pdf %}<a target="_blank" rel="noopener" href="{{ p.pdf | relative_url }}">PDF</a>{% endif %}
-      </div>
-      {% if p.tags %}<div class="muted" style="margin-top:6px;">Tags: {{ p.tags | join: ', ' }}</div>{% endif %}
-    </li>
-  {% endfor %}
+{% for p in pubs %}
+
+### {{ p.title }}
+
+{{ p.authors }} · {{ p.venue }} · {{ p.year }}
+
+{% if p.doi %}
+  <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>
+{% endif %}
+{% if p.url %}
+  <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">Link</a>
+{% endif %}
+{% if p.pdf %}
+  <a class="pub-link" href="{{ p.pdf }}" target="_blank" rel="noopener">PDF</a>
+{% endif %}
+
+{% if p.tags %}
+Tags: {{ p.tags | join: ', ' }}
+{% endif %}
+
+{% endfor %}
 </ul>
