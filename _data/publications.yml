@@ -1,15 +1,271 @@
-# This file is intentionally small to start.
-# Option A (easiest): maintain this list by hand.
-# Option B (recommended): export your Scholar profile to BibTeX occasionally and run scripts/bib2yaml.py to regenerate.
-- year: 2006
-  title: "CAFE: a computational tool for the study of gene family evolution"
-  authors: "De Bie T, Cristianini N, Demuth JP, Hahn MW"
-  venue: "Bioinformatics"
-  doi: "10.1093/bioinformatics/btl097"
-  tags: ["gene-family-evolution", "computational"]
-- year: 2006
+# Generated from data/publications.bib
+-
+  year: "2025"
+  title: "‘Hangry'Beetles: Reduced aggression in response to food deprivation in a system where males fight for mates"
+  authors: "Herzog, Marquerite and Williams, Olivia and Demuth, Jeffery"
+  venue: ""
+-
+  year: "2025"
+  title: "Leveraging machine learning to classify and characterize gene expression patterns in two coral diseases"
+  authors: "Van Buren, Emily W and Beavers, Kelsey M and Cornelio, Mariah N and Stokes, Alexia and Emery, Madison and Brandt, Marilyn E and Demuth, Jeffery P and Wang, Li and Mydlarz, Laura D"
+  venue: "Discover Applied Sciences"
+-
+  year: "2025"
+  title: "Estimation of genome-wide coupling in rattlesnake hybrids provides insight into the process of speciation and its progress"
+  authors: "Francioli, Yannick Z and Bernstein, Justin M and Adams, Richard H and Guss, Hannah D and Schield, Drew R and Smith, Sierra N and Gopalan, Siddharth S and Maag, Dylan W and Meik, Jesse M and Jezkova, Tereza and others"
+  venue: "Nature Communications"
+-
+  year: "2024"
+  title: "scRNA-seq reveals novel genetic pathways and sex chromosome regulation in Tribolium spermatogenesis"
+  authors: "Robben, Michael and Ramesh, Balan and Pau, Shana and Meletis, Demetra and Luber, Jacob and Demuth, Jeffery"
+  venue: "Genome biology and evolution"
+-
+  year: "2024"
+  title: "Drift drives the evolution of chromosome number I: The impact of trait transitions on genome evolution in Coleoptera"
+  authors: "Blackmon, Heath and Jonika, Michelle M and Alfieri, James M and Fardoun, Leen and Demuth, Jeffery P"
+  venue: "Journal of Heredity"
+-
+  year: "2024"
+  title: "Wright was right: leveraging old data and new methods to illustrate the critical role of epistasis in genetics and evolution"
+  authors: "Burch, Jorja and Chin, Maximos and Fontenot, Brian E and Mandal, Sabyasachi and McKnight, Thomas D and Demuth, Jeffery P and Blackmon, Heath"
+  venue: "Evolution"
+-
+  year: "2024"
+  title: "Machine Learning Approaches for Classifying and Characterizing Coral Diseases"
+  authors: "Van Buren, Emily W and Beavers, Kelsey M and Cornelio, Mariah N and Stokes, Alexia and Emery, Madison and Demuth, Jeffery P and Wang, Li and Mydlarz, Laura D"
+  venue: ""
+-
+  year: "2023"
+  title: "coleoguy/evobir: EvobiR version 2.1"
+  authors: "Jonika, Michelle M and Chin, Maximos and Anderson, Nathan W and Adams, Richard H and Demuth, Jeffery P and Blackmon, Heath"
+  venue: "Zenodo"
+-
+  year: "2022"
+  title: "Adaptive variation in homologue number within transcript families promotes expression divergence in reef-building coral"
+  authors: "Dimos, Bradford and Emery, Madison and Beavers, Kelsey and MacKnight, Nicholas and Brandt, Marilyn and Demuth, Jeffery and Mydlarz, Laura"
+  venue: "Molecular ecology"
+-
+  year: "2021"
+  title: "Divergence time estimation of genus Tribolium by extensive sampling of highly conserved orthologs"
+  authors: "Ramesh, Balan and Firneno Jr, Thomas J and Demuth, Jeffery P"
+  venue: "Molecular Phylogenetics and Evolution"
+-
+  year: "2020"
+  title: "The landscape of diversity and divergence across genomes highlights links between genome structure and evolution in the formation of genomic islands"
+  authors: "Orton, RW and Schield, DR and Nikolakis, ZL and Perry, BW and Demuth, JP and Mackessy, SP and Smith, CF and Meik, JM and Castoe, TA"
+  venue: "INTEGRATIVE AND COMPARATIVE BIOLOGY"
+-
+  year: "2019"
+  title: "The origins and evolution of chromosomes, dosage compensation, and mechanisms underlying venom regulation in snakes"
+  authors: "Schield, Drew R and Card, Daren C and Hales, Nicole R and Perry, Blair W and Pasquesi, Giulia M and Blackmon, Heath and Adams, Richard H and Corbin, Andrew B and Smith, Cara F and Ramesh, Balan and others"
+  venue: "Genome research"
+-
+  year: "2019"
+  title: "Variation in genetic diversity and differentiation across chromosomes in rattlesnakes reveal links between genome structure and speciation"
+  authors: "Orton, RO and Schield, DR and Row, KW and Nikolakis, ZL and Perry, BW and Demuth, JP and Mackessy, SP and Meik, JM and Castoe, TA"
+  venue: "INTEGRATIVE AND COMPARATIVE BIOLOGY"
+-
+  year: "2018"
+  title: "Molecular adaptations for sensing and securing prey and insight into amniote genome diversity from the garter snake genome"
+  authors: "Perry, Blair W and Card, Daren C and McGlothlin, Joel W and Pasquesi, Giulia IM and Adams, Richard H and Schield, Drew R and Hales, Nicole R and Corbin, Andrew B and Demuth, Jeffery P and Hoffmann, Federico G and others"
+  venue: "Genome Biology and Evolution"
+-
+  year: "2017"
+  title: "The within-host dynamics of infection in trans-generationally primed flour beetles"
+  authors: "Tate, Ann T and Andolfatto, Peter and Demuth, Jeffery P and Graham, Andrea L"
+  venue: "Molecular ecology"
+-
+  year: "2016"
+  title: "An information-theoretic approach to estimating the composite genetic effects contributing to variation among generation means: moving beyond the joint-scaling test for line cross analysis"
+  authors: "Blackmon, Heath and Demuth, Jeffery P"
+  venue: "Evolution"
+-
+  year: "2016"
+  title: "Haldane’s rule: genetic bases and their empirical support"
+  authors: "Delph, Lynda F and Demuth, Jeffery P"
+  venue: "Journal of Heredity"
+-
+  year: "2016"
+  title: "Genome of the Asian longhorned beetle (Anoplophora glabripennis), a globally significant invasive species, reveals key functional and evolutionary innovations at the beetle--plant interface"
+  authors: "McKenna, Duane D and Scully, Erin D and Pauchet, Yannick and Hoover, Kelli and Kirsch, Roy and Geib, Scott M and Mitchell, Robert F and Waterhouse, Robert M and Ahn, Seung-Joon and Arsala, Deanna and others"
+  venue: "Genome biology"
+-
+  year: "2015"
+  title: "Genomic origins of insect sex chromosomes"
+  authors: "Blackmon, Heath and Demuth, Jeffery P"
+  venue: "Current Opinion in Insect Science"
+-
+  year: "2015"
+  title: "Coleoptera karyotype database"
+  authors: "Blackmon, Heath and Demuth, Jeffery P"
+  venue: "The Coleopterists Bulletin"
+-
+  year: "2015"
+  title: "The fragile Y hypothesis: Y chromosome aneuploidy as a selective pressure in sex chromosome and meiotic mechanism evolution"
+  authors: "Blackmon, Heath and Demuth, Jeffery P"
+  venue: "BioEssays"
+-
+  year: "2014"
+  title: "Do sex chromosomes affect speciation rate?"
+  authors: "Demuth, Jeffery"
+  venue: "BioEssays"
+-
+  year: "2014"
+  title: "Estimating tempo and mode of Y chromosome turnover: explaining Y chromosome loss with the fragile Y hypothesis"
+  authors: "Blackmon, Heath and Demuth, Jeffery P"
+  venue: "Genetics"
+-
+  year: "2014"
+  title: "Genetic architecture of isolation between two species of Silene with sex chromosomes and Haldane's rule"
+  authors: "Demuth, Jeffery P and Flanagan, Rebecca J and Delph, Lynda F"
+  venue: "Evolution"
+-
+  year: "2013"
+  title: "The Role of Transposable Elements in Speciation"
+  authors: "Watson, Eric T. and Demuth, Jeffery P."
+  venue: "Speciation: Natural Processes, Genetics, and Biodiversity"
+-
+  year: "2012"
+  title: "Sex, war, and disease: the role of parasite infection on weapon development and mating success in a horned beetle (Gnatocerus cornutus)"
+  authors: "Demuth, Jeffery P and Naidu, Amrita and Mydlarz, Laura D"
+  venue: "PLoS One"
+-
+  year: "2012"
+  title: "Haldane's rule in marsupials: what happens when both sexes are functionally hemizygous?"
+  authors: "Watson, Eric T and Demuth, Jeffery P"
+  venue: "Journal of Heredity"
+-
+  year: "2012"
+  title: "Why chromosome palindromes?"
+  authors: "Betr{\\'a"
+  venue: "International journal of evolutionary biology"
+-
+  year: "2012"
+  title: "Gene expression levels are correlated with synonymous codon usage, amino acid composition, and gene architecture in the red flour beetle, Tribolium castaneum"
+  authors: "Williford, Anna and Demuth, Jeffery P"
+  venue: "Molecular biology and evolution"
+-
+  year: "2012"
+  title: "Ring Species and Speciation"
+  authors: "Blackmon, Heath and Demuth, Jeffery P"
+  venue: "eLS"
+-
+  year: "2010"
+  title: "Hyperexpression of the X chromosome in both sexes results in extensive female bias of X-linked genes in the flour beetle"
+  authors: "Prince, Eldon G and Kirkland, Donna and Demuth, Jeffery P"
+  venue: "Genome biology and evolution"
+-
+  year: "2009"
+  title: "The life and death of gene families"
+  authors: "Demuth, Jeffery P and Hahn, Matthew W"
+  venue: "Bioessays"
+-
+  year: "2009"
+  title: "Adaptive evolution of young gene duplicates in mammals"
+  authors: "Han, Mira V and Demuth, Jeffery P and McGrath, Casey L and Casola, Claudio and Hahn, Matthew W"
+  venue: "Genome research"
+-
+  year: "2008"
+  title: "The genome of the model beetle and pest Tribolium castaneum."
+  authors: "Richards, Stephen and Gibbs, Richard A and Weinstock, George M and Brown, Susan J and Denell, Robin and Beeman, Richard W and Gibbs, Richard and Bucher, Gregor and Friedrich, Markus and Grimmelikhuijzen, CJea and others"
+  venue: "Nature"
+-
+  year: "2007"
+  title: "Accelerated rate of gene gain and loss in primates"
+  authors: "Hahn, Matthew W and Demuth, Jeffery P and Han, Sang-Gook"
+  venue: "Genetics"
+-
+  year: "2007"
+  title: "Population differentiation in the beetle Tribolium castaneum. I. Genetic architecture"
+  authors: "Demuth, Jeffery P and Wade, Michael J"
+  venue: "Evolution"
+-
+  year: "2007"
+  title: "Population differentiation in the beetle Tribolium castaneum. II. Haldane's rule and incipient speciation"
+  authors: "Demuth, Jeffery P and Wade, Michael J"
+  venue: "Evolution"
+-
+  year: "2007"
+  title: "Maternal expression increases the rate of bicoid evolution by relaxing selective constraint"
+  authors: "Demuth, Jeffery P and Wade, Michael J"
+  venue: "Genetica"
+-
+  year: "2007"
+  title: "Genome-wide survey of Tribolium castaneum microsatellites and description of 509 polymorphic markers"
+  authors: "Demuth, Jeffery P and Drury, Douglas W and Peters, Morgan L and Van Dyken, J David and Priest, Nicholas K and Wade, Michael J"
+  venue: "Molecular Ecology Notes"
+-
+  year: "2007"
   title: "Evolutionary and biomedical insights from the rhesus macaque genome"
-  authors: "Gibbs RA, Rogers J, Katze MG, et al."
-  venue: "Science"
-  url: "https://scholar.google.com/citations?hl=en&user=YFugZqwAAAAJ"
-  tags: ["comparative-genomics"]
+  authors: "Gibbs, Richard A and Rogers, Jeffrey and Katze, Michael G and Bumgarner, Roger and Weinstock, George M and Mardis, Elaine R and Remington, Karin A and Strausberg, Robert L and Venter, J Craig and Wilson, Richard K and others"
+  venue: "science"
+-
+  year: "2006"
+  title: "The evolution of mammalian gene families"
+  authors: "Demuth, Jeffery P and Bie, Tijl De and Stajich, Jason E and Cristianini, Nello and Hahn, Matthew W"
+  venue: "PloS one"
+-
+  year: "2006"
+  title: "CAFE: a computational tool for the study of gene family evolution"
+  authors: "De Bie, Tijl and Cristianini, Nello and Demuth, Jeffery P and Hahn, Matthew W"
+  venue: "Bioinformatics"
+-
+  year: "2006"
+  title: "Experimental methods for measuring gene interactions"
+  authors: "Demuth, Jeffery P and Wade, Michael J"
+  venue: "Annu. Rev. Ecol. Evol. Syst."
+-
+  year: "2006"
+  title: "CAFE: A Computational Tool for the Study of Gene Family Evolution"
+  authors: "Demuth, Jeffery"
+  venue: ""
+-
+  year: "2006"
+  title: "BIOINFORMATICSAPPLICATIONS NOTE"
+  authors: "De Bie, Tijl and Cristianini, Nello and Demuth, Jeffery P and Hahn, Matthew W"
+  venue: ""
+-
+  year: "2005"
+  title: "Maternal expression relaxes constraint on innovation of the anterior determinant, bicoid"
+  authors: "Barker, Michael S and Demuth, Jeffery P and Wade, Michael J"
+  venue: "PLoS genetics"
+-
+  year: "2005"
+  title: "On the theoretical and empirical framework for studying genetic interactions within and among species"
+  authors: "Demuth, Jeffery P and Wade, Michael J"
+  venue: "The American Naturalist"
+-
+  year: "2004"
+  title: "Dissertation: Evolution of hybrid incompatibility in the beetle Tribolium castaneum"
+  authors: "Demuth, Jeffery Paul"
+  venue: "Indiana University"
+-
+  year: "2003"
+  title: "Sexual selection favors female-biased sex ratios: the balance between the opposing forces of sex-ratio selection and sexual selection"
+  authors: "Wade, Michael J and Shuster, Stephen M and Demuth, Jeffery P"
+  venue: "The American Naturalist"
+-
+  year: "2001"
+  title: "The effects of constant and fluctuating incubation temperatures on sex determination, growth, and performance in the tortoise Gopherus polyphemus"
+  authors: "Demuth, Jeffery P"
+  venue: "Canadian Journal of Zoology"
+-
+  year: "2001"
+  title: "Ring Species and Speciation"
+  authors: "Demuth, Jeffery P and Rieseberg, Loren H"
+  venue: "e LS"
+-
+  year: "1998"
+  title: "The effects of constant and fluctuating incubation temperatures on sex determination, growth, and locomotor performance in the tortoise Gopherus polyphemus"
+  authors: "Demuth, Jeffery Paul"
+  venue: ""
+-
+  year: ""
+  title: "SAGA version 2.0. 0 Tutorial"
+  authors: "Blackmon, Heath and Demuth, Jeffery P"
+  venue: ""
+-
+  year: ""
+  title: "SAGA tutorial"
+  authors: "Blackmon, Heath and Demuth, Jeffery P"
+  venue: ""
