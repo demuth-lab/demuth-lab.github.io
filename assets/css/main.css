@@ -167,3 +167,20 @@ a:hover{text-decoration:underline}
     height: 220px;
   }
 }
+/* =========================
+   DOI formatting block
+   ========================= */
+
+.doi-link, .pub-link {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background: #f0f0f0;
+}
+
+.doi-link:hover, .pub-link:hover {
+  background: #e6e6e6;
+}
