@@ -56,6 +56,9 @@
     Richard H and Demuth, Jeffery P and Blackmon, Heath
   venue: Zenodo
   type: article
+  software:
+  - label: GitHub repo
+    url: https://github.com/coleoguy/evobir
 - year: 2022
   title: Adaptive variation in homologue number within transcript families promotes
     expression divergence in reef-building coral
