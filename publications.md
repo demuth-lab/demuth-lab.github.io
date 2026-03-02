@@ -111,13 +111,7 @@ Build list of years from pubs for the year-jump dropdown.
       {% endif %}
 
     </div>
-
-    {% if p.tags and p.tags.size > 0 %}
-      <div class="pub-tags">
-        {{ p.tags | join: ', ' }}
-      </div>
-    {% endif %}
-
+    
   </li>
 
 {% endfor %}
