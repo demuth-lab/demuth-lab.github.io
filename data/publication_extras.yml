@@ -16,14 +16,14 @@
 "10.5281/zenodo.8033504":
   software:
     - label: "CAFE Software"
-      url: "10.1093/bioinformatics/btl097"
+      url: "https://github.com/hahnlab/CAFE5"
 
 "10.1371/journal.pone.0000085":
   software:
     - label: "CAFE Software"
-      url: "10.1093/bioinformatics/btl097"
+      url: "https://github.com/hahnlab/CAFE5"
 
 "10.1534/genetics.107.080077":
  software:
     - label: "CAFE Software"
-      url: "10.1093/bioinformatics/btl097"
+      url: "https://github.com/hahnlab/CAFE5"
