@@ -5,36 +5,58 @@ layout: default
 
 <p class="lede">
 Selected publications. For the most up-to-date list, see
-<a target="_blank" rel="noopener" href="{{ site.data.links.scholar }}">
-Google Scholar
-</a>.
+<a target="_blank" rel="noopener" href="{{ site.data.links.scholar }}">Google Scholar</a>.
 </p>
 
 {% assign pubs = site.data.publications %}
+{% assign topics = site.data.topics %}
 
-<!-- Year Jump Dropdown -->
-<div class="pub-year-jump">
-  <label for="yearJump"><strong>Jump to year:</strong></label>
-  <select id="yearJump" onchange="if(this.value) location.hash=this.value;">
-    <option value="">Select…</option>
+{% comment %}
+Build list of years from pubs for the year-jump dropdown.
+{% endcomment %}
+{% assign years_csv = "" %}
+{% for p in pubs %}
+  {% if p.year %}
+    {% assign y = p.year | append: "" %}
+    {% unless years_csv contains y %}
+      {% assign years_csv = years_csv | append: y | append: "," %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+{% assign years = years_csv | split: "," %}
 
-    {% assign years_csv = "" %}
-    {% for p in pubs %}
-      {% if p.year %}
-        {% assign y = p.year | append: "" %}
-        {% unless years_csv contains y %}
-          {% assign years_csv = years_csv | append: y | append: "," %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-    {% assign years = years_csv | split: "," %}
+<div class="pub-controls">
 
-    {% for y in years %}
-      {% if y != "" %}
-        <option value="#year-{{ y }}">{{ y }}</option>
-      {% endif %}
-    {% endfor %}
-  </select>
+  <!-- Year Jump Dropdown -->
+  <div class="pub-year-jump">
+    <label for="yearJump"><strong>Jump to year:</strong></label>
+    <select id="yearJump" onchange="if(this.value) location.hash=this.value;">
+      <option value="">Select…</option>
+      {% for y in years %}
+        {% if y != "" %}
+          <option value="#year-{{ y }}">{{ y }}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
+  </div>
+
+  <!-- Topic Filter Dropdown -->
+  <div class="pub-topic-jump">
+    <label for="topicFilter"><strong>Filter by topic:</strong></label>
+    <select id="topicFilter">
+      <option value="">All topics</option>
+      {% for kv in topics %}
+        {% assign topic_id = kv[0] %}
+        {% assign topic = kv[1] %}
+        {% if topic and topic.label %}
+          <option value="{{ topic_id }}">{{ topic.label }}</option>
+        {% else %}
+          <option value="{{ topic_id }}">{{ topic_id }}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
+  </div>
+
 </div>
 
 {% assign current_year = "" %}
@@ -54,11 +76,10 @@ Google Scholar
     {% assign current_year = y %}
   {% endif %}
 
-  <li class="pub-item">
+  <li class="pub-item"
+      data-tags="{% if p.tags %}{{ p.tags | join: ',' | downcase }}{% endif %}">
 
-    <div class="pub-title">
-      {{ p.title }}
-    </div>
+    <div class="pub-title">{{ p.title }}</div>
 
     <div class="pub-meta">
       {{ p.authors }} · <em>{{ p.venue }}</em> · {{ p.year }}
@@ -100,3 +121,48 @@ Google Scholar
 
 {% endfor %}
 </ul>
+
+<script>
+(function () {
+  const topicSel = document.getElementById("topicFilter");
+  if (!topicSel) return;
+
+  function applyFilter() {
+    const chosen = (topicSel.value || "").trim().toLowerCase();
+
+    const items = document.querySelectorAll(".pub-item");
+    const yearHeaders = document.querySelectorAll(".pub-year");
+
+    // Show/hide individual publications
+    items.forEach((li) => {
+      const tags = (li.getAttribute("data-tags") || "")
+        .toLowerCase()
+        .split(",")
+        .map(s => s.trim())
+        .filter(Boolean);
+
+      const show = (!chosen) || tags.includes(chosen);
+      li.style.display = show ? "" : "none";
+    });
+
+    // Hide year sections with no visible pubs
+    yearHeaders.forEach((h2) => {
+      const ul = h2.nextElementSibling;
+      let anyVisible = false;
+
+      if (ul && ul.classList.contains("pub-list")) {
+        ul.querySelectorAll(".pub-item").forEach((li) => {
+          if (li.style.display !== "none") anyVisible = true;
+        });
+      }
+
+      h2.style.display = anyVisible ? "" : "none";
+      if (ul && ul.classList.contains("pub-list")) {
+        ul.style.display = anyVisible ? "" : "none";
+      }
+    });
+  }
+
+  topicSel.addEventListener("change", applyFilter);
+})();
+</script>
