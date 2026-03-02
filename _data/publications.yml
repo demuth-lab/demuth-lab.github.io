@@ -47,9 +47,6 @@
   venue: Evolution
   type: article
   doi: 10.1093/evolut/qpae003
-  software:
-  - label: SAGA Software
-    url: https://github.com/coleoguy/SAGA2
 - year: 2023
   title: EvobiR (v2.1)
   authors: Jonika, Michelle M and Chin, Maximos and Anderson, Nathan W and Adams,
@@ -57,9 +54,6 @@
   venue: Zenodo
   type: article
   doi: 10.5281/zenodo.8033504
-  software:
-  - label: EvobiR Software
-    url: https://github.com/coleoguy/evobir
 - year: 2022
   title: Adaptive variation in homologue number within transcript families promotes
     expression divergence in reef-building coral
@@ -123,9 +117,6 @@
   venue: Evolution
   type: article
   doi: 10.1111/evo.12844
-  software:
-  - label: SAGA Software
-    url: https://github.com/coleoguy/SAGA2
 - year: 2016
   title: 'Haldane’s rule: genetic bases and their empirical support'
   authors: Delph, Lynda F and Demuth, Jeffery P
