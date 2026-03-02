@@ -8,3 +8,7 @@
     - label: "SAGA Software"
       url: "https://github.com/coleoguy/SAGA2"
 
+"2023|evobir-v2-1":
+  software:
+    - label: "GitHub repo"
+      url: "https://github.com/coleoguy/evobir"
