@@ -57,7 +57,7 @@
   venue: Zenodo
   type: article
   software:
-  - label: GitHub repo
+  - label: EvobiR Software
     url: https://github.com/coleoguy/evobir
 - year: 2022
   title: Adaptive variation in homologue number within transcript families promotes
