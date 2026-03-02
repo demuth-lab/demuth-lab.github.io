@@ -56,6 +56,7 @@
     Richard H and Demuth, Jeffery P and Blackmon, Heath
   venue: Zenodo
   type: article
+  doi: 10.5281/zenodo.8033504
   software:
   - label: EvobiR Software
     url: https://github.com/coleoguy/evobir
