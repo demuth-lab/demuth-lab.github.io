@@ -2,15 +2,12 @@
 """
 Convert data/publications.bib -> _data/publications.yml
 
-Features:
+Adds:
 - Conservative DOI enrichment via Crossref for entries missing DOI.
-- Adds pub["type"] = "preprint" for preprints (bioRxiv/medRxiv/arXiv/Research Square).
-- Writes:
-  - _data/publications.yml
-  - doi_lookup_report.txt
-  - .cache/crossref_doi_cache.json (to reduce API calls)
+- Preprint tagging via venue/url keywords (bioRxiv/medRxiv/arXiv/Research Square).
+- Merges manual annotations from data/publication_extras.yml (software links, pdfs, tags, overrides).
 
-Dependencies (install in GitHub Actions):
+Dependencies:
   pip install requests pyyaml
 """
 
@@ -21,7 +18,7 @@ import re
 import time
 from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Any
 
 import requests
 import yaml
@@ -29,20 +26,15 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 BIB = ROOT / "data" / "publications.bib"
 OUT = ROOT / "_data" / "publications.yml"
+EXTRAS = ROOT / "data" / "publication_extras.yml"
 
 CACHE_DIR = ROOT / ".cache"
 CACHE_FILE = CACHE_DIR / "crossref_doi_cache.json"
 REPORT = ROOT / "doi_lookup_report.txt"
 
 # --- Minimal BibTeX parser (works for Scholar-style exports) ---
-ENTRY_RE = re.compile(
-    r"@(?P<type>\w+)\s*\{\s*(?P<key>[^,]+)\s*,(?P<body>.*?)\n\}\s*",
-    re.S,
-)
-FIELD_RE = re.compile(
-    r"(?P<field>\w+)\s*=\s*(?P<value>\{.*?\}|\".*?\")\s*,?\s*",
-    re.S,
-)
+ENTRY_RE = re.compile(r"@(?P<type>\w+)\s*\{\s*(?P<key>[^,]+)\s*,(?P<body>.*?)\n\}\s*", re.S)
+FIELD_RE = re.compile(r"(?P<field>\w+)\s*=\s*(?P<value>\{.*?\}|\".*?\")\s*,?\s*", re.S)
 
 
 def _clean(v: str) -> str:
@@ -73,6 +65,18 @@ def norm_title(s: str) -> str:
     return s
 
 
+def slugify_title(s: str) -> str:
+    s = norm_title(s)
+    s = s.replace(" ", "-")
+    s = re.sub(r"-+", "-", s)
+    return s.strip("-")
+
+
+def make_fallback_key(year: Any, title: str) -> str:
+    y = str(year).strip() if year is not None else ""
+    return f"{y}|{slugify_title(title)}"
+
+
 def title_similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, norm_title(a), norm_title(b)).ratio()
 
@@ -101,46 +105,35 @@ def save_cache(cache: Dict[str, dict]) -> None:
     CACHE_FILE.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-# --- Preprint detection (long-term robust approach) ---
-PREPRINT_VENUE_KEYWORDS = [
-    "biorxiv",
-    "medrxiv",
-    "arxiv",
-    "research square",
-]
-PREPRINT_URL_KEYWORDS = [
-    "biorxiv.org",
-    "medrxiv.org",
-    "arxiv.org",
-    "researchsquare.com",
-]
+def load_extras() -> Dict[str, dict]:
+    if not EXTRAS.exists():
+        return {}
+    data = yaml.safe_load(EXTRAS.read_text(encoding="utf-8")) or {}
+    if not isinstance(data, dict):
+        raise SystemExit("publication_extras.yml must be a YAML mapping (dictionary) at the top level.")
+    return data
+
+
+# --- Preprint detection ---
+PREPRINT_VENUE_KEYWORDS = ["biorxiv", "medrxiv", "arxiv", "research square"]
+PREPRINT_URL_KEYWORDS = ["biorxiv.org", "medrxiv.org", "arxiv.org", "researchsquare.com"]
 
 
 def is_preprint_entry(entry: Dict[str, str], venue: str, url: str) -> bool:
     v = (venue or "").lower()
     u = (url or "").lower()
-
-    # Venue keywords
     if any(k in v for k in PREPRINT_VENUE_KEYWORDS):
         return True
-
-    # URL keywords
     if any(k in u for k in PREPRINT_URL_KEYWORDS):
         return True
-
-    # BibTeX-style arXiv fields sometimes present
-    # e.g., archivePrefix={arXiv}, eprint={...}
     arch = (entry.get("archiveprefix") or "").lower()
     if arch == "arxiv":
         return True
-
     return False
 
 
 # --- Crossref DOI lookup (conservative) ---
-def crossref_candidates(
-    title: str, author_surname: str, mailto: Optional[str]
-) -> List[dict]:
+def crossref_candidates(title: str, author_surname: str, mailto: Optional[str]) -> List[dict]:
     url = "https://api.crossref.org/works"
     params = {
         "rows": 5,
@@ -151,12 +144,10 @@ def crossref_candidates(
         params["query.author"] = author_surname
     if mailto:
         params["mailto"] = mailto
-
     headers = {"User-Agent": "demuth-lab-site/1.0 (GitHub Actions)"}
     r = requests.get(url, params=params, headers=headers, timeout=30)
     r.raise_for_status()
-    data = r.json()
-    return data.get("message", {}).get("items", [])
+    return r.json().get("message", {}).get("items", [])
 
 
 def extract_year_from_crossref(item: dict) -> Optional[int]:
@@ -173,8 +164,7 @@ def author_surname_matches(item: dict, target_surname: str) -> bool:
     authors = item.get("author") or []
     if not authors:
         return False
-    first = authors[0]
-    fam = (first.get("family") or "").strip().lower()
+    fam = (authors[0].get("family") or "").strip().lower()
     return fam == target_surname
 
 
@@ -185,9 +175,6 @@ def best_doi_conservative(
     mailto: Optional[str],
     min_sim: float = 0.92,
 ) -> Tuple[Optional[str], str]:
-    """
-    Returns (doi, reason)
-    """
     items = crossref_candidates(title, author_surname, mailto)
     best = None
     best_sim = 0.0
@@ -218,12 +205,58 @@ def best_doi_conservative(
     return doi, f"accepted (title_sim={best_sim:.3f})"
 
 
-def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]]:
-    cache = load_cache()
-    report_lines: List[str] = []
-    pubs: List[Dict[str, object]] = []
+def merge_extras(pub: Dict[str, Any], extras: Dict[str, dict]) -> None:
+    """
+    Merge rules:
+    - If extras provides a scalar field (pdf/type/url/etc), overwrite.
+    - If extras provides a list field:
+        - tags: union (preserve pub first)
+        - software: append (pub first, then extras)
+    """
+    doi = (pub.get("doi") or "").strip().lower()
+    fallback_key = make_fallback_key(pub.get("year"), pub.get("title", ""))
+    extra = None
 
-    # Polite Crossref usage:
+    if doi and doi in extras:
+        extra = extras[doi]
+    elif fallback_key in extras:
+        extra = extras[fallback_key]
+
+    if not extra:
+        return
+    if not isinstance(extra, dict):
+        return
+
+    # Merge scalar/other dict fields first
+    for k, v in extra.items():
+        if k in ("tags", "software"):
+            continue
+        pub[k] = v
+
+    # Merge tags
+    if "tags" in extra and isinstance(extra["tags"], list):
+        existing = pub.get("tags")
+        if not isinstance(existing, list):
+            existing = []
+        merged = existing + [t for t in extra["tags"] if t not in existing]
+        pub["tags"] = merged
+
+    # Merge software links
+    if "software" in extra and isinstance(extra["software"], list):
+        existing_sw = pub.get("software")
+        if not isinstance(existing_sw, list):
+            existing_sw = []
+        pub["software"] = existing_sw + extra["software"]
+
+
+def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, Any]]:
+    cache = load_cache()
+    extras = load_extras()
+
+    report_lines: List[str] = []
+    pubs: List[Dict[str, Any]] = []
+
+    # Put your email here (Crossref "polite pool")
     MAILTO = "jpdemuth@uta.edu"
 
     for e in entries:
@@ -232,20 +265,20 @@ def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]
 
         title = e.get("title", "").replace("{", "").replace("}", "").strip()
         authors = e.get("author", "").strip()
-
         venue = (e.get("journal") or e.get("booktitle") or e.get("publisher") or "").strip()
-        url = (e.get("url") or "").strip()
-        doi = (e.get("doi") or "").strip()
 
-        # Detect preprint type (long-term solution)
-        pub_type = "preprint" if is_preprint_entry(e, venue, url) else None
+        url = (e.get("url") or "").strip()
+        doi = (e.get("doi") or "").strip().lower()
+
+        # Default type via detection
+        pub_type = "preprint" if is_preprint_entry(e, venue, url) else "article"
 
         # Conservative DOI enrichment if missing
         if not doi and title:
             cache_key = f"{norm_title(title)}|{year_int or ''}|{first_author_surname(authors)}"
             if cache_key in cache:
                 cached = cache[cache_key]
-                doi = (cached.get("doi") or "").strip()
+                doi = (cached.get("doi") or "").strip().lower()
                 if doi:
                     report_lines.append(f"[CACHED] DOI added: {title} -> {doi}")
                 else:
@@ -259,7 +292,7 @@ def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]
                         mailto=MAILTO,
                     )
                     if doi_found:
-                        doi = doi_found
+                        doi = doi_found.strip().lower()
                         report_lines.append(f"[OK] {reason}: {title} -> {doi}")
                         cache[cache_key] = {"doi": doi}
                     else:
@@ -269,27 +302,28 @@ def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]
                     report_lines.append(f"[ERROR] {title}: {ex}")
                     cache[cache_key] = {"doi": None, "reason": str(ex)}
 
-                time.sleep(0.2)  # be polite to Crossref
+                time.sleep(0.2)
 
-        pub: Dict[str, object] = {
+        pub: Dict[str, Any] = {
             "year": int(year_raw) if year_raw.isdigit() else year_raw,
             "title": title,
             "authors": authors,
             "venue": venue,
+            "type": pub_type,
         }
-
-        if pub_type:
-            pub["type"] = pub_type  # <-- long-term flag for template logic
 
         if doi:
             pub["doi"] = doi
         elif url:
             pub["url"] = url
 
+        # Merge manual extras by DOI or fallback key
+        merge_extras(pub, extras)
+
         pubs.append(pub)
 
-    # Sort newest first (robust to mixed year types)
-    def sort_key(p: Dict[str, object]) -> int:
+    # Sort newest first
+    def sort_key(p: Dict[str, Any]) -> int:
         y = p.get("year")
         if isinstance(y, int):
             return y
@@ -306,17 +340,14 @@ def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]
 
 def main() -> None:
     if not BIB.exists():
-        raise SystemExit(f"BibTeX file not found: {BIB} (create it, then rerun)")
+        raise SystemExit(f"BibTeX file not found: {BIB}")
 
     text = BIB.read_text(encoding="utf-8", errors="ignore")
     entries = parse_bibtex(text)
     pubs = bib_to_publications(entries)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(
-        yaml.safe_dump(pubs, sort_keys=False, allow_unicode=True),
-        encoding="utf-8",
-    )
+    OUT.write_text(yaml.safe_dump(pubs, sort_keys=False, allow_unicode=True), encoding="utf-8")
 
     print(f"Wrote {OUT} with {len(pubs)} publications")
     print(f"Wrote {REPORT} (DOI lookup report)")
