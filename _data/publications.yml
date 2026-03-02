@@ -59,7 +59,7 @@
   doi: 10.5281/zenodo.8033504
   software:
   - label: CAFE Software
-    url: 10.1093/bioinformatics/btl097
+    url: https://github.com/hahnlab/CAFE5
 - year: 2022
   title: Adaptive variation in homologue number within transcript families promotes
     expression divergence in reef-building coral
@@ -251,7 +251,7 @@
   doi: 10.1534/genetics.107.080077
   software:
   - label: CAFE Software
-    url: 10.1093/bioinformatics/btl097
+    url: https://github.com/hahnlab/CAFE5
 - year: 2007
   title: Population differentiation in the beetle Tribolium castaneum. I. Genetic
     architecture
@@ -296,7 +296,7 @@
   doi: 10.1371/journal.pone.0000085
   software:
   - label: CAFE Software
-    url: 10.1093/bioinformatics/btl097
+    url: https://github.com/hahnlab/CAFE5
 - year: 2006
   title: 'CAFE: a computational tool for the study of gene family evolution'
   authors: De Bie, Tijl and Cristianini, Nello and Demuth, Jeffery P and Hahn, Matthew
