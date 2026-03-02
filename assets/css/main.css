@@ -168,6 +168,50 @@ a:hover{text-decoration:underline}
   }
 }
 /* =========================
+   Publications
+   ========================= */
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.pub-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.pub-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.pub-meta {
+  opacity: 0.9;
+  margin-bottom: 0.4rem;
+}
+
+.pub-links a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background: #f0f0f0;
+}
+
+.pub-links a:hover {
+  background: #e6e6e6;
+}
+
+.pub-tags {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* =========================
    DOI formatting block
    ========================= */
 
