@@ -13,7 +13,7 @@
     - label: "EvobiR Software"
       url: "https://github.com/coleoguy/evobir"
 
-"10.5281/zenodo.8033504":
+"10.1093/bioinformatics/btl097":
   software:
     - label: "CAFE Software"
       url: "https://github.com/hahnlab/CAFE5"
