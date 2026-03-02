@@ -7,14 +7,6 @@ Selected and complete publications. For the most up-to-date list, see
 <a target="_blank" rel="noopener" href="{{ site.data.links.scholar }}">Google Scholar</a>.
 </p>
 
-<div class="card">
-  <h3>How to update</h3>
-  <ol>
-    <li>Quick/manual: edit <code>_data/publications.yml</code>.</li>
-    <li>Recommended: export/update <code>data/publications.bib</code> (from Google Scholar) and run <code>scripts/bib2yaml.py</code> to regenerate <code>_data/publications.yml</code>.</li>
-  </ol>
-</div>
-
 {% assign pubs = site.data.publications %}
 
 {%- comment -%}
