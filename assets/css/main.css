@@ -260,6 +260,20 @@ a:hover{text-decoration:underline}
   padding-top:0.5rem;
 }
 
+.pub-software{
+  margin-top:0.5rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+}
+
+.pub-subhead{
+  color:var(--muted);
+  font-size:0.9rem;
+  margin-right:0.25rem;
+}
+
 /* =========================
    Mobile
    ========================= */
