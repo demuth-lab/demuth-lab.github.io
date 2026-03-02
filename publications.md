@@ -76,6 +76,15 @@ Google Scholar
         Tags: {{ p.tags | join: ', ' }}
       </div>
     {% endif %}
+    
+    {% if p.software and p.software.size > 0 %}
+       <div class="pub-software">
+          <span class="pub-subhead">Software:</span>
+          {% for s in p.software %}
+             <a class="pub-link" href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
+          {% endfor %}
+       </div>
+     {% endif %}
   </li>
 
 {% endfor %}
