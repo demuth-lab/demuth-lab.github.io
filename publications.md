@@ -11,6 +11,32 @@ Google Scholar
 </p>
 
 {% assign pubs = site.data.publications %}
+
+<!-- Year Jump Dropdown -->
+<div class="pub-year-jump">
+  <label for="yearJump"><strong>Jump to year:</strong></label>
+  <select id="yearJump" onchange="if(this.value) location.hash=this.value;">
+    <option value="">Select…</option>
+
+    {% assign years_csv = "" %}
+    {% for p in pubs %}
+      {% if p.year %}
+        {% assign y = p.year | append: "" %}
+        {% unless years_csv contains y %}
+          {% assign years_csv = years_csv | append: y | append: "," %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% assign years = years_csv | split: "," %}
+
+    {% for y in years %}
+      {% if y != "" %}
+        <option value="#year-{{ y }}">{{ y }}</option>
+      {% endif %}
+    {% endfor %}
+  </select>
+</div>
+
 {% assign current_year = "" %}
 
 {% for p in pubs %}
@@ -21,7 +47,7 @@ Google Scholar
       </ul>
     {% endif %}
 
-<h2 id="year-{{ y }}">{{ y }}</h2>
+<h2 id="year-{{ y }}" class="pub-year">{{ y }}</h2>
 
 <ul class="pub-list">
 
@@ -37,15 +63,21 @@ Google Scholar
 
     <div class="pub-links">
       {% if p.doi %}
-        <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>
+        <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>
       {% endif %}
       {% if p.url %}
-        <a href="{{ p.url }}" target="_blank" rel="noopener">Link</a>
+        <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">Link</a>
       {% endif %}
       {% if p.pdf %}
-        <a href="{{ p.pdf }}" target="_blank" rel="noopener">PDF</a>
+        <a class="pub-link" href="{{ p.pdf }}" target="_blank" rel="noopener">PDF</a>
       {% endif %}
     </div>
+
+    {% if p.tags and p.tags.size > 0 %}
+      <div class="pub-tags">
+        Tags: {{ p.tags | join: ', ' }}
+      </div>
+    {% endif %}
   </li>
 
 {% endfor %}
