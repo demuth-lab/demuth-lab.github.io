@@ -282,6 +282,28 @@ a:hover{text-decoration:underline}
   margin-right:0.25rem;
 }
 
+.pub-controls{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  align-items:center;
+  margin: 1rem 0 1.25rem 0;
+}
+
+.pub-topic-jump{
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+}
+
+.pub-topic-jump select{
+  padding:6px 10px;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.15);
+  background:#fff;
+}
+
+
 /* =========================
    Mobile
    ========================= */
