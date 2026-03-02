@@ -58,7 +58,7 @@ Google Scholar
     <div class="pub-title">{{ p.title }}</div>
 
     <div class="pub-meta">
-      {{ p.authors }} · <em>{{ p.venue }}<em>
+      {{ p.authors }} · <em>{{ p.venue }}</em>
     </div>
 
     <div class="pub-links">
