@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """
 Convert data/publications.bib -> _data/publications.yml
-and conservatively add missing DOIs via Crossref.
 
-Conservative policy:
-- Only add DOI if title similarity is high AND year matches (if present)
-  AND first-author surname matches (if present).
-- Otherwise leave DOI blank and log to a report.
+Features:
+- Conservative DOI enrichment via Crossref for entries missing DOI.
+- Adds pub["type"] = "preprint" for preprints (bioRxiv/medRxiv/arXiv/Research Square).
+- Writes:
+  - _data/publications.yml
+  - doi_lookup_report.txt
+  - .cache/crossref_doi_cache.json (to reduce API calls)
+
+Dependencies (install in GitHub Actions):
+  pip install requests pyyaml
 """
 
 from __future__ import annotations
@@ -29,7 +34,7 @@ CACHE_DIR = ROOT / ".cache"
 CACHE_FILE = CACHE_DIR / "crossref_doi_cache.json"
 REPORT = ROOT / "doi_lookup_report.txt"
 
-# --- Very small BibTeX parser (good enough for Scholar exports) ---
+# --- Minimal BibTeX parser (works for Scholar-style exports) ---
 ENTRY_RE = re.compile(
     r"@(?P<type>\w+)\s*\{\s*(?P<key>[^,]+)\s*,(?P<body>.*?)\n\}\s*",
     re.S,
@@ -59,7 +64,7 @@ def parse_bibtex(text: str) -> List[Dict[str, str]]:
     return entries
 
 
-# --- DOI lookup (Crossref) ---
+# --- Helpers ---
 def norm_title(s: str) -> str:
     s = s.lower()
     s = re.sub(r"\{|\}", "", s)
@@ -73,41 +78,88 @@ def title_similarity(a: str, b: str) -> float:
 
 
 def first_author_surname(authors: str) -> str:
-    # BibTeX author format often "Last, First and Last2, First2 ..."
     if not authors:
         return ""
     first = authors.split(" and ")[0].strip()
     if "," in first:
         return first.split(",")[0].strip().lower()
-    # If "First Last"
     parts = first.split()
     return parts[-1].strip().lower() if parts else ""
 
 
+def load_cache() -> Dict[str, dict]:
+    if CACHE_FILE.exists():
+        try:
+            return json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
+def save_cache(cache: Dict[str, dict]) -> None:
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    CACHE_FILE.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+# --- Preprint detection (long-term robust approach) ---
+PREPRINT_VENUE_KEYWORDS = [
+    "biorxiv",
+    "medrxiv",
+    "arxiv",
+    "research square",
+]
+PREPRINT_URL_KEYWORDS = [
+    "biorxiv.org",
+    "medrxiv.org",
+    "arxiv.org",
+    "researchsquare.com",
+]
+
+
+def is_preprint_entry(entry: Dict[str, str], venue: str, url: str) -> bool:
+    v = (venue or "").lower()
+    u = (url or "").lower()
+
+    # Venue keywords
+    if any(k in v for k in PREPRINT_VENUE_KEYWORDS):
+        return True
+
+    # URL keywords
+    if any(k in u for k in PREPRINT_URL_KEYWORDS):
+        return True
+
+    # BibTeX-style arXiv fields sometimes present
+    # e.g., archivePrefix={arXiv}, eprint={...}
+    arch = (entry.get("archiveprefix") or "").lower()
+    if arch == "arxiv":
+        return True
+
+    return False
+
+
+# --- Crossref DOI lookup (conservative) ---
 def crossref_candidates(
-    title: str, year: Optional[int], author_surname: str, mailto: Optional[str]
+    title: str, author_surname: str, mailto: Optional[str]
 ) -> List[dict]:
     url = "https://api.crossref.org/works"
     params = {
         "rows": 5,
         "query.bibliographic": title,
-        # These two help a bit, but Crossref can be fuzzy anyway:
         "select": "DOI,title,author,issued,container-title,type,score,URL",
     }
     if author_surname:
         params["query.author"] = author_surname
-
-    headers = {"User-Agent": "demuth-lab-site/1.0 (GitHub Actions)"}
     if mailto:
         params["mailto"] = mailto
 
+    headers = {"User-Agent": "demuth-lab-site/1.0 (GitHub Actions)"}
     r = requests.get(url, params=params, headers=headers, timeout=30)
     r.raise_for_status()
     data = r.json()
     return data.get("message", {}).get("items", [])
 
 
-def extract_year(item: dict) -> Optional[int]:
+def extract_year_from_crossref(item: dict) -> Optional[int]:
     issued = item.get("issued", {})
     parts = issued.get("date-parts", [])
     if parts and parts[0] and isinstance(parts[0][0], int):
@@ -132,20 +184,19 @@ def best_doi_conservative(
     author_surname: str,
     mailto: Optional[str],
     min_sim: float = 0.92,
-) -> Tuple[Optional[str], Optional[str], str]:
+) -> Tuple[Optional[str], str]:
     """
-    Returns: (doi, doi_url, reason)
+    Returns (doi, reason)
     """
-    items = crossref_candidates(title, year, author_surname, mailto)
+    items = crossref_candidates(title, author_surname, mailto)
     best = None
     best_sim = 0.0
 
     for it in items:
         it_title = (it.get("title") or [""])[0]
         sim = title_similarity(title, it_title)
-        it_year = extract_year(it)
+        it_year = extract_year_from_crossref(it)
 
-        # Conservative filters:
         if sim < min_sim:
             continue
         if year is not None and it_year is not None and it_year != year:
@@ -158,27 +209,13 @@ def best_doi_conservative(
             best = it
 
     if not best:
-        return None, None, "no high-confidence match"
+        return None, "no high-confidence match"
 
     doi = best.get("DOI")
     if not doi:
-        return None, None, "match found but DOI missing in Crossref record"
+        return None, "match found but DOI missing in Crossref record"
 
-    return doi, f"https://doi.org/{doi}", f"accepted (title_sim={best_sim:.3f})"
-
-
-def load_cache() -> Dict[str, dict]:
-    if CACHE_FILE.exists():
-        try:
-            return json.loads(CACHE_FILE.read_text(encoding="utf-8"))
-        except Exception:
-            return {}
-    return {}
-
-
-def save_cache(cache: Dict[str, dict]) -> None:
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    CACHE_FILE.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
+    return doi, f"accepted (title_sim={best_sim:.3f})"
 
 
 def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]]:
@@ -186,36 +223,38 @@ def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]
     report_lines: List[str] = []
     pubs: List[Dict[str, object]] = []
 
-    # Optional: set this to your email to be polite to Crossref
-    # (or leave blank; it still works, but mailto is recommended)
+    # Polite Crossref usage:
     MAILTO = "jpdemuth@uta.edu"
 
     for e in entries:
         year_raw = e.get("year", "")
-        year = int(year_raw) if year_raw.isdigit() else None
+        year_int = int(year_raw) if year_raw.isdigit() else None
 
         title = e.get("title", "").replace("{", "").replace("}", "").strip()
         authors = e.get("author", "").strip()
+
         venue = (e.get("journal") or e.get("booktitle") or e.get("publisher") or "").strip()
-
-        doi = (e.get("doi") or "").strip()
         url = (e.get("url") or "").strip()
+        doi = (e.get("doi") or "").strip()
 
-        # If DOI missing, try Crossref (conservative)
+        # Detect preprint type (long-term solution)
+        pub_type = "preprint" if is_preprint_entry(e, venue, url) else None
+
+        # Conservative DOI enrichment if missing
         if not doi and title:
-            cache_key = f"{norm_title(title)}|{year or ''}|{first_author_surname(authors)}"
+            cache_key = f"{norm_title(title)}|{year_int or ''}|{first_author_surname(authors)}"
             if cache_key in cache:
                 cached = cache[cache_key]
-                doi = cached.get("doi") or ""
+                doi = (cached.get("doi") or "").strip()
                 if doi:
-                    report_lines.append(f"[CACHED] DOI added for: {title} -> {doi}")
+                    report_lines.append(f"[CACHED] DOI added: {title} -> {doi}")
                 else:
-                    report_lines.append(f"[CACHED] No DOI for: {title}")
+                    report_lines.append(f"[CACHED] No DOI: {title}")
             else:
                 try:
-                    doi_found, doi_url, reason = best_doi_conservative(
+                    doi_found, reason = best_doi_conservative(
                         title=title,
-                        year=year,
+                        year=year_int,
                         author_surname=first_author_surname(authors),
                         mailto=MAILTO,
                     )
@@ -230,8 +269,7 @@ def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]
                     report_lines.append(f"[ERROR] {title}: {ex}")
                     cache[cache_key] = {"doi": None, "reason": str(ex)}
 
-                # Be polite to Crossref
-                time.sleep(0.2)
+                time.sleep(0.2)  # be polite to Crossref
 
         pub: Dict[str, object] = {
             "year": int(year_raw) if year_raw.isdigit() else year_raw,
@@ -240,15 +278,17 @@ def bib_to_publications(entries: List[Dict[str, str]]) -> List[Dict[str, object]
             "venue": venue,
         }
 
+        if pub_type:
+            pub["type"] = pub_type  # <-- long-term flag for template logic
+
         if doi:
             pub["doi"] = doi
-            pub["doi_url"] = f"https://doi.org/{doi}"
         elif url:
             pub["url"] = url
 
         pubs.append(pub)
 
-    # Sort newest first if possible
+    # Sort newest first (robust to mixed year types)
     def sort_key(p: Dict[str, object]) -> int:
         y = p.get("year")
         if isinstance(y, int):
@@ -280,7 +320,7 @@ def main() -> None:
 
     print(f"Wrote {OUT} with {len(pubs)} publications")
     print(f"Wrote {REPORT} (DOI lookup report)")
-    print(f"Cache: {CACHE_FILE} (to reduce API calls)")
+    print(f"Cache: {CACHE_FILE}")
 
 
 if __name__ == "__main__":
