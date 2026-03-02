@@ -108,9 +108,14 @@ def save_cache(cache: Dict[str, dict]) -> None:
 def load_extras() -> Dict[str, dict]:
     if not EXTRAS.exists():
         return {}
-    data = yaml.safe_load(EXTRAS.read_text(encoding="utf-8")) or {}
+    try:
+        data = yaml.safe_load(EXTRAS.read_text(encoding="utf-8")) or {}
+    except Exception as ex:
+        print(f"WARNING: Could not parse {EXTRAS}: {ex}")
+        return {}
     if not isinstance(data, dict):
-        raise SystemExit("publication_extras.yml must be a YAML mapping (dictionary) at the top level.")
+        print(f"WARNING: {EXTRAS} must be a top-level mapping; ignoring.")
+        return {}
     return data
 
 
