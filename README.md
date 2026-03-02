@@ -19,7 +19,9 @@ This repo is a mobile-friendly Jekyll site designed for easy setup and maintenan
 Google Scholar doesn’t offer a stable public API, so the recommended workflow is:
 1) Keep your Scholar profile updated
 2) Occasionally export a BibTeX file (from Scholar or Zotero) to `data/publications.bib`
-3) Run: `python3 scripts/bib2yaml.py` to regenerate `_data/publications.yml`
+3) Either: Manually add the new stuff to _data/publications.yml
+           OR Run `python3 scripts/bib2yaml.py` to regenerate `_data/publications.yml`
+   
 
 ## Local preview
 ```bash
