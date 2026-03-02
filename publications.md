@@ -61,15 +61,29 @@ Google Scholar
       {{ p.authors }} · <em>{{ p.venue }}</em>
     </div>
 
-    <div class="pub-links">
+   <div class="pub-links">
       {% if p.doi %}
-         {% if p.type == "preprint" %}
-             <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Preprint</a>
-         {% else %}
-             <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Article</a>
-         {% endif %}
+        {% if p.type == "preprint" %}
+          <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Preprint</a>
+        {% else %}
+          <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Article</a>
+        {% endif %}
       {% endif %}
-    </div>
+    
+      {% if p.pdf %}
+        <a class="pub-link" href="{{ p.pdf }}" target="_blank" rel="noopener">Download PDF</a>
+      {% endif %}
+    
+      {% if p.url %}
+        <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">Link</a>
+      {% endif %}
+    
+      {% if p.software and p.software.size > 0 %}
+        {% for s in p.software %}
+          <a class="pub-link" href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
+        {% endfor %}
+      {% endif %}
+</div>
 
     {% if p.tags and p.tags.size > 0 %}
       <div class="pub-tags">
