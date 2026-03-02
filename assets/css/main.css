@@ -237,6 +237,14 @@ a:hover{text-decoration:underline}
   text-decoration:none;
 }
 
+.pub-links a {
+  background: #f0f0f0;
+}
+
+.pub-links a[href*="github"] {
+  background: #eef2ff;
+}
+
 .pub-tags{margin-top:0.4rem;font-size:0.9rem;opacity:0.85}
 
 /* Publications year dropdown */
