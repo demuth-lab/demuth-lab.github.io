@@ -13,7 +13,7 @@ title: "Publications"
 </div>
 
 <ul class="pub-list">
-  {% assign pubs = site.data.publications | sort: 'year' | reverse %}
+  {% assign pubs = site.data.publications %}
 {% for p in pubs %}
 
 ### {{ p.title }}
