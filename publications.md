@@ -55,13 +55,17 @@ Google Scholar
   {% endif %}
 
   <li class="pub-item">
-    <div class="pub-title">{{ p.title }}</div>
 
-    <div class="pub-meta">
-      {{ p.authors }} · <em>{{ p.venue }}</em>
+    <div class="pub-title">
+      {{ p.title }}
     </div>
 
-   <div class="pub-links">
+    <div class="pub-meta">
+      {{ p.authors }} · <em>{{ p.venue }}</em> · {{ p.year }}
+    </div>
+
+    <div class="pub-links">
+
       {% if p.doi %}
         {% if p.type == "preprint" %}
           <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Preprint</a>
@@ -69,36 +73,29 @@ Google Scholar
           <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Article</a>
         {% endif %}
       {% endif %}
-    
+
       {% if p.pdf %}
         <a class="pub-link" href="{{ p.pdf }}" target="_blank" rel="noopener">Download PDF</a>
       {% endif %}
-    
-      {% if p.url %}
+
+      {% if p.url and not p.doi %}
         <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">Link</a>
       {% endif %}
-    
+
       {% if p.software and p.software.size > 0 %}
         {% for s in p.software %}
           <a class="pub-link" href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
         {% endfor %}
       {% endif %}
-</div>
+
+    </div>
 
     {% if p.tags and p.tags.size > 0 %}
       <div class="pub-tags">
-        Tags: {{ p.tags | join: ', ' }}
+        {{ p.tags | join: ', ' }}
       </div>
     {% endif %}
-    
-    {% if p.software and p.software.size > 0 %}
-       <div class="pub-software">
-          <span class="pub-subhead">Software:</span>
-          {% for s in p.software %}
-             <a class="pub-link" href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
-          {% endfor %}
-       </div>
-     {% endif %}
+
   </li>
 
 {% endfor %}
