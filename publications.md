@@ -63,13 +63,11 @@ Google Scholar
 
     <div class="pub-links">
       {% if p.doi %}
-        <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Article</a>
-      {% endif %}
-      {% if p.url %}
-        <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">Link</a>
-      {% endif %}
-      {% if p.pdf %}
-        <a class="pub-link" href="{{ p.pdf }}" target="_blank" rel="noopener">PDF</a>
+         {% if p.type == "preprint" %}
+             <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Preprint</a>
+         {% else %}
+             <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Article</a>
+         {% endif %}
       {% endif %}
     </div>
 
