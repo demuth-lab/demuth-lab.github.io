@@ -2,6 +2,7 @@
 title: "Publications"
 layout: default
 ---
+<p class="muted">Topics loaded: {{ site.data.topics | size }}</p>
 
 <p class="lede">
 Selected publications. For the most up-to-date list, see
