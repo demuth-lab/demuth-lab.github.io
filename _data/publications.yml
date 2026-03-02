@@ -47,8 +47,14 @@
   venue: Evolution
   doi: 10.1093/evolut/qpae003
   doi_url: https://doi.org/10.1093/evolut/qpae003
+- year: 2024
+  title: Machine Learning Approaches for Classifying and Characterizing Coral Diseases
+  authors: Van Buren, Emily W and Beavers, Kelsey M and Cornelio, Mariah N and Stokes,
+    Alexia and Emery, Madison and Demuth, Jeffery P and Wang, Li and Mydlarz, Laura
+    D
+  venue: ''
 - year: 2023
-  title: 'EvobiR (v2.1)'
+  title: 'coleoguy/evobir: EvobiR version 2.1'
   authors: Jonika, Michelle M and Chin, Maximos and Anderson, Nathan W and Adams,
     Richard H and Demuth, Jeffery P and Blackmon, Heath
   venue: Zenodo
