@@ -58,8 +58,8 @@
   type: article
   doi: 10.5281/zenodo.8033504
   software:
-  - label: CAFE Software
-    url: https://github.com/hahnlab/CAFE5
+  - label: EvobiR Software
+    url: https://github.com/coleoguy/evobir
 - year: 2022
   title: Adaptive variation in homologue number within transcript families promotes
     expression divergence in reef-building coral
@@ -304,6 +304,9 @@
   venue: Bioinformatics
   type: article
   doi: 10.1093/bioinformatics/btl097
+  software:
+  - label: CAFE Software
+    url: https://github.com/hahnlab/CAFE5
 - year: 2006
   title: Experimental methods for measuring gene interactions
   authors: Demuth, Jeffery P and Wade, Michael J
