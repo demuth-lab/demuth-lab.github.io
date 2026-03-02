@@ -10,5 +10,5 @@
 
 "2023|evobir-v2-1":
   software:
-    - label: "GitHub repo"
+    - label: "EvobiR Software"
       url: "https://github.com/coleoguy/evobir"
