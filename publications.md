@@ -63,7 +63,7 @@ Google Scholar
 
     <div class="pub-links">
       {% if p.doi %}
-        <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>
+        <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Article</a>
       {% endif %}
       {% if p.url %}
         <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">Link</a>
