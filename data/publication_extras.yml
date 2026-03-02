@@ -1,11 +1,11 @@
-10.1111/evo.12844
+"10.1111/evo.12844":
   software:
     - label: "SAGA Software"
       url: "https://github.com/coleoguy/SAGA2"
 }
 
-10.1093/evolut/qpae003
-software:
+"10.1093/evolut/qpae003":
+  software:
     - label: "SAGA Software"
       url: "https://github.com/coleoguy/SAGA2"
 }
