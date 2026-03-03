@@ -17,15 +17,19 @@ permalink: /people/
       His research integrates comparative genomics, regulatory evolution, and behavioral genetics in horned beetles and related systems.
     </p>
 
-    <p class="pi-links">
-      <a href="mailto:jpdemuth@uta.edu">jpdemuth@uta.edu</a>
-      &nbsp;•&nbsp;
-      <a href="YOUR_SCHOLAR_LINK">Google Scholar</a>
-      &nbsp;•&nbsp;
-      <a href="YOUR_ORCID_LINK">ORCID</a>
-      &nbsp;•&nbsp;
-      <a href="YOUR_CV_LINK">CV</a>
-    </p>
+    <div class="pi-links">
+      <a href="{{ site.data.links.scholar }}" target="_blank" rel="noopener" class="scholar-link">
+        <i class="bi bi-mortarboard-fill" aria-hidden="true"></i> Google Scholar
+      </a>
+
+      <a href="https://orcid.org/0000-0002-0471-3679" target="_blank" rel="noopener" class="scholar-link">
+        <i class="bi bi-link-45deg" aria-hidden="true"></i> ORCID
+      </a>
+
+      <span class="email-pill" id="pi-email"
+            data-user="jpdemuth"
+            data-domain="uta.edu"></span>
+    </div>
   </div>
 </div>
 
@@ -60,3 +64,33 @@ permalink: /people/
   {% endif %}
 {% endfor %}
 </div>
+
+
+
+<script>
+(function () {
+  const el = document.getElementById("pi-email");
+  if (!el) return;
+
+  const user = el.getAttribute("data-user");
+  const domain = el.getAttribute("data-domain");
+  if (!user || !domain) return;
+
+  const addr = user + "@" + domain;
+
+  // Visible text
+  el.textContent = addr;
+
+  // Clickable mailto
+  el.addEventListener("click", () => {
+    window.location.href = "mailto:" + addr;
+  });
+
+  // Make it look/act like a button
+  el.setAttribute("role", "link");
+  el.setAttribute("tabindex", "0");
+  el.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") window.location.href = "mailto:" + addr;
+  });
+})();
+</script>
