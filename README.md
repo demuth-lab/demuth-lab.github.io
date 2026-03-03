@@ -17,9 +17,15 @@ This repo is a mobile-friendly Jekyll site designed for easy setup and maintenan
 
 ## Publications workflow (Scholar-friendly)
 Google Scholar doesn’t offer a stable public API, so the recommended workflow is:
-1) Keep your Scholar profile updated
-2) Occasionally export a BibTeX file (from Scholar or Zotero) to `data/publications.bib`
-3) Either: Manually add the new stuff to _data/publications.yml
+1) Download the new publications as BibText (.bib) 
+2) Append the new BibTeX file info `data/publications.bib`
+3) Run the .github/workflows/publications workflow (will scrape for the dois)
+4) Add any software links or other stuff using the 'data/publication_extras.yml' use the doi as keys
+5) Add the doi for new [ubs to the data/topics.yml so it can be filtered correctly
+
+Alternate method:
+
+7) Either: Manually add the new stuff to _data/publications.yml
            OR Run `python3 scripts/bib2yaml.py` to regenerate `_data/publications.yml`
    
 
