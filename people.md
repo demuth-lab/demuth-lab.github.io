@@ -26,13 +26,9 @@ permalink: /people/
         <i class="bi bi-link-45deg" aria-hidden="true"></i> ORCID
       </a>
 
-      <a href="#"
-         class="scholar-link"
-         id="pi-email"
-         data-user="jpdemuth"
-         data-domain="uta.edu">
+      <a href="#" class="scholar-link" id="pi-email" data-user="jpdemuth" data-domain="uta.edu">
         <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-        Email
+        Contact Me
       </a>
     </div>
   </div>
@@ -79,23 +75,11 @@ permalink: /people/
 
   const user = el.getAttribute("data-user");
   const domain = el.getAttribute("data-domain");
-  if (!user || !domain) return;
-
   const addr = user + "@" + domain;
 
-  // Visible text
-  el.textContent = addr;
-
-  // Clickable mailto
-  el.addEventListener("click", () => {
+  el.addEventListener("click", function (e) {
+    e.preventDefault();
     window.location.href = "mailto:" + addr;
-  });
-
-  // Make it look/act like a button
-  el.setAttribute("role", "link");
-  el.setAttribute("tabindex", "0");
-  el.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") window.location.href = "mailto:" + addr;
   });
 })();
 </script>
