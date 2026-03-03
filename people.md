@@ -26,9 +26,14 @@ permalink: /people/
         <i class="bi bi-link-45deg" aria-hidden="true"></i> ORCID
       </a>
 
-      <span class="email-pill" id="pi-email"
-            data-user="jpdemuth"
-            data-domain="uta.edu"></span>
+      <a href="#"
+         class="scholar-link"
+         id="pi-email"
+         data-user="jpdemuth"
+         data-domain="uta.edu">
+        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+        Email
+      </a>
     </div>
   </div>
 </div>
