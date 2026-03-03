@@ -80,14 +80,6 @@ a:hover{text-decoration:underline}
   flex-wrap:wrap;
 }
 
-/* The button group */
-.scholar-links{
-  display:inline-flex;
-  align-items:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
 /* =========================
    Hero
    ========================= */
@@ -284,9 +276,9 @@ a:hover{text-decoration:underline}
    ========================= */
 
 .scholar-links{
-  margin-bottom:2rem;
-  display:flex;
-  gap:16px;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
   flex-wrap:wrap;
 }
 
