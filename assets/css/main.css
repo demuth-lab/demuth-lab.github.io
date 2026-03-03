@@ -343,3 +343,14 @@ a:hover{text-decoration:underline}
 @media (max-width: 480px){
   .person-card img{width:180px;height:180px}
 }
+
+/* Make "pub-link" buttons look neutral (not blue) */
+.pub-links a.pub-link,
+.pub-links a.doi-link {
+  color: var(--fg);
+}
+
+.pub-links a.pub-link:hover,
+.pub-links a.doi-link:hover {
+  color: var(--fg);
+}
