@@ -71,6 +71,24 @@ a:hover{text-decoration:underline}
 .lede{font-size:18px;color:var(--muted);margin:8px 0 18px}
 
 /* =========================
+   Keep lede text + buttons on one line (wrap nicely on mobile) 
+   ========================= */*/
+.lede-links{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+/* The button group */
+.scholar-links{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* =========================
    Hero
    ========================= */
 
