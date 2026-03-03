@@ -172,6 +172,28 @@ a:hover{text-decoration:underline}
   background:var(--card);
 }
 
+.pi-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  align-items:center;
+}
+
+.email-pill{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 12px;
+  border-radius:8px;
+  border:1px solid var(--line);
+  background:#f0f0f0;
+  color:var(--fg);
+  cursor:pointer;
+  user-select:none;
+}
+.email-pill:hover{
+  background:#e6e6e6;
+}
+
 /* =========================
    Publications
    ========================= */
