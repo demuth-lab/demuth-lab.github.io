@@ -93,7 +93,7 @@ Selected publications. For the most up-to-date list, see
         {% if p.type == "preprint" %}
           <a class="doi-link" href="{{ view_href }}" target="_blank" rel="noopener">View Preprint</a>
         {% else %}
-          <a class="doi-link" href="{{ view_href }}" target="_blank" rel="noopener">View Article</a>
+          <a class="pub-link" href="{{ view_href }}" target="_blank" rel="noopener">View Article</a>
         {% endif %}
       {% endif %}
 
