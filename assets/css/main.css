@@ -262,6 +262,35 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
+   Scholar + ORCID links 
+   ========================= */
+
+.scholar-links{
+  margin-bottom:2rem;
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.scholar-link{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 12px;
+  border-radius:8px;
+  border:1px solid var(--line);
+  background:#f0f0f0;
+  color:var(--fg);
+  text-decoration:none;
+  font-size:0.95rem;
+}
+
+.scholar-link:hover{
+  background:#e6e6e6;
+  text-decoration:none;
+}
+
+/* =========================
    Mobile
    ========================= */
 
