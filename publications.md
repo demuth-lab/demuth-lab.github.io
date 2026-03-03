@@ -2,7 +2,6 @@
 title: "Publications"
 layout: default
 ---
-<p class="muted">Topics loaded: {{ site.data.topics | size }}</p>
 
 <p class="lede">
 Selected publications. For the most up-to-date list, see
@@ -12,9 +11,6 @@ Selected publications. For the most up-to-date list, see
 {% assign pubs = site.data.publications %}
 {% assign topics = site.data.topics %}
 
-{% comment %}
-Build list of years from pubs for the year-jump dropdown.
-{% endcomment %}
 {% assign years_csv = "" %}
 {% for p in pubs %}
   {% if p.year %}
@@ -28,7 +24,6 @@ Build list of years from pubs for the year-jump dropdown.
 
 <div class="pub-controls">
 
-  <!-- Year Jump Dropdown -->
   <div class="pub-year-jump">
     <label for="yearJump"><strong>Jump to year:</strong></label>
     <select id="yearJump" onchange="if(this.value) location.hash=this.value;">
@@ -41,7 +36,6 @@ Build list of years from pubs for the year-jump dropdown.
     </select>
   </div>
 
-  <!-- Topic Filter Dropdown -->
   <div class="pub-topic-jump">
     <label for="topicFilter"><strong>Filter by topic:</strong></label>
     <select id="topicFilter">
@@ -73,12 +67,10 @@ Build list of years from pubs for the year-jump dropdown.
 <h2 id="year-{{ y }}" class="pub-year">{{ y }}</h2>
 
 <ul class="pub-list">
-
     {% assign current_year = y %}
   {% endif %}
 
-  <li class="pub-item"
-      data-tags="{% if p.tags %}{{ p.tags | join: ',' | downcase }}{% endif %}">
+  <li class="pub-item" data-tags="{% if p.tags %}{{ p.tags | join: ',' | downcase }}{% endif %}">
 
     <div class="pub-title">{{ p.title }}</div>
 
@@ -87,12 +79,18 @@ Build list of years from pubs for the year-jump dropdown.
     </div>
 
     <div class="pub-links">
-
+      {% assign view_href = nil %}
       {% if p.doi %}
+        {% assign view_href = "https://doi.org/" | append: p.doi %}
+      {% elsif p.url %}
+        {% assign view_href = p.url %}
+      {% endif %}
+
+      {% if view_href %}
         {% if p.type == "preprint" %}
-          <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Preprint</a>
+          <a class="doi-link" href="{{ view_href }}" target="_blank" rel="noopener">View Preprint</a>
         {% else %}
-          <a class="doi-link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">View Article</a>
+          <a class="doi-link" href="{{ view_href }}" target="_blank" rel="noopener">View Article</a>
         {% endif %}
       {% endif %}
 
@@ -100,18 +98,13 @@ Build list of years from pubs for the year-jump dropdown.
         <a class="pub-link" href="{{ p.pdf }}" target="_blank" rel="noopener">Download PDF</a>
       {% endif %}
 
-      {% if p.url and not p.doi %}
-        <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">Link</a>
-      {% endif %}
-
       {% if p.software and p.software.size > 0 %}
         {% for s in p.software %}
           <a class="pub-link" href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
         {% endfor %}
       {% endif %}
-
     </div>
-    
+
   </li>
 
 {% endfor %}
@@ -128,7 +121,6 @@ Build list of years from pubs for the year-jump dropdown.
     const items = document.querySelectorAll(".pub-item");
     const yearHeaders = document.querySelectorAll(".pub-year");
 
-    // Show/hide individual publications
     items.forEach((li) => {
       const tags = (li.getAttribute("data-tags") || "")
         .toLowerCase()
@@ -140,7 +132,6 @@ Build list of years from pubs for the year-jump dropdown.
       li.style.display = show ? "" : "none";
     });
 
-    // Hide year sections with no visible pubs
     yearHeaders.forEach((h2) => {
       const ul = h2.nextElementSibling;
       let anyVisible = false;
