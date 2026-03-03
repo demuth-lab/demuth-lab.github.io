@@ -43,7 +43,44 @@ a:hover{text-decoration:underline}
   height:64px;
 }
 
-.brand{font-weight:700;color:var(--fg)}
+/* =========================
+   Brand
+   ========================= */
+
+.brand{
+  font-weight:700;
+  font-size:1.05rem; /* matches Principal Investigator scale */
+  letter-spacing:0.3px;
+  position:relative;
+  padding-left:14px;
+  color:var(--fg);
+  display:inline-flex;
+  align-items:center;
+}
+
+/* =========================
+   Blue vertical accent bar
+   ========================= */
+
+.brand::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  width:3px;
+  height:65%;
+  background:var(--accent);
+  border-radius:2px;
+}
+
+/* =========================
+   Make “Lab” blue
+   ========================= */
+
+.brand-accent{
+  color:var(--accent);
+}
 
 .site-nav{display:flex;align-items:center;gap:14px}
 .site-nav a{color:var(--fg);padding:8px 10px;border-radius:10px}
