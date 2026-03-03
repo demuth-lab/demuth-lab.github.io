@@ -5,25 +5,21 @@ layout: default
 
 <p class="lede">
 Selected publications. For the most up-to-date list, see
-<a class="button scholar-button"
-   target="_blank"
-   rel="noopener"
-   href="{{ site.data.links.scholar }}">
+<div class="scholar-links">
+  <a href="{{ site.data.links.scholar }}"
+     target="_blank"
+     class="scholar-link">
+    <i class="bi bi-mortarboard-fill"></i>
+    Google Scholar
+  </a>
 
-  <svg class="scholar-icon"
-       viewBox="0 0 24 24"
-       width="17"
-       height="17"
-       xmlns="http://www.w3.org/2000/svg"
-       aria-hidden="true">
-    <path fill="#4285F4"
-          d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
-    <path fill="#3367D6"
-          d="M12 13L3 8.18V17l9 4 9-4V8.18L12 13z"/>
-  </svg>
-
-  <span>Google Scholar</span>
-</a>
+  <a href="https://orcid.org/0000-0002-5433-4036"
+     target="_blank"
+     class="scholar-link">
+    <i class="bi bi-link-45deg"></i>
+    ORCID
+  </a>
+</div>
 </p>
 
 {% assign pubs = site.data.publications %}
