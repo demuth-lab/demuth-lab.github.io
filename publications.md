@@ -3,23 +3,25 @@ title: "Publications"
 layout: default
 ---
 
-<p class="lede">
-For the most up-to-date list, see
-<div class="scholar-links">
-  <a href="{{ site.data.links.scholar }}"
-     target="_blank"
-     class="scholar-link">
-    <i class="bi bi-mortarboard-fill"></i>
-    Google Scholar
-  </a>
+<p class="lede lede-links">
+  For the most up-to-date list, see
+  <span class="scholar-links">
+    <a href="{{ site.data.links.scholar }}"
+       target="_blank"
+       rel="noopener"
+       class="scholar-link">
+      <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+      Google Scholar
+    </a>
 
-  <a href="https://orcid.org/0000-0002-0471-3679"
-     target="_blank"
-     class="scholar-link">
-    <i class="bi bi-link-45deg"></i>
-    ORCID
-  </a>
-</div>
+    <a href="https://orcid.org/0000-0002-0471-3679"
+       target="_blank"
+       rel="noopener"
+       class="scholar-link">
+      <i class="bi bi-link-45deg" aria-hidden="true"></i>
+      ORCID
+    </a>
+  </span>
 </p>
 
 {% assign pubs = site.data.publications %}
