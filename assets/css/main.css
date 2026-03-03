@@ -189,7 +189,7 @@ a:hover{text-decoration:underline}
   border-radius:6px;
   font-size:0.9rem;
   background:#f0f0f0;
-  color:var(--fg);
+  color:var(--muted);
   text-decoration:none;
 }
 .pub-links a.pub-link:hover{
@@ -209,8 +209,8 @@ a:hover{text-decoration:underline}
   text-decoration:none;
 }
 .pub-links a.software-link:hover{
-  background:#eef2ff;
-  color:#fff;
+  background:#e2e8ff;
+  color:var(--fg);
   text-decoration:none;
 }
 
