@@ -44,22 +44,7 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
-   Brand
-   ========================= */
-
-.brand{
-  font-weight:700;
-  font-size:1.1rem; /* matches Principal Investigator scale */
-  letter-spacing:0.3px;
-  position:relative;
-  padding-left:14px;
-  color:var(--fg);
-  display:inline-flex;
-  align-items:center;
-}
-
-/* =========================
-   Blue vertical accent bar
+   Blue vertical accent bar (left of nav header)
    ========================= */
 
 .brand::before{
@@ -75,7 +60,24 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
-   Make “Lab” blue
+   Brand (Demuth)
+   ========================= */
+
+.brand{
+  font-weight:700;
+  font-size:1.1rem; 
+  letter-spacing:0.3px;
+  position:relative;
+  padding-left:14px;
+  color:var(--fg);
+  display:inline-flex;
+  align-items:center;
+}
+
+
+
+/* =========================
+   Brand Accent (Lab)
    ========================= */
 
 .brand-accent{
