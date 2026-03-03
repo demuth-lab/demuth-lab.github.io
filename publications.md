@@ -5,7 +5,23 @@ layout: default
 
 <p class="lede">
 Selected publications. For the most up-to-date list, see
-<a target="_blank" rel="noopener" href="{{ site.data.links.scholar }}">Google Scholar</a>.
+<a class="button scholar-button" 
+   target="_blank" 
+   rel="noopener"
+   href="{{ site.data.links.scholar }}">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 24 24"
+       width="18"
+       height="18"
+       aria-hidden="true"
+       class="scholar-icon">
+    <path fill="currentColor"
+          d="M12 24l8-5V9l-8 5-8-5v10zM12 0L0 7l12 7 12-7z"/>
+  </svg>
+
+  <span>Google Scholar</span>
+</a>
 </p>
 
 {% assign pubs = site.data.publications %}
