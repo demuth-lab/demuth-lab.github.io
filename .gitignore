@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Publication script cache + report
+.cache/
+doi_lookup_report.txt
+
+# macOS junk
+.DS_Store
+
+# Optional: Jekyll local build folder (only if you build locally)
+_site/
+
+# Optional: virtual environments (if you ever use one)
+venv/
+.env/
