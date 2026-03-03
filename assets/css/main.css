@@ -192,7 +192,9 @@ a:hover{text-decoration:underline}
   font-size:14px;
 }
 
-/* Publications buttons */
+/* =========================
+   Publication Buttons
+   ========================= */
 .pub-links a.pub-link{
   display:inline-block;
   padding:2px 8px;
@@ -208,7 +210,9 @@ a:hover{text-decoration:underline}
   text-decoration:none;
 }
 
-/* Software buttons */
+/* =========================
+   Software Buttons
+   ========================= */
 .pub-links a.software-link{
   display:inline-block;
   padding:2px 8px;
@@ -224,7 +228,9 @@ a:hover{text-decoration:underline}
   text-decoration:none;
 }
 
-/* Dropdown controls */
+/* =========================
+   Dropdown controls
+   ========================= */
 .pub-controls{
   display:flex;
   flex-wrap:wrap;
