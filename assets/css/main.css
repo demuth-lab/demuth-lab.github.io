@@ -22,6 +22,10 @@ a:hover{text-decoration:underline}
 
 .container{max-width:1040px;margin:0 auto;padding:0 18px}
 
+/* =========================
+   Header
+   ========================= */
+
 .site-header{
   position:sticky;
   top:0;
@@ -57,13 +61,19 @@ a:hover{text-decoration:underline}
 }
 .nav-toggle span{display:block;width:18px;height:2px;background:var(--fg);margin:4px 0}
 
-.site-main{padding:28px 0 56px}
+/* =========================
+   Layout
+   ========================= */
 
+.site-main{padding:28px 0 56px}
 .page-title{margin:0 0 16px;font-size:34px;letter-spacing:-0.02em}
 .muted{color:var(--muted)}
 .lede{font-size:18px;color:var(--muted);margin:8px 0 18px}
 
-/* Hero */
+/* =========================
+   Hero
+   ========================= */
+
 .hero{padding:26px 0 8px}
 .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
 .hero h1{font-size:42px;line-height:1.1;margin:0 0 10px;letter-spacing:-0.03em}
@@ -71,7 +81,10 @@ a:hover{text-decoration:underline}
 .hero-actions{display:flex;gap:10px;flex-wrap:wrap}
 .hero-image img{width:100%;border-radius:16px;border:1px solid var(--line);background:var(--card)}
 
-/* Buttons */
+/* =========================
+   Buttons
+   ========================= */
+
 .button{
   display:inline-block;
   padding:10px 14px;
@@ -84,7 +97,10 @@ a:hover{text-decoration:underline}
 .button.primary:hover{background:#0284c7;text-decoration:none}
 .button.secondary{background:var(--card)}
 
-/* Cards + sections */
+/* =========================
+   Cards
+   ========================= */
+
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
 .card{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:14px}
 .card h3{margin:0 0 8px;font-size:18px}
@@ -93,28 +109,17 @@ a:hover{text-decoration:underline}
 .section-title h2{margin:0;font-size:22px}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 
-/* Footer */
-.site-footer{border-top:1px solid var(--line);padding:22px 0;background:var(--bg)}
-.footer-inner{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-.footer-title{font-weight:700}
-.footer-links{display:flex;gap:12px;flex-wrap:wrap}
-
 /* =========================
-   People page
+   People
    ========================= */
 
 .people-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:2rem;
   margin-top:1.5rem;
-  align-items:start;
 }
 
-/* Support both possible markup styles:
-   - legacy: .person ...
-   - current: .person-card ...
-*/
 .person,
 .person-card{
   border:1px solid var(--line);
@@ -123,54 +128,22 @@ a:hover{text-decoration:underline}
   padding:12px;
 }
 
-.person-card{
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
+.person-card{text-align:center;display:flex;flex-direction:column;align-items:center}
 
-/* legacy person markup */
-.person img{
-  width:100%;
-  aspect-ratio:1/1;
-  object-fit:cover;
-  border-radius:12px;
-  border:1px solid var(--line);
-  background:var(--card);
-}
-.person .name{font-weight:700;margin-top:10px}
-.person .role{color:var(--muted);font-size:14px}
-.person .interests{color:var(--muted);font-size:14px;margin-top:6px}
-.person .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:14px}
-
-/* current person-card markup */
 .person-card img{
-  width:220px;
-  height:220px;
+  width:220px;height:220px;
   object-fit:cover;
-  object-position:center;
   border-radius:12px;
-  margin:0 auto 0.75rem auto;
-  display:block;
   border:1px solid var(--line);
   background:var(--card);
+  margin-bottom:0.75rem;
 }
-.person-card h4{
-  margin:0.25rem 0;
-  font-size:1.05rem;
-  line-height:1.25;
-}
-.person-card p{
-  margin:0;
-  font-size:0.95rem;
-  line-height:1.35;
-  max-width:28ch;
-  opacity:0.9;
-}
+
+.person-card h4{margin:0.25rem 0;font-size:1.05rem}
+.person-card p{margin:0;font-size:0.95rem;opacity:0.9}
 
 /* =========================
-   PI block
+   PI
    ========================= */
 
 .pi-wrap{
@@ -182,24 +155,18 @@ a:hover{text-decoration:underline}
 }
 
 .pi-photo{
-  width:240px;
-  height:240px;
+  width:240px;height:240px;
   object-fit:cover;
-  object-position:center;
   border-radius:14px;
   border:1px solid var(--line);
   background:var(--card);
 }
 
-.pi-text h3{margin-top:0;margin-bottom:0.25rem}
-.pi-text p{margin-top:0.5rem;margin-bottom:0.75rem}
-.pi-links{margin-top:0.75rem;font-size:0.95rem}
-
 /* =========================
    Publications
    ========================= */
 
-.pub-list{list-style:none;padding-left:0;margin:0 0 1.5rem 0}
+.pub-list{list-style:none;padding:0;margin:0 0 1.5rem 0}
 
 .pub-item{
   padding:1rem 0;
@@ -207,7 +174,13 @@ a:hover{text-decoration:underline}
 }
 
 .pub-title{font-weight:600;margin-bottom:0.25rem}
-.pub-meta{opacity:0.9;margin-bottom:0.4rem;color:var(--muted);font-size:14px}
+
+.pub-meta{
+  opacity:0.9;
+  margin-bottom:0.4rem;
+  color:var(--muted);
+  font-size:14px;
+}
 
 .pub-links{
   display:flex;
@@ -217,45 +190,52 @@ a:hover{text-decoration:underline}
   font-size:14px;
 }
 
-.pub-links a,
-.doi-link,
-.pub-link{
+/* Neutral publication buttons */
+.pub-links a{
   display:inline-block;
-  margin-right:0.5rem;
   padding:2px 8px;
   border-radius:6px;
-  text-decoration:none;
   font-size:0.9rem;
   background:#f0f0f0;
   color:var(--fg);
-}
-
-.pub-links a:hover,
-.doi-link:hover,
-.pub-link:hover{
-  background:#e6e6e6;
   text-decoration:none;
 }
 
-.pub-links a {
-  background: #f0f0f0;
+.pub-links a:hover{
+  background:#e6e6e6;
+  color:var(--fg);
+  text-decoration:none;
 }
 
-.pub-links a[href*="github"] {
-  background: #eef2ff;
+/* Software buttons (blue only when explicitly classed) */
+.software-link{
+  background:var(--accent);
+  color:#fff;
 }
 
-.pub-tags{margin-top:0.4rem;font-size:0.9rem;opacity:0.85}
+.software-link:hover{
+  background:#0284c7;
+  color:#fff;
+}
 
-/* Publications year dropdown */
-.pub-year-jump{
+/* Dropdown controls */
+.pub-controls{
   display:flex;
+  flex-wrap:wrap;
+  gap:14px;
   align-items:center;
-  gap:0.75rem;
   margin:1rem 0 1.25rem 0;
 }
 
-.pub-year-jump select{
+.pub-year-jump,
+.pub-topic-jump{
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+}
+
+.pub-year-jump select,
+.pub-topic-jump select{
   padding:6px 10px;
   border-radius:8px;
   border:1px solid rgba(0,0,0,0.15);
@@ -268,89 +248,50 @@ a:hover{text-decoration:underline}
   padding-top:0.5rem;
 }
 
-.pub-software{
-  margin-top:0.5rem;
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  align-items:center;
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer{
+  border-top:1px solid var(--line);
+  padding:22px 0;
+  background:var(--bg);
 }
 
-.pub-subhead{
-  color:var(--muted);
-  font-size:0.9rem;
-  margin-right:0.25rem;
-}
-
-.pub-controls{
+.footer-inner{
   display:flex;
-  flex-wrap:wrap;
+  justify-content:space-between;
   gap:14px;
-  align-items:center;
-  margin: 1rem 0 1.25rem 0;
+  flex-wrap:wrap;
 }
-
-.pub-topic-jump{
-  display:flex;
-  align-items:center;
-  gap:0.75rem;
-}
-
-.pub-topic-jump select{
-  padding:6px 10px;
-  border-radius:8px;
-  border:1px solid rgba(0,0,0,0.15);
-  background:#fff;
-}
-
 
 /* =========================
    Mobile
    ========================= */
 
-@media (max-width: 860px){
+@media (max-width:860px){
   .cards{grid-template-columns:1fr 1fr}
   .hero-grid{grid-template-columns:1fr}
 }
 
-@media (max-width: 720px){
+@media (max-width:720px){
   .nav-toggle{display:block}
   .site-nav{
     display:none;
     position:absolute;
-    top:64px;
-    left:0;
-    right:0;
+    top:64px;left:0;right:0;
     background:var(--bg);
     border-bottom:1px solid var(--line);
     padding:10px 18px;
     flex-direction:column;
-    align-items:flex-start;
   }
   .site-nav.open{display:flex}
   .site-nav a{width:100%}
   .page-title{font-size:30px}
   .hero h1{font-size:36px}
-
   .pi-wrap{grid-template-columns:1fr}
-  .pi-photo{width:220px;height:220px}
 }
 
-@media (max-width: 520px){
+@media (max-width:520px){
   .cards{grid-template-columns:1fr}
-}
-
-@media (max-width: 480px){
-  .person-card img{width:180px;height:180px}
-}
-
-/* Make "pub-link" buttons look neutral (not blue) */
-.pub-links a.pub-link,
-.pub-links a.doi-link {
-  color: var(--fg);
-}
-
-.pub-links a.pub-link:hover,
-.pub-links a.doi-link:hover {
-  color: var(--fg);
 }
