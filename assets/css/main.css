@@ -182,16 +182,8 @@ a:hover{text-decoration:underline}
   font-size:14px;
 }
 
-.pub-links{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:6px;
-  font-size:14px;
-}
-
-/* Neutral publication buttons */
-.pub-links a{
+/* Publications buttons */
+.pub-links a.pub-link{
   display:inline-block;
   padding:2px 8px;
   border-radius:6px;
@@ -200,22 +192,26 @@ a:hover{text-decoration:underline}
   color:var(--fg);
   text-decoration:none;
 }
-
-.pub-links a:hover{
+.pub-links a.pub-link:hover{
   background:#e6e6e6;
   color:var(--fg);
   text-decoration:none;
 }
 
-/* Software buttons (blue only when explicitly classed) */
-.software-link{
+/* Software buttons */
+.pub-links a.software-link{
+  display:inline-block;
+  padding:2px 8px;
+  border-radius:6px;
+  font-size:0.9rem;
   background:var(--accent);
   color:#fff;
+  text-decoration:none;
 }
-
-.software-link:hover{
+.pub-links a.software-link:hover{
   background:#0284c7;
   color:#fff;
+  text-decoration:none;
 }
 
 /* Dropdown controls */
@@ -294,17 +290,4 @@ a:hover{text-decoration:underline}
 
 @media (max-width:520px){
   .cards{grid-template-columns:1fr}
-}
-
-/* Force software buttons to stay blue even if they point to GitHub */
-.pub-links a.software-link,
-.pub-links a.software-link[href*="github"] {
-  background: var(--accent) !important;
-  color: #fff !important;
-}
-
-.pub-links a.software-link:hover,
-.pub-links a.software-link[href*="github"]:hover {
-  background: #0284c7 !important;
-  color: #fff !important;
 }
