@@ -4,7 +4,7 @@ layout: default
 ---
 
 <p class="lede">
-Selected publications. For the most up-to-date list, see
+For the most up-to-date list, see
 <div class="scholar-links">
   <a href="{{ site.data.links.scholar }}"
      target="_blank"
@@ -13,7 +13,7 @@ Selected publications. For the most up-to-date list, see
     Google Scholar
   </a>
 
-  <a href="https://orcid.org/0000-0002-5433-4036"
+  <a href="https://orcid.org/0000-0002-0471-3679"
      target="_blank"
      class="scholar-link">
     <i class="bi bi-link-45deg"></i>
