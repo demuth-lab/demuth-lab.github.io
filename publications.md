@@ -79,8 +79,8 @@ Selected publications. For the most up-to-date list, see
     </div>
 
     <div class="pub-links">
-    
       {% assign view_href = nil %}
+
       {% if p.doi %}
         {% assign view_href = "https://doi.org/" | append: p.doi %}
       {% elsif p.url %}
@@ -91,10 +91,14 @@ Selected publications. For the most up-to-date list, see
 
       {% if view_href %}
         {% if p.type == "preprint" %}
-          <a class="doi-link" href="{{ view_href }}" target="_blank" rel="noopener">View Preprint</a>
+          <a class="pub-link" href="{{ view_href }}" target="_blank" rel="noopener">View Preprint</a>
         {% else %}
           <a class="pub-link" href="{{ view_href }}" target="_blank" rel="noopener">View Article</a>
         {% endif %}
+      {% endif %}
+
+      {% if p.pdf and p.doi %}
+        <a class="pub-link" href="{{ p.pdf }}" target="_blank" rel="noopener">Download PDF</a>
       {% endif %}
 
       {% if p.software and p.software.size > 0 %}
