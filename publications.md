@@ -99,7 +99,7 @@ Selected publications. For the most up-to-date list, see
 
       {% if p.software and p.software.size > 0 %}
         {% for s in p.software %}
-          <a class="pub-link" href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
+          <a class="software-link" href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
         {% endfor %}
       {% endif %}
     </div>
