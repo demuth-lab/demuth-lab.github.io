@@ -204,12 +204,12 @@ a:hover{text-decoration:underline}
   padding:2px 8px;
   border-radius:6px;
   font-size:0.9rem;
-  background:var(--accent);
-  color:#fff;
+  background:#eef2ff;
+  color:var(--muted);
   text-decoration:none;
 }
 .pub-links a.software-link:hover{
-  background:#0284c7;
+  background:#eef2ff;
   color:#fff;
   text-decoration:none;
 }
