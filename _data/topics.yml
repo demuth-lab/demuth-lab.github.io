@@ -16,7 +16,7 @@ sex-chromosome-evolution:
     - "10.1155/2012/207958"
 
 behavioral-ecology-genetics:
-  label: "Sexual Selection|Behavior|Loser Effects"
+  label: "Sexual Selection|Loser Effects"
   dois:
     - "10.21203/rs.3.rs-6377782/v1"
     - "10.1371/journal.pone.0028690"
@@ -82,12 +82,11 @@ reptiles-amphibians:
 mammals:
   label: "Mammals"
   dois:
-    - "10.1002/bies.080085"
     - "10.1101/gr.085951.108"
     - "10.1534/genetics.107.080077"
     - "10.1371/journal.pone.0000085"
     - "10.1126/science.1139247"
-
+    - "10.1093/jhered/esr154"
 
 plants:
   label: "Plants"
