@@ -295,3 +295,16 @@ a:hover{text-decoration:underline}
 @media (max-width:520px){
   .cards{grid-template-columns:1fr}
 }
+
+/* Force software buttons to stay blue even if they point to GitHub */
+.pub-links a.software-link,
+.pub-links a.software-link[href*="github"] {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+
+.pub-links a.software-link:hover,
+.pub-links a.software-link[href*="github"]:hover {
+  background: #0284c7 !important;
+  color: #fff !important;
+}
