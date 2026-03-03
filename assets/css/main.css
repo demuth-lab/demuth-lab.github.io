@@ -49,7 +49,7 @@ a:hover{text-decoration:underline}
 
 .brand{
   font-weight:700;
-  font-size:1.05rem; /* matches Principal Investigator scale */
+  font-size:1.1rem; /* matches Principal Investigator scale */
   letter-spacing:0.3px;
   position:relative;
   padding-left:14px;
