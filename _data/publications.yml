@@ -195,6 +195,7 @@
   authors: Demuth, Jeffery
   venue: BioEssays
   type: article
+  doi: 10.1002/bies.201400049
 - year: 2014
   title: 'Estimating tempo and mode of Y chromosome turnover: explaining Y chromosome
     loss with the fragile Y hypothesis'
@@ -211,6 +212,7 @@
   authors: Demuth, Jeffery P and Flanagan, Rebecca J and Delph, Lynda F
   venue: Evolution
   type: article
+  doi: 10.1111/evo.12269
 - year: 2013
   title: The Role of Transposable Elements in Speciation
   authors: Watson, Eric T. and Demuth, Jeffery P.
@@ -238,9 +240,10 @@
   - PEGQ
 - year: 2012
   title: Why chromosome palindromes?
-  authors: Betr{\'a
+  authors: Betrán, Esther, Demuth, Jeffery P., and Williford, Anna
   venue: International journal of evolutionary biology
   type: article
+  doi: 10.1155/2012/207958
 - year: 2012
   title: Gene expression levels are correlated with synonymous codon usage, amino
     acid composition, and gene architecture in the red flour beetle, Tribolium castaneum
@@ -295,6 +298,7 @@
     Gregor and Friedrich, Markus and Grimmelikhuijzen, CJea and others
   venue: Nature
   type: article
+  doi: 10.1038/nature06784
 - year: 2007
   title: Accelerated rate of gene gain and loss in primates
   authors: Hahn, Matthew W and Demuth, Jeffery P and Han, Sang-Gook
@@ -333,6 +337,7 @@
   authors: Demuth, Jeffery P and Wade, Michael J
   venue: Genetica
   type: article
+  doi: 10.1007/s10709-006-0031-4
 - year: 2007
   title: Genome-wide survey of Tribolium castaneum microsatellites and description
     of 509 polymorphic markers
@@ -350,6 +355,7 @@
     Strausberg, Robert L and Venter, J Craig and Wilson, Richard K and others
   venue: science
   type: article
+  doi: 10.1126/science.1139247
 - year: 2006
   title: The evolution of mammalian gene families
   authors: Demuth, Jeffery P and Bie, Tijl De and Stajich, Jason E and Cristianini,
