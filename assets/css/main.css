@@ -291,13 +291,3 @@ a:hover{text-decoration:underline}
 @media (max-width:520px){
   .cards{grid-template-columns:1fr}
 }
-
-/* =========================
-   Scholar Icon
-   ========================= */
-.scholar-icon{
-  width:17px;
-  height:17px;
-  flex:0 0 auto;
-  display:block;
-}
