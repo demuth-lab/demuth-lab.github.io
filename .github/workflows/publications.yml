@@ -38,10 +38,19 @@ jobs:
 
           git checkout main
           git fetch origin main
+          # Stash any working-tree changes (e.g., regenerated publications.yml)
+          git stash push -m "autostash-publications" --include-untracked || true
+
+          # Rebase onto latest main
           git pull --rebase origin main
 
+          # Re-apply our generated changes
+          git stash pop || true
+
+          # Stage only the generated file
           git add _data/publications.yml
 
+          # If nothing changed, exit cleanly
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
