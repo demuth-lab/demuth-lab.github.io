@@ -304,7 +304,7 @@ a:hover{text-decoration:underline}
   border-radius:6px;
   font-size:0.9rem;
   background:var(--accent-soft);  
-  color:var(--fg);
+  color:var(--muted);
   text-decoration:none;
 }
 
