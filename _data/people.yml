@@ -47,7 +47,7 @@
   level: undergraduate
   photo: /assets/img/people/UndergraduateStudents/James_Lam.webp
   description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-  
+
 - name: Elizabeth Tran
   level: undergraduate
   photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
@@ -88,6 +88,24 @@
 
 # Graduate Students
 
+- name: Catherine Rodgers
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD Student
+  years: 2014–present
+
+- name: Marquerite (Maya) Herzog
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD Student
+  years: 2016–present
+
+- name: Balan Ramesh
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD Student
+  years: 2016–present
+
 - name: Heath Blackmon
   role: Alumni
   alumni_group: Graduate Students
@@ -122,7 +140,6 @@
   alumni_group: Graduate Students
   degree: PhD
   years: 2008–2010
-  linkedin: https://www.linkedin.com/in/eldonprince/
 
 
 # Lab Managers
@@ -140,9 +157,180 @@
   years: 2007–2009
 
 
-# Undergraduate Students
+# Undergraduate Honors Theses
+
+- name: Beena Margabandu
+  role: Alumni
+  alumni_group: Undergraduate Honors Theses
+  degree: Undergraduate Researcher
+  honors_thesis: true
+
+- name: Roman Goff
+  role: Alumni
+  alumni_group: Undergraduate Honors Theses
+  degree: Undergraduate Researcher
+  honors_thesis: true
+
+- name: Austin Truong
+  role: Alumni
+  alumni_group: Undergraduate Honors Theses
+  degree: Undergraduate Researcher
+  honors_thesis: true
+
+- name: Elizabeth Pan
+  role: Alumni
+  alumni_group: Undergraduate Honors Theses
+  degree: Undergraduate Researcher
+  honors_thesis: true
+
+- name: Priscilla Glenn
+  role: Alumni
+  alumni_group: Undergraduate Honors Theses
+  degree: Undergraduate Researcher
+  honors_thesis: true
+
+- name: Mujhtuba Baksh
+  role: Alumni
+  alumni_group: Undergraduate Honors Theses
+  degree: Undergraduate Researcher
+  honors_thesis: true
 
 - name: Danielle Moore
+  role: Alumni
+  alumni_group: Undergraduate Honors Theses
+  degree: Undergraduate Researcher
+  honors_thesis: true
+
+- name: Erin Leidlein
+  role: Alumni
+  alumni_group: Undergraduate Honors Theses
+  degree: Undergraduate Researcher
+  honors_thesis: true
+
+
+# Undergraduate Students
+
+- name: Prabha Nair
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Annie Nguyen
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Abanob Mady
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Shrayan Shrestha
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Vaidehi Gandhe
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Preston Truong
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Yussef Al-Zubi
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Adam Alasad
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Gwen Schultz
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Mason Bartels
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Emily Armstrong
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Darelle Collinot
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Rachel Swain
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Natalie Wagener
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Sarah Richmond
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Andrew George
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Ayobami Ayankola
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Samuel Hernandez
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Reema Mahdawi
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Abhijeet Rajpurohit
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Shaam Mahasneh
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Kayla Wilhoit
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: High School Student
+
+- name: Emily Hale
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Alaisha Woodson
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Maria Maldonado
   role: Alumni
   alumni_group: Undergraduate Students
   degree: Undergraduate Researcher
@@ -162,27 +350,17 @@
   alumni_group: Undergraduate Students
   degree: Undergraduate Researcher
 
-- name: Priscilla Glenn
-  role: Alumni
-  alumni_group: Undergraduate Students
-  degree: Undergraduate Researcher (Honors Thesis)
-
-- name: Athena Myer
-  role: Alumni
-  alumni_group: Undergraduate Students
-  degree: Undergraduate Researcher
-
 - name: Houda Chamseddine
   role: Alumni
   alumni_group: Undergraduate Students
   degree: Undergraduate Researcher
 
-- name: Erin Leidlein
+- name: Athena Meyer
   role: Alumni
   alumni_group: Undergraduate Students
-  degree: Undergraduate Researcher (Honors Thesis)
+  degree: Undergraduate Researcher
 
-- name: Sara Richmond
+- name: Reagan Griffin
   role: Alumni
   alumni_group: Undergraduate Students
   degree: Undergraduate Researcher
