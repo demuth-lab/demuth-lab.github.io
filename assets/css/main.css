@@ -258,40 +258,49 @@ a:hover{text-decoration:underline}
 }
 
 /* Alumni list (compact, scan-friendly) */
+
 .alumni-list{
   list-style:none;
   padding:0;
   margin:0 0 1.25rem 0;
 }
 
+/* Two-column layout: name | details */
 .alumni-row{
-  display:flex;
-  align-items:center;
+  display:grid;
+  grid-template-columns: 220px 1fr;
   gap:12px;
   padding:6px 0;
+  align-items:start;
 }
 
 .alumni-name{
   font-weight:500;
 }
 
+/* Details can wrap without pushing name around */
+.alumni-details{
+  min-width:0; /* important for wrapping in grid */
+}
+
 .alumni-meta{
   color:var(--muted);
+  line-height:1.35;
 }
 
-/* Right-aligned LinkedIn button */
-.alumni-linkedin{
-  margin-left:auto;
-  padding:4px 10px;
-  border-radius:8px;
-  background:var(--card);
-  color:var(--fg);
-  text-decoration:none;
-  transition:background 150ms ease;
+.alumni-thesis{
+  display:block;
+  margin-top:2px;
+  color:var(--muted);
+  line-height:1.35;
 }
 
-.alumni-linkedin:hover{
-  background:var(--line);
+/* Mobile: stack nicely */
+@media (max-width: 640px){
+  .alumni-row{
+    grid-template-columns: 1fr;
+    gap:4px;
+  }
 }
 
 
