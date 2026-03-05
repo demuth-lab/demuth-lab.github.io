@@ -78,7 +78,6 @@ permalink: /people/
 ### {{ group_name }}
 
 <ul class="alumni-list">
-  
   {% assign with_year = group_items | where_exp: "p", "p.year" | sort: "year" | reverse %}
   {% assign with_years = group_items | where_exp: "p", "p.years" %}
   {% assign no_year = group_items | where_exp: "p", "p.year == nil and p.years == nil" | sort: "name" %}
@@ -86,38 +85,24 @@ permalink: /people/
   {% for p in with_year %}
     <li class="alumni-row">
       <span class="alumni-name">{{ p.name }}</span>
-      <span class="alumni-meta">
-        {% if p.degree %}{{ p.degree }}{% endif %}
-        {% if p.year %} {{ p.year }}{% endif %}
-      </span>
-      {% if p.linkedin %}
-        <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-      {% endif %}
+      <span class="alumni-meta">{% if p.degree %}{{ p.degree }}{% endif %}{% if p.year %} {{ p.year }}{% endif %}</span>
+      {% if p.linkedin %}<a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
     </li>
   {% endfor %}
 
   {% for p in with_years %}
     <li class="alumni-row">
       <span class="alumni-name">{{ p.name }}</span>
-      <span class="alumni-meta">
-        {% if p.degree %}{{ p.degree }}{% endif %}
-        {% if p.years %} {{ p.years }}{% endif %}
-      </span>
-      {% if p.linkedin %}
-        <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-      {% endif %}
+      <span class="alumni-meta">{% if p.degree %}{{ p.degree }}{% endif %}{% if p.years %} {{ p.years }}{% endif %}</span>
+      {% if p.linkedin %}<a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
     </li>
   {% endfor %}
 
   {% for p in no_year %}
     <li class="alumni-row">
       <span class="alumni-name">{{ p.name }}</span>
-      <span class="alumni-meta">
-        {% if p.degree %}{{ p.degree }}{% endif %}
-      </span>
-      {% if p.linkedin %}
-        <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-      {% endif %}
+      <span class="alumni-meta">{% if p.degree %}{{ p.degree }}{% endif %}</span>
+      {% if p.linkedin %}<a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
     </li>
   {% endfor %}
 </ul>
