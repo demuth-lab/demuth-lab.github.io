@@ -71,7 +71,7 @@ permalink: /people/
 ## Lab Alumni
 
 {% assign alumni = site.data.people | where: "role", "Alumni" %}
-{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Student|Undergraduate Students" | split: "|" %}
+{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Students|Undergraduate Research Assistants" | split: "|" %}
 
 {% for group_name in group_order %}
   {% assign group_items = alumni | where: "alumni_group", group_name %}
