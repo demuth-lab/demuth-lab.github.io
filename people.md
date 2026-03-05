@@ -104,11 +104,11 @@ permalink: /people/
   <div class="alumni-thesis">
 
     {% if p.alumni_group == "Undergraduate Honors Student" %}
-      Honors Thesis:
+      <strong>Title:</strong>
     {% elsif p.degree == "MS" %}
-      MS Thesis:
+      <strong>MS Thesis:</strong>
     {% elsif p.degree == "PhD" %}
-      PhD Dissertation:
+      <strong>PhD Dissertation:</strong>
     {% endif %}
 
     <em>{{ p.thesis_title }}</em>
