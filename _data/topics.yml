@@ -1,5 +1,6 @@
 sex-chromosome-evolution:
   label: "Sex Chromosomes"
+  group: "topic"
   dois:
     - "10.1093/gbe/evad123"
     - "10.1111/evo.12844"
@@ -17,12 +18,14 @@ sex-chromosome-evolution:
 
 behavioral-ecology-genetics:
   label: "Sexual Selection|Loser Effects"
+  group: "topic"
   dois:
     - "10.21203/rs.3.rs-6377782/v1"
     - "10.1371/journal.pone.0028690"
 
 PEGQ:
   label: "PEGQ - Pop, Evol, & Quant Genetics"
+  group: "topic"
   dois:
     - "10.1093/jhered/esae001"
     - "10.1093/evolut/qpae003"
@@ -43,6 +46,7 @@ PEGQ:
     
 gene-family-evolution:
   label: "Gene Family Evolution"
+  group: "topic"
   dois:
       - "10.1111/mec.16414"
       - "10.1002/bies.080085"
@@ -52,8 +56,18 @@ gene-family-evolution:
       - "10.1093/bioinformatics/btl097"
       - "10.1126/science.1139247"
 
+software-tools:
+  label: "Software & Tools"
+  group: "topics"
+  dois:
+    - "10.1093/evolut/qpae003"
+    - "10.5281/zenodo.1234567"
+    - "10.1093/bioinformatics/btl097"
+
+
 beetles:
   label: "Beetles"
+  group: "organism"
   dois:
     - "10.1093/gbe/evae059"
     - "10.1093/jhered/esae001"
@@ -72,7 +86,8 @@ beetles:
     - "10.1038/nature06784"
 
 reptiles-amphibians:
-  label: "Reptiles & Amphibians"
+  label: "Herps"
+  group: "organism"
   dois:
     - "10.1038/s41467-025-65457-w"
     - "10.1101/gr.240952.118"
@@ -81,6 +96,7 @@ reptiles-amphibians:
 
 mammals:
   label: "Mammals"
+  group: "organism"
   dois:
     - "10.1101/gr.085951.108"
     - "10.1534/genetics.107.080077"
@@ -90,18 +106,13 @@ mammals:
 
 plants:
   label: "Plants"
+  group: "organism"
   dois: 
     - "10.1111/evo.12269"
 
 corals:
   label: "Corals"
+  group: "organism"
   dois:
     - "10.1007/s42452-025-07382-7"
     - "10.1111/mec.16414"
-
-software-tools:
-  label: "Software & Tools"
-  dois:
-    - "10.1093/evolut/qpae003"
-    - "10.5281/zenodo.1234567"
-    - "10.1093/bioinformatics/btl097"
