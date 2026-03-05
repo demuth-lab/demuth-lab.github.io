@@ -67,3 +67,25 @@
   level: undergraduate
   photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.jpeg
   description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+# Alumni
+
+- name: Heath Blackmon
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD
+  year: 2015
+  linkedin: https://www.linkedin.com/in/...
+
+- name: Anna Williford
+  role: Alumni
+  alumni_group: Postdocs
+  degree: Postdoc
+  years: 2011–2012
+  linkedin: https://www.linkedin.com/in/...
+
+- name: Donna Kirkland
+  role: Alumni
+  alumni_group: Lab Managers
+  degree: Lab Manager
+  years: 2007–2009
