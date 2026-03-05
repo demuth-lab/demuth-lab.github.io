@@ -299,8 +299,9 @@ a:hover{text-decoration:underline}
    Software Buttons
    ========================= */
 .pub-links a.software-link{
+  display:inline-block;
   background:rgba(2,132,199,0.12);  
-  color:var(--accent);
+  color:var(--fg);
   padding:6px 10px;
   border-radius:8px;
   text-decoration:none;
