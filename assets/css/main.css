@@ -88,21 +88,80 @@ a:hover{text-decoration:underline}
    Site Nav Links
    ========================= */
 
-.site-nav a{
-  color:var(--fg);
-  padding:8px 10px;
-  border-radius:10px;
+.site-nav{
+  display:flex;
+  gap:8px;
+  align-items:center;
 }
 
+/* Base link */
+.site-nav a{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  color:var(--fg);
+  padding:9px 12px;
+  border-radius:999px; /* pill */
+
+  text-decoration:none;
+
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+/* Hover: blue pill + gentle lift */
 .site-nav a:hover{
   background:var(--accent);
   color:#fff;
-  text-decoration:none;
+  transform:translateY(-1px);
+  box-shadow:0 6px 18px rgba(0,0,0,.10);
 }
 
+/* Active: stays blue, slightly stronger */
 .site-nav a.active{
   background:var(--accent);
   color:#fff;
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+
+/* Optional: animated underline indicator */
+.site-nav a::after{
+  content:"";
+  position:absolute;
+  left:12px;
+  right:12px;
+  bottom:6px;
+  height:2px;
+  border-radius:2px;
+
+  background:currentColor;
+  opacity:0;
+  transform:scaleX(.6);
+  transition:opacity 160ms ease, transform 160ms ease;
+}
+
+.site-nav a:hover::after,
+.site-nav a.active::after{
+  opacity:.85;
+  transform:scaleX(1);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .site-nav a{
+    transition:none;
+  }
+  .site-nav a:hover{
+    transform:none;
+  }
+  .site-nav a::after{
+    transition:none;
+  }
 }
 
 .nav-toggle{
