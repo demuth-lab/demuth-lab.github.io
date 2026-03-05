@@ -84,11 +84,26 @@ a:hover{text-decoration:underline}
   color:var(--accent);
 }
 
-.site-nav{display:flex;align-items:center;gap:14px}
-.site-nav a{color:var(--fg);padding:8px 10px;border-radius:10px}
-.site-nav a:hover{background:var(--card);text-decoration:none}
-.site-nav a.cta{background:var(--accent);color:#fff}
-.site-nav a.cta:hover{background:#0284c7}
+/* =========================
+   Site Nav Links
+   ========================= */
+
+.site-nav a{
+  color:var(--fg);
+  padding:8px 10px;
+  border-radius:10px;
+}
+
+.site-nav a:hover{
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+}
+
+.site-nav a.active{
+  background:var(--accent);
+  color:#fff;
+}
 
 .nav-toggle{
   display:none;
