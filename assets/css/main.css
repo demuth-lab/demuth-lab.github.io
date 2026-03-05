@@ -6,6 +6,8 @@
   --accent:#0ea5e9;
   --accent2:#10b981;
   --card:#f8fafc;
+  --accent-soft:rgba(2,132,199,0.12);
+  --accent-border:rgba(2,132,199,0.25);
 }
 
 *{box-sizing:border-box}
@@ -301,13 +303,14 @@ a:hover{text-decoration:underline}
   padding:2px 8px;
   border-radius:6px;
   font-size:0.9rem;
-  background:#eef2ff;
-  color:var(--muted);
+  background:var(--accent-soft);
+  color:var(--accent);
+  border:1px solid var(--accent-border);
   text-decoration:none;
 }
 .pub-links a.software-link:hover{
-  background:#e2e8ff;
-  color:var(--fg);
+  background:rgba(2,132,199,0.20);
+  border-color:rgba(2,132,199,0.40);
   text-decoration:none;
 }
 
