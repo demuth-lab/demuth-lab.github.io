@@ -71,43 +71,57 @@ permalink: /people/
 ## Lab Alumni
 
 {% assign alumni = site.data.people | where: "role", "Alumni" %}
-{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Theses|Undergraduate Students" | split: "|" %}
+{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Student|Undergraduate Students" | split: "|" %}
 
 {% for group_name in group_order %}
   {% assign group_items = alumni | where: "alumni_group", group_name %}
 
   {% if group_items.size > 0 %}
+
 <h3>{{ group_name }}</h3>
 
 <ul class="alumni-list">
-  {%- comment -%}
-  Sort by year when present (ascending), then reverse by printing in reverse order.
-  No where_exp needed.
-  {%- endcomment -%}
 
-  {% assign items_sorted = group_items | sort: "year" %}
+{% assign sorted = group_items | sort: "year" %}
 
-  {% for p in items_sorted reversed %}
-    <li class="alumni-row">
-      <span class="alumni-name">{{ p.name }}</span>
+{% for p in sorted reversed %}
 
-      <span class="alumni-meta">
-        {% if p.degree %}{{ p.degree }}{% endif %}
-        {% if p.year %} {{ p.year }}{% endif %}
-        {% if p.years %} {{ p.years }}{% endif %}
-      </span>
+<li class="alumni-row">
 
-      {% if p.linkedin %}
-        <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+<span class="alumni-name">{{ p.name }}</span>
 
-  {% endif %}
+<span class="alumni-meta">
+
+{% if p.degree %}{{ p.degree }}{% endif %}
+
+{% if p.year %} {{ p.year }}{% endif %}
+{% if p.years %} {{ p.years }}{% endif %}
+
+{% if p.thesis_title %}
+<br>
+
+{% if p.alumni_group == "Undergraduate Honors Student" %}
+<strong>Honors Thesis:</strong>
+{% elsif p.degree == "MS" %}
+<strong>MS Thesis:</strong>
+{% elsif p.degree == "PhD" %}
+<strong>PhD Dissertation:</strong>
+{% endif %}
+
+<em>{{ p.thesis_title }}</em>
+
+{% endif %}
+
+</span>
+
+</li>
+
 {% endfor %}
 
+</ul>
 
+{% endif %}
+{% endfor %}
 
 <script>
 (function () {
