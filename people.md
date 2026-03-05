@@ -69,34 +69,71 @@ permalink: /people/
 ## Lab Alumni
 
 {% assign alumni = site.data.people | where: "role", "Alumni" %}
+{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Students" | split: "|" %}
 
-{% comment %}
-Group by alumni_group (e.g., Postdocs, Graduate Students...)
-{% endcomment %}
-{% assign alumni_groups = alumni | group_by: "alumni_group" %}
+{% for group_name in group_order %}
+  {% assign group_items = alumni | where: "alumni_group", group_name %}
 
-{% for g in alumni_groups %}
-### {{ g.name }}
+  {% if group_items and group_items.size > 0 %}
+### {{ group_name }}
 
 <ul class="alumni-list">
-  {% assign members = g.items | sort: "name" %}
-  {% for p in members %}
+  {%- comment -%}
+  Sort: prefer most-recent first by year if present; otherwise name.
+  Jekyll’s sort is ascending, so we sort then reverse for recency.
+  {%- endcomment -%}
+
+  {% assign with_year = group_items | where_exp: "p", "p.year" | sort: "year" | reverse %}
+  {% assign with_years = group_items | where_exp: "p", "p.years" %}
+  {% assign no_year = group_items | where_exp: "p", "p.year == nil and p.years == nil" | sort: "name" %}
+
+  {%- comment -%}
+  We can’t reliably sort ranges like "2011–2012" without extra parsing,
+  so we keep them in the order they appear in the YAML file.
+  If you want these sorted too, add alumni_sort: 2012 (end year) to those entries.
+  {%- endcomment -%}
+
+  {% for p in with_year %}
     <li class="alumni-row">
       <span class="alumni-name">{{ p.name }}</span>
-
       <span class="alumni-meta">
         {% if p.degree %}{{ p.degree }}{% endif %}
-        {% if p.year %} {{ p.year }}{% elsif p.years %} {{ p.years }}{% endif %}
+        {% if p.year %} {{ p.year }}{% endif %}
       </span>
+      {% if p.linkedin %}
+        <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      {% endif %}
+    </li>
+  {% endfor %}
 
+  {% for p in with_years %}
+    <li class="alumni-row">
+      <span class="alumni-name">{{ p.name }}</span>
+      <span class="alumni-meta">
+        {% if p.degree %}{{ p.degree }}{% endif %}
+        {% if p.years %} {{ p.years }}{% endif %}
+      </span>
+      {% if p.linkedin %}
+        <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+
+  {% for p in no_year %}
+    <li class="alumni-row">
+      <span class="alumni-name">{{ p.name }}</span>
+      <span class="alumni-meta">
+        {% if p.degree %}{{ p.degree }}{% endif %}
+      </span>
       {% if p.linkedin %}
         <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
       {% endif %}
     </li>
   {% endfor %}
 </ul>
-
+  {% endif %}
 {% endfor %}
+
 
 
 <script>
