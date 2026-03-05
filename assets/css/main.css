@@ -257,6 +257,44 @@ a:hover{text-decoration:underline}
   background:#e6e6e6;
 }
 
+/* Alumni list (compact, scan-friendly) */
+.alumni-list{
+  list-style:none;
+  padding:0;
+  margin:0 0 1.25rem 0;
+}
+
+.alumni-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:6px 0;
+}
+
+.alumni-name{
+  font-weight:500;
+}
+
+.alumni-meta{
+  color:var(--muted);
+}
+
+/* Right-aligned LinkedIn button */
+.alumni-linkedin{
+  margin-left:auto;
+  padding:4px 10px;
+  border-radius:8px;
+  background:var(--card);
+  color:var(--fg);
+  text-decoration:none;
+  transition:background 150ms ease;
+}
+
+.alumni-linkedin:hover{
+  background:var(--line);
+}
+
+
 /* =========================
    Publications
    ========================= */
