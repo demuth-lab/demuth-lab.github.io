@@ -87,28 +87,33 @@ permalink: /people/
 {% for p in sorted reversed %}
 
 <li class="alumni-row">
-  <span class="alumni-name">{{ p.name }}</span>
 
-  <span class="alumni-details">
-    <span class="alumni-meta">
+  <div class="alumni-main">
+    <span class="alumni-name">{{ p.name }}</span>
+
+    <span class="alumni-degree">
       {% if p.degree %}{{ p.degree }}{% endif %}
       {% if p.year %} {{ p.year }}{% endif %}
       {% if p.years %} {{ p.years }}{% endif %}
     </span>
+  </div>
 
-    {% if p.thesis_title %}
-      <span class="alumni-thesis">
-        {% if p.alumni_group == "Undergraduate Honors Student" %}
-          <strong>Honors Thesis:</strong>
-        {% elsif p.degree == "MS" %}
-          <strong>MS Thesis:</strong>
-        {% elsif p.degree == "PhD" %}
-          <strong>PhD Dissertation:</strong>
-        {% endif %}
-        <em>{{ p.thesis_title }}</em>
-      </span>
+  {% if p.thesis_title %}
+  <div class="alumni-thesis">
+
+    {% if p.alumni_group == "Undergraduate Honors Student" %}
+      Honors Thesis:
+    {% elsif p.degree == "MS" %}
+      MS Thesis:
+    {% elsif p.degree == "PhD" %}
+      PhD Dissertation:
     {% endif %}
-  </span>
+
+    <em>{{ p.thesis_title }}</em>
+
+  </div>
+  {% endif %}
+
 </li>
 
 {% endfor %}
