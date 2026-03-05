@@ -195,7 +195,7 @@ a:hover{text-decoration:underline}
 
 .person,
 .person-card{
-  border:1px solid var(--line);
+  border:none;
   background:var(--bg);
   border-radius:16px;
   padding:12px;
@@ -207,7 +207,7 @@ a:hover{text-decoration:underline}
   width:220px;height:220px;
   object-fit:cover;
   border-radius:12px;
-  border:1px solid var(--line);
+  border:none;
   background:var(--card);
   margin-bottom:0.75rem;
 }
