@@ -68,24 +68,121 @@
   photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.jpeg
   description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
 
-# Alumni
 
-- name: Heath Blackmon
-  role: Alumni
-  alumni_group: Graduate Students
-  degree: PhD
-  year: 2015
-  linkedin: https://www.linkedin.com/in/...
+# Lab Alumni
+
+# Postdocs
 
 - name: Anna Williford
   role: Alumni
   alumni_group: Postdocs
   degree: Postdoc
   years: 2011–2012
-  linkedin: https://www.linkedin.com/in/...
+
+- name: Brian Fontenot
+  role: Alumni
+  alumni_group: Postdocs
+  degree: Postdoc
+  years: 2009–2010
+
+
+# Graduate Students
+
+- name: Heath Blackmon
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD
+  years: 2010–2015
+
+- name: Eric Watson
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD
+  years: 2009–2014
+
+- name: Nick Long
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: MS
+  years: 2013–2016
+
+- name: Amrita Pal
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: MS (non-thesis)
+
+- name: Amrita Naidu
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: MS
+  years: 2007–2009
+
+- name: Eldon Prince
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD
+  years: 2008–2010
+  linkedin: https://www.linkedin.com/in/eldonprince/
+
+
+# Lab Managers
+
+- name: Emmanuela Mujica
+  role: Alumni
+  alumni_group: Lab Managers
+  degree: Lab Manager
+  years: 2010–2011
 
 - name: Donna Kirkland
   role: Alumni
   alumni_group: Lab Managers
   degree: Lab Manager
   years: 2007–2009
+
+
+# Undergraduate Students
+
+- name: Danielle Moore
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Tien Phan
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Minh Nguyen
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Douja Chamseddine
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Priscilla Glenn
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher (Honors Thesis)
+
+- name: Athena Myer
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Houda Chamseddine
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
+
+- name: Erin Leidlein
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher (Honors Thesis)
+
+- name: Sara Richmond
+  role: Alumni
+  alumni_group: Undergraduate Students
+  degree: Undergraduate Researcher
