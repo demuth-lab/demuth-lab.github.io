@@ -66,6 +66,37 @@ permalink: /people/
 {% endfor %}
 </div>
 
+## Lab Alumni
+
+{% assign alumni = site.data.people | where: "role", "Alumni" %}
+
+{% comment %}
+Group by alumni_group (e.g., Postdocs, Graduate Students...)
+{% endcomment %}
+{% assign alumni_groups = alumni | group_by: "alumni_group" %}
+
+{% for g in alumni_groups %}
+### {{ g.name }}
+
+<ul class="alumni-list">
+  {% assign members = g.items | sort: "name" %}
+  {% for p in members %}
+    <li class="alumni-row">
+      <span class="alumni-name">{{ p.name }}</span>
+
+      <span class="alumni-meta">
+        {% if p.degree %}{{ p.degree }}{% endif %}
+        {% if p.year %} {{ p.year }}{% elsif p.years %} {{ p.years }}{% endif %}
+      </span>
+
+      {% if p.linkedin %}
+        <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+{% endfor %}
 
 
 <script>
