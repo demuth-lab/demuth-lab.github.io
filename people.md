@@ -74,39 +74,34 @@ permalink: /people/
 {% for group_name in group_order %}
   {% assign group_items = alumni | where: "alumni_group", group_name %}
 
-  {% if group_items and group_items.size > 0 %}
-
+  {% if group_items.size > 0 %}
 <h3>{{ group_name }}</h3>
 
 <ul class="alumni-list">
-  {% assign with_year = group_items | where_exp: "p", "p.year" | sort: "year" | reverse %}
-  {% assign with_years = group_items | where_exp: "p", "p.years" %}
-  {% assign no_year = group_items | where_exp: "p", "p.year == nil and p.years == nil" | sort: "name" %}
+  {%- comment -%}
+  Sort by year when present (ascending), then reverse by printing in reverse order.
+  No where_exp needed.
+  {%- endcomment -%}
 
-  {% for p in with_year %}
+  {% assign items_sorted = group_items | sort: "year" %}
+
+  {% for p in items_sorted reversed %}
     <li class="alumni-row">
       <span class="alumni-name">{{ p.name }}</span>
-      <span class="alumni-meta">{% if p.degree %}{{ p.degree }}{% endif %}{% if p.year %} {{ p.year }}{% endif %}</span>
-      {% if p.linkedin %}<a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-    </li>
-  {% endfor %}
 
-  {% for p in with_years %}
-    <li class="alumni-row">
-      <span class="alumni-name">{{ p.name }}</span>
-      <span class="alumni-meta">{% if p.degree %}{{ p.degree }}{% endif %}{% if p.years %} {{ p.years }}{% endif %}</span>
-      {% if p.linkedin %}<a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-    </li>
-  {% endfor %}
+      <span class="alumni-meta">
+        {% if p.degree %}{{ p.degree }}{% endif %}
+        {% if p.year %} {{ p.year }}{% endif %}
+        {% if p.years %} {{ p.years }}{% endif %}
+      </span>
 
-  {% for p in no_year %}
-    <li class="alumni-row">
-      <span class="alumni-name">{{ p.name }}</span>
-      <span class="alumni-meta">{% if p.degree %}{{ p.degree }}{% endif %}</span>
-      {% if p.linkedin %}<a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+      {% if p.linkedin %}
+        <a class="alumni-linkedin" href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
+
   {% endif %}
 {% endfor %}
 
