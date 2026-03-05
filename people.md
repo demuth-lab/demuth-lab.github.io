@@ -91,11 +91,13 @@ permalink: /people/
   <div class="alumni-main">
     <span class="alumni-name">{{ p.name }}</span>
 
-    <span class="alumni-degree">
-      {% if p.degree %}{{ p.degree }}{% endif %}
-      {% if p.year %} {{ p.year }}{% endif %}
-      {% if p.years %} {{ p.years }}{% endif %}
-    </span>
+   {% unless p.alumni_group == "Undergraduate Research Assistant" or p.alumni_group == "Undergraduate Honors Student" %}
+   <span class="alumni-degree">
+     {% if p.degree %}{{ p.degree }}{% endif %}
+     {% if p.year %} {{ p.year }}{% endif %}
+     {% if p.years %} {{ p.years }}{% endif %}
+   </span>
+  {% endunless %}
   </div>
 
   {% if p.thesis_title %}
