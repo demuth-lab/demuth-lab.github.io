@@ -7,7 +7,7 @@
   --accent2:#10b981;
   --card:#f8fafc;
   --accent-soft:rgba(2,132,199,0.12);
-  --accent-border:rgba(2,132,199,0.25);
+  --accent-hover:rgba(2,132,199,0.25);
 }
 
 *{box-sizing:border-box}
@@ -300,15 +300,16 @@ a:hover{text-decoration:underline}
    ========================= */
 .pub-links a.software-link{
   display:inline-block;
-  background:rgba(2,132,199,0.12);  
+  padding:2px 8px;
+  border-radius:6px;
+  font-size:0.9rem;
+  background:var(--accent-soft);  
   color:var(--fg);
-  padding:6px 10px;
-  border-radius:8px;
   text-decoration:none;
 }
 
 .pub-links a.software-link:hover{
-  background:rgba(2,132,199,0.20);
+  background:var(--accent-hover);
   text-decoration:none;
 }
 
