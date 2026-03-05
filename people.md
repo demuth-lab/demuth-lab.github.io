@@ -75,7 +75,8 @@ permalink: /people/
   {% assign group_items = alumni | where: "alumni_group", group_name %}
 
   {% if group_items and group_items.size > 0 %}
-### {{ group_name }}
+
+<h3>{{ group_name }}</h3>
 
 <ul class="alumni-list">
   {% assign with_year = group_items | where_exp: "p", "p.year" | sort: "year" | reverse %}
