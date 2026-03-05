@@ -290,11 +290,7 @@ a:hover{text-decoration:underline}
 
 /* thesis line */
 .alumni-thesis{
-  margin-left:260px;
-  margin-top:3px;
-  font-size:0.95rem;
-  color:var(--muted);
-  line-height:1.35;
+  margin-left:0;
 }
 
 .alumni-row:last-child{
