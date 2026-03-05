@@ -66,6 +66,8 @@ permalink: /people/
 {% endfor %}
 </div>
 
+---
+
 ## Lab Alumni
 
 {% assign alumni = site.data.people | where: "role", "Alumni" %}
