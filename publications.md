@@ -4,7 +4,7 @@ layout: default
 ---
 
 <p class="lede lede-links">
-  For the most up-to-date list, see
+  For the most up-to-date list and citations:
   <span class="scholar-links">
     <a href="{{ site.data.links.scholar }}"
        target="_blank"
