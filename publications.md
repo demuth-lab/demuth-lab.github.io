@@ -49,12 +49,24 @@ layout: default
     <select id="topicFilter">
       <option value="">All topics</option>
       {% for kv in topics %}
-        {% assign topic_id = kv[0] %}
-        {% assign topic = kv[1] %}
-        {% if topic and topic.label %}
-          <option value="{{ topic_id }}">{{ topic.label }}</option>
-        {% else %}
-          <option value="{{ topic_id }}">{{ topic_id }}</option>
+        {% assign id = kv[0] %}
+        {% assign t = kv[1] %}
+        {% if t.group == "topic" %}
+          <option value="{{ id }}">{{ t.label | default: id }}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="pub-topic-jump">
+    <label for="orgFilter"><strong>Filter by organism:</strong></label>
+    <select id="orgFilter">
+      <option value="">All organisms</option>
+      {% for kv in topics %}
+        {% assign id = kv[0] %}
+        {% assign t = kv[1] %}
+        {% if t.group == "organism" %}
+          <option value="{{ id }}">{{ t.label | default: id }}</option>
         {% endif %}
       {% endfor %}
     </select>
@@ -124,10 +136,12 @@ layout: default
 <script>
 (function () {
   const topicSel = document.getElementById("topicFilter");
-  if (!topicSel) return;
+  const orgSel = document.getElementById("orgFilter");
+  if (!topicSel || !orgSel) return;
 
   function applyFilter() {
-    const chosen = (topicSel.value || "").trim().toLowerCase();
+    const topic = (topicSel.value || "").trim().toLowerCase();
+    const org = (orgSel.value || "").trim().toLowerCase();
 
     const items = document.querySelectorAll(".pub-item");
     const yearHeaders = document.querySelectorAll(".pub-year");
@@ -139,8 +153,10 @@ layout: default
         .map(s => s.trim())
         .filter(Boolean);
 
-      const show = (!chosen) || tags.includes(chosen);
-      li.style.display = show ? "" : "none";
+      const topicOk = (!topic) || tags.includes(topic);
+      const orgOk = (!org) || tags.includes(org);
+
+      li.style.display = (topicOk && orgOk) ? "" : "none";
     });
 
     yearHeaders.forEach((h2) => {
@@ -161,5 +177,7 @@ layout: default
   }
 
   topicSel.addEventListener("change", applyFilter);
+  orgSel.addEventListener("change", applyFilter);
 })();
+  
 </script>
