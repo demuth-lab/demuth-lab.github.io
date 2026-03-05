@@ -88,58 +88,68 @@
 
 # Graduate Students
 
-- name: Catherine Rodgers
-  role: Alumni
-  alumni_group: Graduate Students
-  degree: PhD Student
-  years: 2014–present
-
 - name: Marquerite (Maya) Herzog
   role: Alumni
   alumni_group: Graduate Students
   degree: PhD Student
   years: 2016–present
+  thesis_title: Elucidating the molecular genetic basis of behaviors related to the loser effect
 
 - name: Balan Ramesh
   role: Alumni
   alumni_group: Graduate Students
   degree: PhD Student
   years: 2016–present
+  thesis_title: "Elucidating the evolution of sex chromosome dosage compensation using beetles"
+
+- name: Malini Kotak
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD Student
+  years: 2012–2016
+  thesis_title: "Insights into the genomic and metabolic adaptations of termite associated verrcucomicrobia strains using functional and comparative genomics"
 
 - name: Heath Blackmon
   role: Alumni
   alumni_group: Graduate Students
   degree: PhD
   years: 2010–2015
+  thesis_title: "Synthesis and phylogenetic comparative analyses of the causes and consequences of karyotype evolution in arthropods" 
 
 - name: Eric Watson
   role: Alumni
   alumni_group: Graduate Students
   degree: PhD
   years: 2009–2014
+  thesis_title: "The genetics of hybrid incompatibility early in the ‘speciation continuum'"
 
+- name: Catherine Rodgers
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD Student
+  years: 2014–present
+  thesis_title: "Population genetic modeling of forces affecting the distribution of Maternal Effect Dominant Embryonic Arrest (MEDEA) factors in Tribolium"
+  
 - name: Nick Long
   role: Alumni
   alumni_group: Graduate Students
   degree: MS
   years: 2013–2016
-
-- name: Amrita Pal
-  role: Alumni
-  alumni_group: Graduate Students
-  degree: MS (non-thesis)
+  thesis_title: "Gene expression differences in hybrids at the beginning of the speciation continuum"
 
 - name: Amrita Naidu
   role: Alumni
   alumni_group: Graduate Students
   degree: MS
   years: 2007–2009
+  thesis_title: "Sex, War And Disease: The Effects Of Infection On Horn Size And Intra-sexual Competition In The Broad-horned Flour Beetle, Gnathocerus cornutus"
 
 - name: Eldon Prince
   role: Alumni
   alumni_group: Graduate Students
   degree: PhD
   years: 2008–2010
+  thesis_title: 
 
 
 # Lab Managers
@@ -157,58 +167,52 @@
   years: 2007–2009
 
 
-# Undergraduate Honors Theses
+# Undergraduate Honors Students
 
 - name: Beena Margabandu
   role: Alumni
-  alumni_group: Undergraduate Honors Theses
-  degree: Undergraduate Researcher
-  honors_thesis: true
-
+  alumni_group: Undergraduate Honors Student 
+  degree: Undergraduate Honors Theses
+  thesis_title: "Effect of individual and population fitness tradeoff on predatory behaviors"
+  
 - name: Roman Goff
   role: Alumni
-  alumni_group: Undergraduate Honors Theses
-  degree: Undergraduate Researcher
-  honors_thesis: true
+  alumni_group: Undergraduate Honors Student 
+  degree: Undergraduate Honors Theses
+  thesis_title: "Creating tools to investigate the predictive power of polygenic score for the big 5 personality traits and math ability"
 
 - name: Austin Truong
   role: Alumni
-  alumni_group: Undergraduate Honors Theses
-  degree: Undergraduate Researcher
-  honors_thesis: true
-
-- name: Elizabeth Pan
-  role: Alumni
-  alumni_group: Undergraduate Honors Theses
-  degree: Undergraduate Researcher
-  honors_thesis: true
+  alumni_group: Undergraduate Honors Student 
+  degree: Undergraduate Honors Theses
+  thesis_title: "Investigating the duration and effect of cycloheximide on l oheximide on loser effec oser effect in gn t in gnatocerus cornutus"
 
 - name: Priscilla Glenn
   role: Alumni
-  alumni_group: Undergraduate Honors Theses
-  degree: Undergraduate Researcher
-  honors_thesis: true
+  alumni_group: Undergraduate Honors Student 
+  degree: Undergraduate Honors Theses
+  thesis_title: "X-chromosome gene regulation in the male germline of the beetle Tribolium castaneum"
 
 - name: Mujhtuba Baksh
   role: Alumni
-  alumni_group: Undergraduate Honors Theses
-  degree: Undergraduate Researcher
-  honors_thesis: true
+  alumni_group: Undergraduate Honors Student 
+  degree: Undergraduate Honors Theses
+  thesis_title: "Effect of phosphine resistance on hybrids in populations of Triboleum castaneum"
 
 - name: Danielle Moore
   role: Alumni
-  alumni_group: Undergraduate Honors Theses
-  degree: Undergraduate Researcher
-  honors_thesis: true
+  alumni_group: Undergraduate Honors Student 
+  degree: Undergraduate Honors Theses
+  thesis_title: "MEDEA: distribution of a selfish genetic element in Texas populations of Tribolium castaneum"
 
 - name: Erin Leidlein
   role: Alumni
-  alumni_group: Undergraduate Honors Theses
-  degree: Undergraduate Researcher
-  honors_thesis: true
+  alumni_group: Undergraduate Honors Student 
+  degree: Undergraduate Honors Theses
+  thesis_title: "Examining the genetic basis of MEDEA, a maternal effect that causes mothers to kill their offspring in beetles"
 
 
-# Undergraduate Students
+# Undergraduate Research Assistants
 
 - name: Prabha Nair
   role: Alumni
