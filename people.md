@@ -71,13 +71,13 @@ permalink: /people/
 ## Lab Alumni
 
 {% assign alumni = site.data.people | where: "role", "Alumni" %}
-{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Student|Undergraduate Research Assistants" | split: "|" %}
+{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Students|Undergraduate Research Assistants" | split: "|" %}
 
 {% for group_name in group_order %}
 {% assign group_items = alumni | where: "alumni_group", group_name %}
 
 {% if group_items.size > 0 %}
-{% if group_name == "Undergraduate Honors Student" %}
+{% if group_name == "Undergraduate Honors Students" %}
 <h3>Undergraduate Honors Theses</h3>
 {% else %}
 <h3>{{ group_name }}</h3>
@@ -87,7 +87,7 @@ permalink: /people/
 {% assign sorted = group_items | sort: "year" %}
 
 {% for p in sorted reversed %}
-{% if group_name == "Undergraduate Honors Student" %}
+{% if group_name == "Undergraduate Honors Students" %}
 
 <li class="alumni-row">
   <span class="alumni-name">{{ p.name }}</span>
