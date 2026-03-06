@@ -314,6 +314,7 @@ a:hover{text-decoration:underline}
 .alumni-thesis em{
   font-style:italic;
   color:var(--muted-light);
+  font-weight: 400;
 }
 
 /* =========================
