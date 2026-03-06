@@ -1,21 +1,21 @@
 # Graduate Students
-- name: Olivia Williams
-  status: current
-  role: graduate
-  degree: null
-  photo: /assets/img/people/GraduateStudents/Olivia_Williams.png
-  bio: Studies the genetics of behavior.
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
 - name: Shana Pau
   status: current
   role: graduate
   degree: null
   photo: /assets/img/people/GraduateStudents/Shana_Pau.jpg
   bio: Studies sex chromosome evolution and gene regulation.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Olivia Williams
+  status: current
+  role: graduate
+  degree: null
+  photo: /assets/img/people/GraduateStudents/Olivia_Williams.png
+  bio: Studies the genetics of behavior.
   start_year: null
   end_year: null
   thesis_title: null
