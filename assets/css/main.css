@@ -276,11 +276,10 @@ a:hover{text-decoration:underline}
   border-bottom:none;
 }
 
-/* first line only: 2 columns */
 .alumni-main{
   display:grid;
-  grid-template-columns: 240px 1fr;
-  column-gap:16px;
+  grid-template-columns: 260px 1fr;
+  column-gap:20px;
   align-items:baseline;
 }
 
@@ -294,21 +293,17 @@ a:hover{text-decoration:underline}
   font-variant-numeric:tabular-nums;
 }
 
-/* thesis line spans full width and starts under the name */
 .alumni-thesis{
-  margin-top:3px;
+  margin-top:4px;
   color:var(--muted);
   font-size:0.95rem;
   line-height:1.45;
 }
 
-@media (max-width:640px){
+@media (max-width: 640px){
   .alumni-main{
-    grid-template-columns:1fr;
-  }
-
-  .alumni-degree{
-    margin-top:2px;
+    grid-template-columns: 1fr;
+    row-gap:2px;
   }
 }
 
