@@ -101,19 +101,19 @@ permalink: /people/
   </div>
 
   {% if p.thesis_title %}
-  <div class="alumni-thesis">
+    <div class="alumni-thesis">
 
-    {% if p.alumni_group == "Undergraduate Honors Student" %}
-      <strong>Title:</strong>
-    {% elsif p.degree == "MS" %}
-      <strong>MS Thesis:</strong>
-    {% elsif p.degree == "PhD" %}
-      <strong>PhD Dissertation:</strong>
-    {% endif %}
+      {% if p.alumni_group == "Undergraduate Honors Student" %}
+        <strong>Honors Thesis:</strong>
+      {% elsif p.degree == "MS" %}
+        <strong>MS Thesis:</strong>
+      {% elsif p.degree == "PhD" %}
+        <strong>PhD Dissertation:</strong>
+      {% endif %}
 
-    <em>{{ p.thesis_title }}</em>
+      <em>{{ p.thesis_title }}</em>
 
-  </div>
+    </div>
   {% endif %}
 
 </li>
