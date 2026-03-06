@@ -78,7 +78,11 @@ permalink: /people/
 
   {% if group_items.size > 0 %}
 
-<h3>{{ group_name }}</h3>
+  {% if group_name == "Undergraduate Honors Student" %}
+    <h3>Undergraduate Honors Theses</h3>
+    {% else %}
+    <h3>{{ group_name }}</h3>
+  {% endif %}
 
 <ul class="alumni-list">
 
@@ -86,46 +90,48 @@ permalink: /people/
 
 {% for p in sorted reversed %}
 
+{% if group_name == "Undergraduate Honors Student" %}
+
+<li class="alumni-row">
+  <span class="alumni-honors">
+    <strong>{{ p.name }}:</strong>
+    <em>{{ p.thesis_title }}</em>
+  </span>
+</li>
+
+{% else %}
+
 <li class="alumni-row">
 
-  <div class="alumni-main">
-    <span class="alumni-name">{{ p.name }}</span>
-
-   {% unless p.alumni_group == "Undergraduate Research Assistants" or p.alumni_group == "Undergraduate Honors Student" %}
-   <span class="alumni-degree">
+  <span class="alumni-name">{{ p.name }}</span>
 
   {% if p.alumni_group == "Undergraduate Honors Student" %}
-    B.S. {{ p.year }}
-
+    <span class="alumni-degree">B.S. {{ p.year }}</span>
   {% elsif p.alumni_group != "Undergraduate Research Assistants" %}
-    {% if p.degree %}{{ p.degree }}{% endif %}
-    {% if p.year %} {{ p.year }}{% endif %}
-    {% if p.years %} {{ p.years }}{% endif %}
+    <span class="alumni-degree">
+      {% if p.degree %}{{ p.degree }}{% endif %}
+      {% if p.year %} {{ p.year }}{% endif %}
+      {% if p.years %} {{ p.years }}{% endif %}
+    </span>
   {% endif %}
 
-</span>
-  {% endunless %}
-  </div>
-
   {% if p.thesis_title %}
-  <div class="alumni-thesis">
+  <span class="alumni-thesis">
 
-      {% if p.alumni_group == "Undergraduate Honors Student" %}
-        <strong>Honors Thesis:</strong>
-      {% elsif p.degree == "MS" %}
-        <strong>MS Thesis:</strong>
-      {% elsif p.degree == "PhD" %}
-        <strong>PhD Dissertation:</strong>
-      {% endif %}
+    {% if p.degree == "MS" %}
+      <strong>MS Thesis:</strong>
+    {% elsif p.degree == "PhD" %}
+      <strong>PhD Dissertation:</strong>
+    {% endif %}
 
-      <em>{{ p.thesis_title }}</em>
+    <em>{{ p.thesis_title }}</em>
 
-  </div>
+  </span>
   {% endif %}
 
 </li>
 
-{% endfor %}
+{% endif %}
 
 </ul>
 
