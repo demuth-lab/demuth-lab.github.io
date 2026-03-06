@@ -93,20 +93,20 @@ permalink: /people/
   <div class="alumni-main">
     <span class="alumni-name">{{ p.name }}</span>
 
-    {% if group_name == "Undergraduate Honors Student" %}
-      <span class="alumni-degree">B.S.{% if p.year %} {{ p.year }}{% endif %}</span>
+    {% if p.alumni_group == "Undergraduate Honors Student" %}
+      <span class="alumni-degree">B.S. Biology{% if p.year %}, {{ p.year }}{% endif %}</span>
     {% elsif p.alumni_group != "Undergraduate Research Assistants" %}
       <span class="alumni-degree">
         {% if p.degree %}{{ p.degree }}{% endif %}
-        {% if p.year %} {{ p.year }}{% endif %}
-        {% if p.years %} {{ p.years }}{% endif %}
+        {% if p.year %}, {{ p.year }}{% endif %}
+        {% if p.years %}, {{ p.years }}{% endif %}
       </span>
     {% endif %}
   </div>
 
   {% if p.thesis_title %}
     <div class="alumni-thesis">
-      {% if group_name == "Undergraduate Honors Student" %}
+      {% if p.alumni_group == "Undergraduate Honors Student" %}
         <strong>Honors Thesis:</strong>
       {% elsif p.degree == "MS" %}
         <strong>MS Thesis:</strong>
