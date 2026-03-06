@@ -93,10 +93,17 @@ permalink: /people/
 
    {% unless p.alumni_group == "Undergraduate Research Assistants" or p.alumni_group == "Undergraduate Honors Student" %}
    <span class="alumni-degree">
-     {% if p.degree %}{{ p.degree }}{% endif %}
-     {% if p.year %} {{ p.year }}{% endif %}
-     {% if p.years %} {{ p.years }}{% endif %}
-   </span>
+
+  {% if p.alumni_group == "Undergraduate Honors Student" %}
+    B.S. {{ p.year }}
+
+  {% elsif p.alumni_group != "Undergraduate Research Assistants" %}
+    {% if p.degree %}{{ p.degree }}{% endif %}
+    {% if p.year %} {{ p.year }}{% endif %}
+    {% if p.years %} {{ p.years }}{% endif %}
+  {% endif %}
+
+</span>
   {% endunless %}
   </div>
 
