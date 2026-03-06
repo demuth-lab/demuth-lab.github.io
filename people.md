@@ -79,7 +79,7 @@ permalink: /people/
 {% if person.role == "postdoc" %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">{{ person.degree }}{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
     </div>
   </li>
@@ -93,11 +93,11 @@ permalink: /people/
 {% if person.role == "graduate" and person.degree == "PhD" %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">PhD{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
     </div>
     {% if person.thesis_title %}
-    <div class="alumni-thesis"><strong>PhD Dissertation:</strong> <em>{{ person.thesis_title }}</em></div>
+    <div class="alumni-thesis">PhD Dissertation: <em>{{ person.thesis_title }}</em></div>
     {% endif %}
   </li>
 {% endif %}
@@ -110,11 +110,11 @@ permalink: /people/
 {% if person.role == "graduate" and person.degree == "MS" %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">M.S.{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
     </div>
     {% if person.thesis_title %}
-    <div class="alumni-thesis"><strong>M.S. Thesis:</strong> <em>{{ person.thesis_title }}</em></div>
+    <div class="alumni-thesis">M.S. Thesis: <em>{{ person.thesis_title }}</em></div>
     {% else %}
     <div class="alumni-thesis">non-thesis</div>
     {% endif %}
@@ -129,7 +129,7 @@ permalink: /people/
 {% if person.role == "lab_manager" %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">{{ person.degree }}{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
     </div>
   </li>
@@ -143,10 +143,10 @@ permalink: /people/
 {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">B.S. Biology{% if person.end_year %}, {{ person.end_year }}{% elsif person.sort_year %}, {{ person.sort_year }}{% endif %}</span>
     </div>
-    <div class="alumni-thesis"><strong>Honors Thesis:</strong> <em>{{ person.thesis_title }}</em></div>
+    <div class="alumni-thesis">Honors Thesis: <em>{{ person.thesis_title }}</em></div>
   </li>
 {% endif %}
 {% endfor %}
@@ -160,7 +160,7 @@ permalink: /people/
   {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
 
     {% unless first %} · {% endunless %}
-    {{ person.name }}
+    <strong>{{ person.name }}</strong>
 
     {% assign first = false %}
   {% endif %}
