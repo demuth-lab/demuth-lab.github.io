@@ -71,71 +71,64 @@ permalink: /people/
 ## Lab Alumni
 
 {% assign alumni = site.data.people | where: "role", "Alumni" %}
-{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Students|Undergraduate Research Assistants" | split: "|" %}
+{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Student|Undergraduate Research Assistants" | split: "|" %}
 
 {% for group_name in group_order %}
   {% assign group_items = alumni | where: "alumni_group", group_name %}
 
   {% if group_items.size > 0 %}
 
-  {% if group_name == "Undergraduate Honors Student" %}
-    <h3>Undergraduate Honors Theses</h3>
+    {% if group_name == "Undergraduate Honors Student" %}
+      <h3>Undergraduate Honors Theses</h3>
     {% else %}
-    <h3>{{ group_name }}</h3>
-  {% endif %}
-
-<ul class="alumni-list">
-
-{% assign sorted = group_items | sort: "year" %}
-
-{% for p in sorted reversed %}
-
-{% if group_name == "Undergraduate Honors Student" %}
-
-<li class="alumni-row">
-  <span class="alumni-honors">
-    <strong>{{ p.name }}:</strong>
-    <em>{{ p.thesis_title }}</em>
-  </span>
-</li>
-
-{% else %}
-
-<li class="alumni-row">
-
-  <span class="alumni-name">{{ p.name }}</span>
-
-  {% if p.alumni_group == "Undergraduate Honors Student" %}
-    <span class="alumni-degree">B.S. {{ p.year }}</span>
-  {% elsif p.alumni_group != "Undergraduate Research Assistants" %}
-    <span class="alumni-degree">
-      {% if p.degree %}{{ p.degree }}{% endif %}
-      {% if p.year %} {{ p.year }}{% endif %}
-      {% if p.years %} {{ p.years }}{% endif %}
-    </span>
-  {% endif %}
-
-  {% if p.thesis_title %}
-  <span class="alumni-thesis">
-
-    {% if p.degree == "MS" %}
-      <strong>MS Thesis:</strong>
-    {% elsif p.degree == "PhD" %}
-      <strong>PhD Dissertation:</strong>
+      <h3>{{ group_name }}</h3>
     {% endif %}
 
-    <em>{{ p.thesis_title }}</em>
+    <ul class="alumni-list">
+      {% assign sorted = group_items | sort: "year" %}
 
-  </span>
+      {% for p in sorted reversed %}
+
+        {% if group_name == "Undergraduate Honors Student" %}
+
+          <li class="alumni-row">
+            <span class="alumni-honors">
+              <strong>{{ p.name }}:</strong>
+              <em>{{ p.thesis_title }}</em>
+            </span>
+          </li>
+
+        {% else %}
+
+          <li class="alumni-row">
+            <span class="alumni-name">{{ p.name }}</span>
+
+            {% if p.alumni_group != "Undergraduate Research Assistants" %}
+              <span class="alumni-degree">
+                {% if p.degree %}{{ p.degree }}{% endif %}
+                {% if p.year %} {{ p.year }}{% endif %}
+                {% if p.years %} {{ p.years }}{% endif %}
+              </span>
+            {% endif %}
+
+            {% if p.thesis_title %}
+              <span class="alumni-thesis">
+                {% if p.degree == "MS" %}
+                  <strong>MS Thesis:</strong>
+                {% elsif p.degree == "PhD" %}
+                  <strong>PhD Dissertation:</strong>
+                {% endif %}
+                <em>{{ p.thesis_title }}</em>
+              </span>
+            {% endif %}
+          </li>
+
+        {% endif %}
+
+      {% endfor %}
+    </ul>
+
   {% endif %}
-
-</li>
-
-{% endif %}
-
-</ul>
-
-{% endif %}
 {% endfor %}
 
 <script>
