@@ -264,45 +264,52 @@ a:hover{text-decoration:underline}
 .alumni-list{
   list-style:none;
   padding:0;
-  margin:0;
+  margin:0 0 1.5rem 0;
 }
 
 .alumni-row{
-  display:grid;
-  grid-template-columns: 240px auto;
-  column-gap:16px;
   padding:12px 0;
   border-bottom:1px solid var(--line);
-}
-
-/* name column */
-.alumni-name{
-  font-weight:500;
-  letter-spacing:0.01em;
-}
-
-/* degree column */
-.alumni-degree{
-  grid-column:2;
-  color:var(--muted);
-}
-
-/* thesis line aligned exactly under degree column */
-.alumni-thesis{
-  grid-column:2;
-  margin-top:3px;
-  font-size:0.93rem;
-  color:var(--muted);
-  line-height:1.45;
 }
 
 .alumni-row:last-child{
   border-bottom:none;
 }
 
-.alumni-honors{
-  display:block;
-  line-height:1.4;
+/* first line only: 2 columns */
+.alumni-main{
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  column-gap:16px;
+  align-items:baseline;
+}
+
+.alumni-name{
+  font-weight:500;
+  letter-spacing:0.01em;
+}
+
+.alumni-degree{
+  color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+
+/* thesis line spans full width and starts under the name */
+.alumni-thesis{
+  margin-top:3px;
+  color:var(--muted);
+  font-size:0.95rem;
+  line-height:1.45;
+}
+
+@media (max-width:640px){
+  .alumni-main{
+    grid-template-columns:1fr;
+  }
+
+  .alumni-degree{
+    margin-top:2px;
+  }
 }
 
 /* Mobile: stack nicely */
