@@ -291,8 +291,7 @@ a:hover{text-decoration:underline}
 }
 
 .alumni-name{
-  font-weight:500;
-  letter-spacing:0.01em;
+  font-weight:700;
 }
 
 .alumni-degree{
@@ -304,16 +303,16 @@ a:hover{text-decoration:underline}
   margin-top:4px;
   color:var(--muted);
   font-size:0.95rem;
-  line-height:1.45;
 }
 
 .alumni-thesis strong{
   color:var(--fg);
-  font-weight:600;
+  font-weight:400;
 }
 
 .alumni-thesis em{
   font-style:italic;
+  color:var(--muted);
 }
 
 /* =========================
