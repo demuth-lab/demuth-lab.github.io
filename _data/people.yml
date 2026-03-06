@@ -281,6 +281,17 @@
   thesis_title: "Creating tools to investigate the predictive power of polygenic score for the big 5 personality traits and math ability"
   sort_year: null
 
+- name: Beena Margabandu
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "Effect of individual and population fitness tradeoff on predatory behaviors"
+  sort_year: null
+
 - name: Austin Truong
   status: alumni
   role: undergraduate
@@ -290,17 +301,6 @@
   start_year: null
   end_year: null
   thesis_title: "Investigating the duration and effect of cycloheximide on l oheximide on loser effec oser effect in gn t in gnatocerus cornutus"
-  sort_year: null
-  
-- name: Mujhtuba Baksh
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: "Effect of phosphine resistance on hybrids in populations of Triboleum castaneum"
   sort_year: null
   
 - name: Priscilla Glenn
@@ -313,7 +313,18 @@
   end_year: null
   thesis_title: "X-chromosome gene regulation in the male germline of the beetle Tribolium castaneum"
   sort_year: null
-  
+
+- name: Mujhtuba Baksh
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "Effect of phosphine resistance on hybrids in populations of Triboleum castaneum"
+  sort_year: null
+   
 - name: Danielle Moore
   status: alumni
   role: undergraduate
