@@ -153,17 +153,19 @@ permalink: /people/
 </ul>
 
 <h3>Undergraduate Research Assistants</h3>
-<ul class="alumni-list">
+
+<p class="alumni-inline">
+{% assign first = true %}
 {% for person in alumni_people %}
-{% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
-  <li class="alumni-row">
-    <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
-    </div>
-  </li>
-{% endif %}
+  {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
+
+    {% unless first %} · {% endunless %}
+    {{ person.name }}
+
+    {% assign first = false %}
+  {% endif %}
 {% endfor %}
-</ul>
+</p>
 
 <script>
 (function () {
