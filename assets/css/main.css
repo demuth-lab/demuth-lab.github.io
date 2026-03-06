@@ -268,15 +268,15 @@ a:hover{text-decoration:underline}
 }
 
 .alumni-row{
-  padding:10px 0;
+  padding:12px 0;
   border-bottom:1px solid var(--line);
 }
 
 /* first line: name + degree */
 .alumni-main{
   display:grid;
-  grid-template-columns: 260px auto;
-  column-gap:14px;
+  grid-template-columns: 240px auto;
+  column-gap:16px;
   align-items:baseline;
 }
 
@@ -288,11 +288,16 @@ a:hover{text-decoration:underline}
   color:var(--muted);
 }
 
-/* thesis line */
+/* thesis / dissertation title */
 .alumni-thesis{
-  margin-left:0;
+  margin-left:240px;
+  margin-top:3px;
+  font-size:0.95rem;
+  color:var(--muted);
+  line-height:1.4;
 }
 
+/* remove line after last entry */
 .alumni-row:last-child{
   border-bottom:none;
 }
