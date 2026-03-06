@@ -1,3 +1,327 @@
+# Graduate Students
 
-# Use your existing people.yml here.
-# This ZIP only modifies layout and styling.
+- name: Shana Pau
+  level: graduate
+  photo: /assets/img/people/GraduateStudents/Shana_Pau.jpg
+  description: Studies sex chromosome evolution and gene regulation.
+
+- name: Olivia Williams
+  level: graduate
+  photo: /assets/img/people/GraduateStudents/Olivia_Williams.png
+  description: Studies the genetics of behavior.
+
+
+# Undergraduate Researchers
+
+- name: Katelin Ho
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat.
+
+- name: Mariam Khaleel
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.jpg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Linh Ngo
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Linh_Ngo.jpg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Michelle Nguyen
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Michelle_Nguyen.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Blessedone Opara
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Blessedone_Opara.jpg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Raed Sharib
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Raed_Sharib.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: James Lam
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/James_Lam.webp
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Elizabeth Tran
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Ava Trinh
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Ava_Trinh.JPG
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Thao Nguyen
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Thao_Nguyen.jpg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+- name: Polycarp Uzoigwe
+  level: undergraduate
+  photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.jpeg
+  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+
+
+# Lab Alumni
+
+# Postdocs
+
+- name: Anna Williford
+  role: Alumni
+  alumni_group: Postdocs
+  degree: Postdoc
+  years: 2011–2012
+
+- name: Brian Fontenot
+  role: Alumni
+  alumni_group: Postdocs
+  degree: Postdoc
+  years: 2009–2010
+
+
+# Graduate Students
+
+- name: Catherine Rodgers
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD Student
+  years: 2014–present
+
+- name: Marquerite (Maya) Herzog
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD Student
+  years: 2016–present
+
+- name: Balan Ramesh
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD Student
+  years: 2016–present
+
+- name: Heath Blackmon
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD
+  years: 2010–2015
+
+- name: Eric Watson
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD
+  years: 2009–2014
+
+- name: Nick Long
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: MS
+  years: 2013–2016
+
+- name: Amrita Pal
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: MS (non-thesis)
+
+- name: Amrita Naidu
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: MS
+  years: 2007–2009
+
+- name: Eldon Prince
+  role: Alumni
+  alumni_group: Graduate Students
+  degree: PhD
+  years: 2008–2010
+
+
+# Lab Managers
+
+- name: Emmanuela Mujica
+  role: Alumni
+  alumni_group: Lab Managers
+  degree: Lab Manager
+  years: 2010–2011
+
+- name: Donna Kirkland
+  role: Alumni
+  alumni_group: Lab Managers
+  degree: Lab Manager
+  years: 2007–2009
+
+
+# Undergraduate Honors Students
+
+- name: Beena Margabandu
+  role: Alumni
+  alumni_group: Undergraduate Honors Students
+  thesis_title: ""
+
+- name: Roman Goff
+  role: Alumni
+  alumni_group: Undergraduate Honors Students
+  thesis_title: ""
+
+- name: Austin Truong
+  role: Alumni
+  alumni_group: Undergraduate Honors Students
+  thesis_title: ""
+
+- name: Elizabeth Pan
+  role: Alumni
+  alumni_group: Undergraduate Honors Students
+  thesis_title: ""
+
+- name: Priscilla Glenn
+  role: Alumni
+  alumni_group: Undergraduate Honors Students
+  thesis_title: ""
+
+- name: Mujhtuba Baksh
+  role: Alumni
+  alumni_group: Undergraduate Honors Students
+  thesis_title: ""
+
+- name: Danielle Moore
+  role: Alumni
+  alumni_group: Undergraduate Honors Students
+  thesis_title: ""
+
+- name: Erin Leidlein
+  role: Alumni
+  alumni_group: Undergraduate Honors Students
+  thesis_title: ""
+
+
+# Undergraduate Research Assistants
+
+- name: Prabha Nair
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Annie Nguyen
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Abanob Mady
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Shrayan Shrestha
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Vaidehi Gandhe
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Preston Truong
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Yussef Al-Zubi
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Adam Alasad
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Gwen Schultz
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Mason Bartels
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Emily Armstrong
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Darelle Collinot
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Rachel Swain
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Natalie Wagener
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Sara Richmond
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Andrew George
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Ayobami Ayankola
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Samuel Hernandez
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Reema Mahdawi
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Abhijeet Rajpurohit
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Shaam Mahasneh
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Kayla Wilhoit
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Emily Hale
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Alaisha Woodson
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Maria Maldonado
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Tien Phan
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Minh Nguyen
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Douja Chamseddine
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Houda Chamseddine
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Athena Meyer
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
+
+- name: Reagan Griffin
+  role: Alumni
+  alumni_group: Undergraduate Research Assistants
