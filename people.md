@@ -40,13 +40,13 @@ permalink: /people/
 
 <div class="people-grid">
 {% for person in site.data.people %}
-  {% if person.level == "graduate" %}
-    <div class="person-card">
-      <img src="{{ person.photo }}" alt="{{ person.name }}">
-      <h4>{{ person.name }}</h4>
-      <p>{{ person.description }}</p>
-    </div>
-  {% endif %}
+{% if person.level == "graduate" %}
+  <div class="person-card">
+    <img src="{{ person.photo }}" alt="{{ person.name }}">
+    <h4>{{ person.name }}</h4>
+    <p>{{ person.description }}</p>
+  </div>
+{% endif %}
 {% endfor %}
 </div>
 
@@ -56,13 +56,13 @@ permalink: /people/
 
 <div class="people-grid">
 {% for person in site.data.people %}
-  {% if person.level == "undergraduate" %}
-    <div class="person-card">
-      <img src="{{ person.photo }}" alt="{{ person.name }}">
-      <h4>{{ person.name }}</h4>
-      <p>{{ person.description }}</p>
-    </div>
-  {% endif %}
+{% if person.level == "undergraduate" %}
+  <div class="person-card">
+    <img src="{{ person.photo }}" alt="{{ person.name }}">
+    <h4>{{ person.name }}</h4>
+    <p>{{ person.description }}</p>
+  </div>
+{% endif %}
 {% endfor %}
 </div>
 
@@ -74,61 +74,61 @@ permalink: /people/
 {% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Student|Undergraduate Research Assistants" | split: "|" %}
 
 {% for group_name in group_order %}
-  {% assign group_items = alumni | where: "alumni_group", group_name %}
+{% assign group_items = alumni | where: "alumni_group", group_name %}
 
-  {% if group_items.size > 0 %}
+{% if group_items.size > 0 %}
+{% if group_name == "Undergraduate Honors Student" %}
+<h3>Undergraduate Honors Theses</h3>
+{% else %}
+<h3>{{ group_name }}</h3>
+{% endif %}
 
-    {% if group_name == "Undergraduate Honors Student" %}
-      <h3>Undergraduate Honors Theses</h3>
-    {% else %}
-      <h3>{{ group_name }}</h3>
-    {% endif %}
+<ul class="alumni-list">
+{% assign sorted = group_items | sort: "year" %}
 
-    <ul class="alumni-list">
-      {% assign sorted = group_items | sort: "year" %}
+{% for p in sorted reversed %}
+{% if group_name == "Undergraduate Honors Student" %}
 
-      {% for p in sorted reversed %}
-
-        {% if group_name == "Undergraduate Honors Student" %}
-
-          <li class="alumni-row">
-            <span class="alumni-honors">
-              <strong>{{ p.name }}:</strong>
-              <em>{{ p.thesis_title }}</em>
-            </span>
-          </li>
-
-        {% else %}
-
-          <li class="alumni-row">
-            <span class="alumni-name">{{ p.name }}</span>
-
-            {% if p.alumni_group != "Undergraduate Research Assistants" %}
-              <span class="alumni-degree">
-                {% if p.degree %}{{ p.degree }}{% endif %}
-                {% if p.year %} {{ p.year }}{% endif %}
-                {% if p.years %} {{ p.years }}{% endif %}
-              </span>
-            {% endif %}
-
-            {% if p.thesis_title %}
-              <span class="alumni-thesis">
-                {% if p.degree == "MS" %}
-                  <strong>MS Thesis:</strong>
-                {% elsif p.degree == "PhD" %}
-                  <strong>PhD Dissertation:</strong>
-                {% endif %}
-                <em>{{ p.thesis_title }}</em>
-              </span>
-            {% endif %}
-          </li>
-
-        {% endif %}
-
-      {% endfor %}
-    </ul>
-
+<li class="alumni-row">
+  <span class="alumni-name">{{ p.name }}</span>
+  <span class="alumni-degree">B.S. {% if p.year %}{{ p.year }}{% endif %}</span>
+  {% if p.thesis_title %}
+  <span class="alumni-thesis">
+    <strong>Honors Thesis:</strong> <em>{{ p.thesis_title }}</em>
+  </span>
   {% endif %}
+</li>
+
+{% else %}
+
+<li class="alumni-row">
+  <span class="alumni-name">{{ p.name }}</span>
+
+  {% if p.alumni_group != "Undergraduate Research Assistants" %}
+  <span class="alumni-degree">
+    {% if p.degree %}{{ p.degree }}{% endif %}
+    {% if p.year %} {{ p.year }}{% endif %}
+    {% if p.years %} {{ p.years }}{% endif %}
+  </span>
+  {% endif %}
+
+  {% if p.thesis_title %}
+  <span class="alumni-thesis">
+    {% if p.degree == "MS" %}
+    <strong>MS Thesis:</strong>
+    {% elsif p.degree == "PhD" %}
+    <strong>PhD Dissertation:</strong>
+    {% endif %}
+    <em>{{ p.thesis_title }}</em>
+  </span>
+  {% endif %}
+</li>
+
+{% endif %}
+{% endfor %}
+</ul>
+
+{% endif %}
 {% endfor %}
 
 <script>
