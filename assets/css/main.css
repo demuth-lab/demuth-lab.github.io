@@ -300,6 +300,11 @@ a:hover{text-decoration:underline}
   border-bottom:none;
 }
 
+.alumni-honors{
+  display:block;
+  line-height:1.4;
+}
+
 /* Mobile: stack nicely */
 
 @media (max-width: 640px){
