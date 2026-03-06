@@ -34,17 +34,20 @@ permalink: /people/
   </div>
 </div>
 
+{% assign current_people = site.data.people | where: "status", "current" %}
+{% assign alumni_people = site.data.people | where: "status", "alumni" | sort: "sort_year" | reverse %}
+
 ---
 
 ## Graduate Students
 
 <div class="people-grid">
-{% for person in site.data.people %}
-{% if person.level == "graduate" %}
+{% for person in current_people %}
+{% if person.role == "graduate" %}
   <div class="person-card">
     <img src="{{ person.photo }}" alt="{{ person.name }}">
     <h4>{{ person.name }}</h4>
-    <p>{{ person.description }}</p>
+    {% if person.bio %}<p>{{ person.bio }}</p>{% endif %}
   </div>
 {% endif %}
 {% endfor %}
@@ -52,15 +55,15 @@ permalink: /people/
 
 ---
 
-## Undergraduate Researchers
+## Undergraduate Research Assistants
 
 <div class="people-grid">
-{% for person in site.data.people %}
-{% if person.level == "undergraduate" %}
+{% for person in current_people %}
+{% if person.role == "undergraduate" %}
   <div class="person-card">
     <img src="{{ person.photo }}" alt="{{ person.name }}">
     <h4>{{ person.name }}</h4>
-    <p>{{ person.description }}</p>
+    {% if person.bio %}<p>{{ person.bio }}</p>{% endif %}
   </div>
 {% endif %}
 {% endfor %}
@@ -70,53 +73,97 @@ permalink: /people/
 
 ## Lab Alumni
 
-{% assign alumni = site.data.people | where: "role", "Alumni" %}
-{% assign group_order = "Postdocs|Graduate Students|Lab Managers|Undergraduate Honors Students|Undergraduate Research Assistants" | split: "|" %}
-
-{% for group_name in group_order %}
-{% assign group_items = alumni | where: "alumni_group", group_name %}
-
-{% if group_items.size > 0 %}
-{% if group_name == "Undergraduate Honors Students" %}
-<h3>Undergraduate Honors Theses</h3>
-{% else %}
-<h3>{{ group_name }}</h3>
-{% endif %}
-
+<h3>Postdocs</h3>
 <ul class="alumni-list">
-{% assign sorted = group_items | sort: "year" %}
-{% for p in sorted reversed %}
-<li class="alumni-row">
-  <div class="alumni-main">
-    <span class="alumni-name">{{ p.name }}</span>
-
-    {% if group_name == "Undergraduate Honors Students" %}
-    <span class="alumni-degree">B.S. Biology{% if p.year %}, {{ p.year }}{% endif %}</span>
-    {% elsif group_name != "Undergraduate Research Assistants" %}
-    <span class="alumni-degree">
-      {% if p.degree %}{{ p.degree }}{% endif %}{% if p.year %}, {{ p.year }}{% endif %}{% if p.years %}, {{ p.years }}{% endif %}
-    </span>
-    {% endif %}
-  </div>
-
-  {% if p.thesis_title %}
-  <div class="alumni-thesis">
-    {% if group_name == "Undergraduate Honors Students" %}
-    <strong>Honors Thesis:</strong>
-    {% elsif p.degree == "MS" %}
-    <strong>MS Thesis:</strong>
-    {% elsif p.degree == "PhD" %}
-    <strong>PhD Dissertation:</strong>
-    {% endif %}
-    <em>{{ p.thesis_title }}</em>
-  </div>
-  {% endif %}
-</li>
+{% for person in alumni_people %}
+{% if person.role == "postdoc" %}
+  <li class="alumni-row">
+    <div class="alumni-main">
+      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-degree">{{ person.degree }}{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
+    </div>
+  </li>
+{% endif %}
 {% endfor %}
 </ul>
 
+<h3>PhD Alumni</h3>
+<ul class="alumni-list">
+{% for person in alumni_people %}
+{% if person.role == "graduate" and person.degree == "PhD" %}
+  <li class="alumni-row">
+    <div class="alumni-main">
+      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-degree">PhD{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
+    </div>
+    {% if person.thesis_title %}
+    <div class="alumni-thesis"><strong>PhD Dissertation:</strong> <em>{{ person.thesis_title }}</em></div>
+    {% endif %}
+  </li>
 {% endif %}
 {% endfor %}
+</ul>
+
+<h3>M.S. Alumni</h3>
+<ul class="alumni-list">
+{% for person in alumni_people %}
+{% if person.role == "graduate" and person.degree == "MS" %}
+  <li class="alumni-row">
+    <div class="alumni-main">
+      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-degree">M.S.{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
+    </div>
+    {% if person.thesis_title %}
+    <div class="alumni-thesis"><strong>M.S. Thesis:</strong> <em>{{ person.thesis_title }}</em></div>
+    {% else %}
+    <div class="alumni-thesis">non-thesis</div>
+    {% endif %}
+  </li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h3>Lab Managers</h3>
+<ul class="alumni-list">
+{% for person in alumni_people %}
+{% if person.role == "lab_manager" %}
+  <li class="alumni-row">
+    <div class="alumni-main">
+      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-degree">{{ person.degree }}{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
+    </div>
+  </li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h3>Undergraduate Honors Theses</h3>
+<ul class="alumni-list">
+{% for person in alumni_people %}
+{% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title %}
+  <li class="alumni-row">
+    <div class="alumni-main">
+      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-degree">B.S. Biology{% if person.end_year %}, {{ person.end_year }}{% elsif person.sort_year %}, {{ person.sort_year }}{% endif %}</span>
+    </div>
+    <div class="alumni-thesis"><strong>Honors Thesis:</strong> <em>{{ person.thesis_title }}</em></div>
+  </li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h3>Undergraduate Research Assistants</h3>
+<ul class="alumni-list">
+{% for person in alumni_people %}
+{% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
+  <li class="alumni-row">
+    <div class="alumni-main">
+      <span class="alumni-name">{{ person.name }}</span>
+    </div>
+  </li>
+{% endif %}
+{% endfor %}
+</ul>
 
 <script>
 (function () {

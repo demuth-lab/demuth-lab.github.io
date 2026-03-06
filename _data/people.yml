@@ -1,327 +1,702 @@
 # Graduate Students
+- name: Olivia Williams
+  status: current
+  role: graduate
+  degree: null
+  photo: /assets/img/people/GraduateStudents/Olivia_Williams.png
+  bio: Studies the genetics of behavior.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
 - name: Shana Pau
-  level: graduate
+  status: current
+  role: graduate
+  degree: null
   photo: /assets/img/people/GraduateStudents/Shana_Pau.jpg
-  description: Studies sex chromosome evolution and gene regulation.
+  bio: Studies sex chromosome evolution and gene regulation.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
-- name: Olivia Williams
-  level: graduate
-  photo: /assets/img/people/GraduateStudents/Olivia_Williams.png
-  description: Studies the genetics of behavior.
-
-
-# Undergraduate Researchers
-
-- name: Katelin Ho
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.jpeg
-  description: Assists with behavioral assays and genomic analyses related to social defeat.
-
-- name: Mariam Khaleel
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.jpg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-
-- name: Linh Ngo
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Linh_Ngo.jpg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-
-- name: Michelle Nguyen
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Michelle_Nguyen.jpeg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-
-- name: Blessedone Opara
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Blessedone_Opara.jpg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-
-- name: Raed Sharib
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Raed_Sharib.jpeg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-
-- name: James Lam
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/James_Lam.webp
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-
-- name: Elizabeth Tran
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+# Undergrads
 
 - name: Ava Trinh
-  level: undergraduate
+  status: current
+  role: undergraduate
+  degree: BS
   photo: /assets/img/people/UndergraduateStudents/Ava_Trinh.JPG
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
-- name: Thao Nguyen
-  level: undergraduate
-  photo: /assets/img/people/UndergraduateStudents/Thao_Nguyen.jpg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+- name: Blessedone Opara
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Blessedone_Opara.jpg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Elizabeth Tran
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: James Lam
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/James_Lam.webp
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Katelin Ho
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.jpeg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Linh Ngo
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Linh_Ngo.jpg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Mariam Khaleel
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.jpg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Michelle Nguyen
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Michelle_Nguyen.jpeg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
 - name: Polycarp Uzoigwe
-  level: undergraduate
+  status: current
+  role: undergraduate
+  degree: BS
   photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.jpeg
-  description: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
+- name: Raed Sharib
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Raed_Sharib.jpeg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
-# Lab Alumni
-
-# Postdocs
-
+- name: Thao Nguyen
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Thao_Nguyen.jpg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+  
+# Alumni - Postdocs
 - name: Anna Williford
-  role: Alumni
-  alumni_group: Postdocs
+  status: alumni
+  role: postdoc
   degree: Postdoc
-  years: 2011–2012
+  photo: null
+  bio: null
+  start_year: 2011
+  end_year: 2012
+  thesis_title: null
+  sort_year: 2012
 
 - name: Brian Fontenot
-  role: Alumni
-  alumni_group: Postdocs
+  status: alumni
+  role: postdoc
   degree: Postdoc
-  years: 2009–2010
-
-
-# Graduate Students
-
-- name: Catherine Rodgers
-  role: Alumni
-  alumni_group: Graduate Students
-  degree: PhD Student
-  years: 2014–present
-
+  photo: null
+  bio: null
+  start_year: 2009
+  end_year: 2010
+  thesis_title: null
+  sort_year: 2010
+  
+# Alumni - PhD
 - name: Marquerite (Maya) Herzog
-  role: Alumni
-  alumni_group: Graduate Students
-  degree: PhD Student
-  years: 2016–present
-
+  status: alumni
+  role: graduate
+  degree: PhD
+  photo: null
+  bio: null
+  start_year: 2016
+  end_year: 2023
+  thesis_title: Elucidating the molecular genetic basis of behaviors related to the loser effect
+  sort_year: 2023
+  
 - name: Balan Ramesh
-  role: Alumni
-  alumni_group: Graduate Students
-  degree: PhD Student
-  years: 2016–present
+  status: alumni
+  role: graduate
+  degree: PhD
+  photo: null
+  bio: null
+  start_year: 2016
+  end_year: 2022
+  thesis_title: "Elucidating the evolution of sex chromosome dosage compensation using beetles"
+  sort_year: 2022
 
 - name: Heath Blackmon
-  role: Alumni
-  alumni_group: Graduate Students
+  status: alumni
+  role: graduate
   degree: PhD
-  years: 2010–2015
+  photo: null
+  bio: null
+  start_year: 2010
+  end_year: 2015
+  thesis_title: "Synthesis and phylogenetic comparative analyses of the causes and consequences of karyotype evolution in arthropods" 
+  sort_year: 2015
 
 - name: Eric Watson
-  role: Alumni
-  alumni_group: Graduate Students
+  status: alumni
+  role: graduate
   degree: PhD
-  years: 2009–2014
+  photo: null
+  bio: null
+  start_year: 2009
+  end_year: 2014
+  thesis_title: "The genetics of hybrid incompatibility early in the ‘speciation continuum'"
+  sort_year: 2014
+
+- name: Malini Kotak
+  status: alumni
+  role: graduate
+  degree: PhD
+  photo: null
+  bio: null
+  start_year: 2012
+  end_year: 2016
+  thesis_title: "Insights into the genomic and metabolic adaptations of termite associated verrcucomicrobia strains using functional and comparative genomics (co - J. Rodriguez)"
+  sort_year: 2016
+  
+- name: Eldon Prince
+  status: alumni
+  role: graduate
+  degree: PhD
+  photo: null
+  bio: null
+  start_year: 2008
+  end_year: 2010
+  thesis_title: null
+  sort_year: 2010
+  
+  # Alumni - MS
+- name: Catherine Rodgers
+  status: alumni
+  role: graduate
+  degree: MS
+  photo: null
+  bio: null
+  start_year: 2014
+  end_year: 2021
+  thesis_title: "Population genetic modeling of forces affecting the distribution of Maternal Effect Dominant Embryonic Arrest (MEDEA) factors in Tribolium"
+  sort_year: 2021
 
 - name: Nick Long
-  role: Alumni
-  alumni_group: Graduate Students
+  status: alumni
+  role: graduate
   degree: MS
-  years: 2013–2016
-
-- name: Amrita Pal
-  role: Alumni
-  alumni_group: Graduate Students
-  degree: MS (non-thesis)
-
+  photo: null
+  bio: null
+  start_year: 2013
+  end_year: 2016
+  thesis_title: "Gene expression differences in hybrids at the beginning of the speciation continuum"
+  sort_year: 2016
+  
 - name: Amrita Naidu
-  role: Alumni
-  alumni_group: Graduate Students
+  status: alumni
+  role: graduate
   degree: MS
-  years: 2007–2009
+  photo: null
+  bio: null
+  start_year: 2007
+  end_year: 2009
+  thesis_title: 'Sex, War and Disease: The effects of infection on horn size and intra-sexual competition in the broad-horned flour beetle, Gnathocerus cornutus'
+  sort_year: 2009
+  
 
-- name: Eldon Prince
-  role: Alumni
-  alumni_group: Graduate Students
-  degree: PhD
-  years: 2008–2010
-
-
-# Lab Managers
-
-- name: Emmanuela Mujica
-  role: Alumni
-  alumni_group: Lab Managers
-  degree: Lab Manager
-  years: 2010–2011
-
-- name: Donna Kirkland
-  role: Alumni
-  alumni_group: Lab Managers
-  degree: Lab Manager
-  years: 2007–2009
-
-
-# Undergraduate Honors Students
-
-- name: Beena Margabandu
-  role: Alumni
-  alumni_group: Undergraduate Honors Students
-  thesis_title: ""
-
+# Alumni - Undergrad - Honors
 - name: Roman Goff
-  role: Alumni
-  alumni_group: Undergraduate Honors Students
-  thesis_title: ""
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "Creating tools to investigate the predictive power of polygenic score for the big 5 personality traits and math ability"
+  sort_year: null
 
 - name: Austin Truong
-  role: Alumni
-  alumni_group: Undergraduate Honors Students
-  thesis_title: ""
-
-- name: Elizabeth Pan
-  role: Alumni
-  alumni_group: Undergraduate Honors Students
-  thesis_title: ""
-
-- name: Priscilla Glenn
-  role: Alumni
-  alumni_group: Undergraduate Honors Students
-  thesis_title: ""
-
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "Investigating the duration and effect of cycloheximide on l oheximide on loser effec oser effect in gn t in gnatocerus cornutus"
+  sort_year: null
+  
 - name: Mujhtuba Baksh
-  role: Alumni
-  alumni_group: Undergraduate Honors Students
-  thesis_title: ""
-
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "Effect of phosphine resistance on hybrids in populations of Triboleum castaneum"
+  sort_year: null
+  
+- name: Priscilla Glenn
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "X-chromosome gene regulation in the male germline of the beetle Tribolium castaneum"
+  sort_year: null
+  
 - name: Danielle Moore
-  role: Alumni
-  alumni_group: Undergraduate Honors Students
-  thesis_title: ""
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "MEDEA: distribution of a selfish genetic element in Texas populations of Tribolium castaneum"
+  sort_year: null
 
 - name: Erin Leidlein
-  role: Alumni
-  alumni_group: Undergraduate Honors Students
-  thesis_title: ""
-
-
-# Undergraduate Research Assistants
-
-- name: Prabha Nair
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Annie Nguyen
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Abanob Mady
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Shrayan Shrestha
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Vaidehi Gandhe
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Preston Truong
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Yussef Al-Zubi
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Adam Alasad
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Gwen Schultz
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Mason Bartels
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Emily Armstrong
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Darelle Collinot
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Rachel Swain
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Natalie Wagener
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Sara Richmond
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Andrew George
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Ayobami Ayankola
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Samuel Hernandez
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Reema Mahdawi
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Abhijeet Rajpurohit
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Shaam Mahasneh
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Kayla Wilhoit
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Emily Hale
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Alaisha Woodson
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Maria Maldonado
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Tien Phan
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
-- name: Minh Nguyen
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "Examining the genetic basis of MEDEA, a maternal effect that causes mothers to kill their offspring in beetles"
+  sort_year: null
+  
+# Alumni - Undergrad
+- name: Athena Meyer
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
 - name: Douja Chamseddine
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
-
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+  
 - name: Houda Chamseddine
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
-- name: Athena Meyer
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
+- name: Minh Nguyen
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Sara Richmond
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Tien Phan
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+  
+- name: Prabha Nair
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+  
+- name: Annie Nguyen
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+  
+- name: Abanob Mady
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Shrayan Shrestha
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Vaidehi Gandhe
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Preston Truong
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Yussef Al-Zubi
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Adam Alasad
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Gwen Schultz
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Mason Bartels
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Emily Armstrong
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Darelle Collinot
+  rstatus: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Rachel Swain
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Natalie Wagener
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Andrew George
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Ayobami Ayankola
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Samuel Hernandez
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Reema Mahdawi
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Abhijeet Rajpurohit
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Shaam Mahasneh
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Kayla Wilhoit
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Emily Hale
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Alaisha Woodson
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Maria Maldonado
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
 
 - name: Reagan Griffin
-  role: Alumni
-  alumni_group: Undergraduate Research Assistants
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+# Alumni - Lab Managers
+- name: Emmanuela Mujica
+  status: alumni
+  role: lab_manager
+  degree: Lab Manager
+  photo: null
+  bio: null
+  start_year: 2010
+  end_year: 2011
+  thesis_title: null
+  sort_year: 2011
+
+- name: Donna Kirkland
+  status: alumni
+  role: lab_manager
+  degree: Lab Manager
+  photo: null
+  bio: null
+  start_year: 2007
+  end_year: 2009
+  thesis_title: null
+  sort_year: 2009
