@@ -2,6 +2,7 @@
   --bg:#ffffff;
   --fg:#0f172a;
   --muted:#475569;
+  --muted-light: #64748b;
   --line:#e2e8f0;
   --accent:#0ea5e9;
   --accent2:#10b981;
@@ -312,7 +313,7 @@ a:hover{text-decoration:underline}
 
 .alumni-thesis em{
   font-style:italic;
-  color:var(--muted);
+  color:var(--muted-light);
 }
 
 /* =========================
