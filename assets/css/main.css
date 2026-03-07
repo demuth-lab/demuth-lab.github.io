@@ -234,8 +234,8 @@ a:hover{text-decoration:underline}
 }
 
 .pi-photo{
-  width:220px;
-  height:220px;
+  width:200px;
+  height:200px;
   border-radius:8px;
   object-fit:cover;
 }
@@ -307,8 +307,8 @@ a:hover{text-decoration:underline}
 
   .pi-photo,
   .person-card img{
-    width:160px;
-    height:160px;
+    width:180px;
+    height:180px;
   }
 
 }
