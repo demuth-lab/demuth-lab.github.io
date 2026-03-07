@@ -277,7 +277,8 @@ a:hover{text-decoration:underline}
 }
 
 .pi-title a{
-  color:var(--muted);
+  color:var(--fg);
+  text-decoration:none;
 }
 
 .pi-title a:hover{
