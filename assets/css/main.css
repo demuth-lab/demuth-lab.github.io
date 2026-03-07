@@ -302,7 +302,7 @@ a:hover{text-decoration:underline}
   font-size:0.95rem;
 }
 
-.alumni-thesis strong{
+.alumni-name strong{
   color:var(--fg);
   font-weight:200;
 }
