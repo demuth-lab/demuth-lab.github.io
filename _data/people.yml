@@ -145,6 +145,17 @@
   sort_year: null
   
 # Alumni - Postdocs
+- name: Ann Tate
+  status: alumni
+  role: postdoc
+  degree: Postdoc
+  photo: null
+  bio: null
+  start_year: 2014
+  end_year: 2016 (co – T. Cooper; U of Houston)
+  thesis_title: null
+  sort_year: 2016
+  
 - name: Anna Williford
   status: alumni
   role: postdoc
@@ -220,7 +231,7 @@
   bio: null
   start_year: 2012
   end_year: 2016
-  thesis_title: "Insights into the genomic and metabolic adaptations of termite associated verrcucomicrobia strains using functional and comparative genomics (co - J. Rodriguez)"
+  thesis_title: "Insights into the genomic and metabolic adaptations of termite associated verrcucomicrobia strains using functional and comparative genomics (co - J. Rodriguez; UC Davis)"
   sort_year: 2016
   
 - name: Eldon Prince
