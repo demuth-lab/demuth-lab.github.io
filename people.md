@@ -30,11 +30,10 @@ permalink: /people/
 
     <p class="pi-title">
       Associate Professor, Department of Biology<br>
-    </p>
-
-    <p class="pi-admin">
+      <span class="pi-admin">
       Associate Chair of Biology: 2014–2015; 2020–2025<br>
       Executive Member of the Division of Data Science: 2018-present
+      </span>
     </p>
 
     <p class="pi-degrees">
