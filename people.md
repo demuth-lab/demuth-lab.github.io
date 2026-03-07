@@ -42,19 +42,7 @@ permalink: /people/
       M.S. Southeastern Louisiana University<br>
       B.S. Harding University
     </p>
-
-    <p class="pi-research">
-      My research examines how genetic and genomic variation shapes the evolution
-      of phenotypes, populations, and species. By integrating comparative genomics,
-      population genetics, and experimental approaches, my group studies how genomes
-      evolve and how genetic architecture influences behavioral interactions and
-      social conflict.
-    </p>
-
-    <p class="pi-quote">
-      “Nothing in biology makes sense except in the light of evolution.” — Dobzhansky
-    </p>
-
+    
   </div>
 
 </div>
