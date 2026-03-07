@@ -298,9 +298,12 @@ a:hover{text-decoration:underline}
 
   .pi-wrap{
     flex-direction:column;
-    align-items:left;
-    text-align:left;
+    align-items:flex-start;
   }
+ 
+ .pi-text{
+    text-align:left;
+}
 
   .pi-photo{
     width:160px;
