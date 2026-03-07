@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Current_Graduate_ Students
 =======
 # Graduate Students
 >>>>>>> 50cc47716d3bfa5189904032b136a586396831dc
+=======
+# Current_Graduate_ Students
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
 - name: Shana Pau
   status: current
   role: graduate
@@ -15,6 +19,7 @@
   sort_year: null
 
 - name: Olivia Williams
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   status: current
@@ -31,6 +36,8 @@
 
 - name: Ava Trinh
 >>>>>>> 50cc47716d3bfa5189904032b136a586396831dc
+=======
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
   status: current
   role: graduate
   degree: PhD
@@ -141,6 +148,9 @@
   thesis_title: null
   sort_year: null
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
 
 - name: Ava Trinh
   status: current
@@ -165,10 +175,13 @@
   sort_year: null
 
 # Alumni_Postdocs
+<<<<<<< HEAD
 =======
   
 # Alumni - Postdocs
 >>>>>>> 50cc47716d3bfa5189904032b136a586396831dc
+=======
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
 - name: Ann Tate
   status: alumni
   role: postdoc
@@ -180,10 +193,14 @@
   thesis_title: null
   sort_year: 2016
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
   
 >>>>>>> 50cc47716d3bfa5189904032b136a586396831dc
+=======
+
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
 - name: Anna Williford
   status: alumni
   role: postdoc
@@ -307,6 +324,7 @@
   thesis_title: 'Sex, War and Disease: The effects of infection on horn size and intra-sexual competition in the broad-horned flour beetle, Gnathocerus cornutus'
   sort_year: 2009
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 # Alumni_Undergrad_Honors
@@ -330,6 +348,11 @@
   sort_year: null
 
 - name: Austin Truong
+=======
+
+# Alumni_Undergrad_Honors
+- name: Mujhtuba Baksh
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
   status: alumni
   role: undergraduate
   degree: BS
@@ -337,10 +360,16 @@
   bio: null
   start_year: null
   end_year: null
+<<<<<<< HEAD
   thesis_title: "Investigating the duration and effect of cycloheximide on l oheximide on loser effec oser effect in gn t in gnatocerus cornutus"
   sort_year: null
   
 >>>>>>> 50cc47716d3bfa5189904032b136a586396831dc
+=======
+  thesis_title: "Effect of phosphine resistance on hybrids in populations of Triboleum castaneum"
+  sort_year: null
+
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
 - name: Priscilla Glenn
   status: alumni
   role: undergraduate
@@ -353,9 +382,13 @@
   sort_year: null
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - name: Roman Goff
 =======
 - name: Mujhtuba Baksh
+=======
+- name: Roman Goff
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
   status: alumni
   role: undergraduate
   degree: BS
@@ -363,6 +396,7 @@
   bio: null
   start_year: null
   end_year: null
+<<<<<<< HEAD
   thesis_title: "Effect of phosphine resistance on hybrids in populations of Triboleum castaneum"
   sort_year: null
    
@@ -375,6 +409,8 @@
   bio: null
   start_year: null
   end_year: null
+=======
+>>>>>>> 03c34782dc7767dc1cafc49f897094f19e05fd5a
   thesis_title: "Creating tools to investigate the predictive power of polygenic score for the big 5 personality traits and math ability"
   sort_year: null
 
