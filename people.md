@@ -58,10 +58,11 @@ permalink: /people/
 <div class="people-grid">
 {% for person in current_people %}
 {% if person.role == "graduate" %}
-  <div class="person-card">
+  <div class="person-card grad-card">
     <img src="{{ person.photo }}" alt="{{ person.name }}">
     <h4>{{ person.name }}</h4>
-    {% if person.bio %}<p>{{ person.bio }}</p>{% endif %}
+    {% if person.degree %}<p class="grad-degree">{{ person.degree }}</p>{% endif %}
+    {% if person.bio %}<p class="grad-topic">{{ person.bio }}</p>{% endif %}
   </div>
 {% endif %}
 {% endfor %}
@@ -74,10 +75,9 @@ permalink: /people/
 <div class="people-grid">
 {% for person in current_people %}
 {% if person.role == "undergraduate" %}
-  <div class="person-card">
+  <div class="person-card undergrad-card">
     <img src="{{ person.photo }}" alt="{{ person.name }}">
     <h4>{{ person.name }}</h4>
-    {% if person.bio %}<p>{{ person.bio }}</p>{% endif %}
   </div>
 {% endif %}
 {% endfor %}
