@@ -69,7 +69,7 @@ permalink: /people/
 
 ---
 
-## Undergraduate Researchers
+## Undergraduate Students
 
 <div class="people-grid">
 {% for person in current_people %}
