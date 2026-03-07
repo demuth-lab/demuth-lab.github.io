@@ -49,7 +49,7 @@ permalink: /people/
 </div>
 
 {% assign current_people = site.data.people | where: "status", "current" %}
-{% assign alumni_people = site.data.people | where: "status", "alumni" | sort: "sort_year" | reverse %}
+{% assign alumni_people = site.data.people | where: "status", "alumni" %}
 
 ---
 
