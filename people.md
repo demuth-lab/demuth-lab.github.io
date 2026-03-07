@@ -7,31 +7,56 @@ permalink: /people/
 ## Principal Investigator
 
 <div class="pi-wrap">
-  <img class="pi-photo" src="/assets/img/people/Demuth_Headshot.jpg" alt="Jeff Demuth">
-  <div class="pi-text">
-    <h3>Jeff Demuth</h3>
-    <p><strong>Associate Professor, Department of Biology, University of Texas at Arlington</strong></p>
 
-    <p>
-      Jeff Demuth is an evolutionary geneticist studying how sex chromosomes and genome architecture shape behavioral responses to social conflict.
-      His research integrates comparative genomics, regulatory evolution, and behavioral genetics in horned beetles and related systems.
-    </p>
+  <img class="pi-photo" src="/assets/img/people/Demuth_Headshot.jpg" alt="Jeff Demuth">
+
+  <div class="pi-text">
+
+    <h3 class="pi-name">Jeff Demuth</h3>
 
     <div class="pi-links">
-      <a href="{{ site.data.links.scholar }}" target="_blank" rel="noopener" class="scholar-link">
-        <i class="bi bi-mortarboard-fill" aria-hidden="true"></i> Google Scholar
+      <a href="{{ site.data.links.scholar }}" target="_blank" rel="noopener">
+        <i class="bi bi-mortarboard-fill"></i> Scholar
       </a>
 
-      <a href="https://orcid.org/0000-0002-0471-3679" target="_blank" rel="noopener" class="scholar-link">
-        <i class="bi bi-link-45deg" aria-hidden="true"></i> ORCID
+      <a href="https://orcid.org/0000-0002-0471-3679" target="_blank" rel="noopener">
+        <i class="bi bi-link-45deg"></i> ORCID
       </a>
 
-      <a href="#" class="scholar-link" id="pi-email" data-user="jpdemuth" data-domain="uta.edu">
-        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-        Contact Me
+      <a href="#" id="pi-email" data-user="jpdemuth" data-domain="uta.edu">
+        <i class="bi bi-envelope-fill"></i> Email
       </a>
     </div>
+
+    <p class="pi-title">
+      Associate Professor, Department of Biology<br>
+      University of Texas at Arlington
+    </p>
+
+    <p class="pi-admin">
+      Associate Chair of Biology: 2014–2015; 2020–2025
+    </p>
+
+    <p class="pi-degrees">
+      Ph.D. Indiana University<br>
+      M.S. Southeastern Louisiana University<br>
+      B.S. Harding University
+    </p>
+
+    <p class="pi-research">
+      My research examines how genetic and genomic variation shapes the evolution
+      of phenotypes, populations, and species. By integrating comparative genomics,
+      population genetics, and experimental approaches, my group studies how genomes
+      evolve and how genetic architecture influences behavioral interactions and
+      social conflict.
+    </p>
+
+    <p class="pi-quote">
+      “Nothing in biology makes sense except in the light of evolution.” — Dobzhansky
+    </p>
+
   </div>
+
 </div>
 
 {% assign current_people = site.data.people | where: "status", "current" %}
