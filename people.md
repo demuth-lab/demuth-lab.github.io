@@ -80,7 +80,7 @@ permalink: /people/
   <li class="alumni-row">
     <div class="alumni-main">
       <span class="alumni-name"><strong>{{ person.name }}</strong></span>
-      <span class="alumni-degree">{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
+      <span class="alumni-degree">{% if person.start_year and person.end_year %}{{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}{{ person.end_year }}{% elsif person.start_year %}{{ person.start_year }}{% endif %}</span>
     </div>
   </li>
 {% endif %}
