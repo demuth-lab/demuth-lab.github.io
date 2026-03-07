@@ -306,6 +306,7 @@ a:hover{text-decoration:underline}
   color:var(--fg);
   font-weight:200;
   font-size:0.95rem;
+  margin-left:1.5rem;
 }
 
 .alumni-thesis em{
