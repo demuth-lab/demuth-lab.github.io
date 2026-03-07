@@ -152,6 +152,20 @@ permalink: /people/
 </ul>
 
 <h3 class="alumni-heading">Undergraduate Students</h3>
+
+<p class="alumni-inline">
+{% assign first = true %}
+{% for person in alumni_people %}
+  {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
+
+    {% unless first %} · {% endunless %}
+    <span class="alumni-name"><strong>{{ person.name }}</strong></span>
+
+    {% assign first = false %}
+  {% endif %}
+{% endfor %}
+</p>
+
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title %}
@@ -166,18 +180,6 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<p class="alumni-inline">
-{% assign first = true %}
-{% for person in alumni_people %}
-  {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
-
-    {% unless first %} · {% endunless %}
-    <span class="alumni-name"><strong>{{ person.name }}</strong></span>
-
-    {% assign first = false %}
-  {% endif %}
-{% endfor %}
-</p>
 
 <script>
 (function () {
