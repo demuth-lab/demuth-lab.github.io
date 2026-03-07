@@ -1,8 +1,8 @@
-# Graduate Students
+# Current_Graduate_ Students
 - name: Shana Pau
   status: current
   role: graduate
-  degree: null
+  degree: PhD
   photo: /assets/img/people/GraduateStudents/Shana_Pau.jpg
   bio: Studies sex chromosome evolution and gene regulation.
   start_year: null
@@ -13,7 +13,7 @@
 - name: Olivia Williams
   status: current
   role: graduate
-  degree: null
+  degree: PhD
   photo: /assets/img/people/GraduateStudents/Olivia_Williams.png
   bio: Studies the genetics of behavior.
   start_year: null
@@ -21,35 +21,23 @@
   thesis_title: null
   sort_year: null
 
-# Undergrads
-
-- name: Ava Trinh
+# Current_Undergrads
+- name: Katelin Ho
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Ava_Trinh.JPG
-  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.jpeg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat.
   start_year: null
   end_year: null
   thesis_title: null
   sort_year: null
 
-- name: Blessedone Opara
+- name: Mariam Khaleel
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Blessedone_Opara.jpg
-  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Elizabeth Tran
-  status: current
-  role: undergraduate
-  degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
+  photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.jpg
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -67,33 +55,11 @@
   thesis_title: null
   sort_year: null
 
-- name: Katelin Ho
-  status: current
-  role: undergraduate
-  degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.jpeg
-  bio: Assists with behavioral assays and genomic analyses related to social defeat.
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
 - name: Linh Ngo
   status: current
   role: undergraduate
   degree: BS
   photo: /assets/img/people/UndergraduateStudents/Linh_Ngo.jpg
-  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Mariam Khaleel
-  status: current
-  role: undergraduate
-  degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.jpg
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -111,11 +77,22 @@
   thesis_title: null
   sort_year: null
 
-- name: Polycarp Uzoigwe
+- name: Thao Nguyen
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.jpeg
+  photo: /assets/img/people/UndergraduateStudents/Thao_Nguyen.jpg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Blessedone Opara
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Blessedone_Opara.jpg
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -133,18 +110,40 @@
   thesis_title: null
   sort_year: null
 
-- name: Thao Nguyen
+- name: Elizabeth Tran
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Thao_Nguyen.jpg
+  photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
   thesis_title: null
   sort_year: null
-  
-# Alumni - Postdocs
+
+- name: Ava Trinh
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Ava_Trinh.JPG
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Polycarp Uzoigwe
+  status: current
+  role: undergraduate
+  degree: BS
+  photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.jpeg
+  bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+# Alumni_Postdocs
 - name: Ann Tate
   status: alumni
   role: postdoc
@@ -155,7 +154,7 @@
   end_year: 2016 (co – T. Cooper; U of Houston)
   thesis_title: null
   sort_year: 2016
-  
+
 - name: Anna Williford
   status: alumni
   role: postdoc
@@ -177,8 +176,8 @@
   end_year: 2010
   thesis_title: null
   sort_year: 2010
-  
-# Alumni - PhD
+
+# Alumni_PhD
 - name: Marquerite (Maya) Herzog
   status: alumni
   role: graduate
@@ -187,9 +186,9 @@
   bio: null
   start_year: 2016
   end_year: 2023
-  thesis_title: Elucidating the molecular genetic basis of behaviors related to the loser effect
+  thesis_title: "Elucidating the molecular genetic basis of behaviors related to the loser effect"
   sort_year: 2023
-  
+
 - name: Balan Ramesh
   status: alumni
   role: graduate
@@ -233,7 +232,7 @@
   end_year: 2016
   thesis_title: "Insights into the genomic and metabolic adaptations of termite associated verrcucomicrobia strains using functional and comparative genomics (co - J. Rodriguez; UC Davis)"
   sort_year: 2016
-  
+
 - name: Eldon Prince
   status: alumni
   role: graduate
@@ -244,8 +243,8 @@
   end_year: 2010
   thesis_title: null
   sort_year: 2010
-  
-  # Alumni - MS
+
+# Alumni_MS
 - name: Catherine Rodgers
   status: alumni
   role: graduate
@@ -267,7 +266,7 @@
   end_year: 2016
   thesis_title: "Gene expression differences in hybrids at the beginning of the speciation continuum"
   sort_year: 2016
-  
+
 - name: Amrita Naidu
   status: alumni
   role: graduate
@@ -278,9 +277,31 @@
   end_year: 2009
   thesis_title: 'Sex, War and Disease: The effects of infection on horn size and intra-sexual competition in the broad-horned flour beetle, Gnathocerus cornutus'
   sort_year: 2009
-  
 
-# Alumni - Undergrad - Honors
+
+# Alumni_Undergrad_Honors
+- name: Mujhtuba Baksh
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "Effect of phosphine resistance on hybrids in populations of Triboleum castaneum"
+  sort_year: null
+
+- name: Priscilla Glenn
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "X-chromosome gene regulation in the male germline of the beetle Tribolium castaneum"
+  sort_year: null
+
 - name: Roman Goff
   status: alumni
   role: undergraduate
@@ -290,6 +311,17 @@
   start_year: null
   end_year: null
   thesis_title: "Creating tools to investigate the predictive power of polygenic score for the big 5 personality traits and math ability"
+  sort_year: null
+
+- name: Erin Leidlein
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: "Examining the genetic basis of MEDEA, a maternal effect that causes mothers to kill their offspring in beetles"
   sort_year: null
 
 - name: Beena Margabandu
@@ -303,39 +335,6 @@
   thesis_title: "Effect of individual and population fitness tradeoff on predatory behaviors"
   sort_year: null
 
-- name: Austin Truong
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: "Investigating the duration and effect of cycloheximide on l oheximide on loser effec oser effect in gn t in gnatocerus cornutus"
-  sort_year: null
-  
-- name: Priscilla Glenn
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: "X-chromosome gene regulation in the male germline of the beetle Tribolium castaneum"
-  sort_year: null
-
-- name: Mujhtuba Baksh
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: "Effect of phosphine resistance on hybrids in populations of Triboleum castaneum"
-  sort_year: null
-   
 - name: Danielle Moore
   status: alumni
   role: undergraduate
@@ -347,7 +346,7 @@
   thesis_title: "MEDEA: distribution of a selfish genetic element in Texas populations of Tribolium castaneum"
   sort_year: null
 
-- name: Erin Leidlein
+- name: Austin Truong
   status: alumni
   role: undergraduate
   degree: BS
@@ -355,142 +354,10 @@
   bio: null
   start_year: null
   end_year: null
-  thesis_title: "Examining the genetic basis of MEDEA, a maternal effect that causes mothers to kill their offspring in beetles"
-  sort_year: null
-  
-# Alumni - Undergrad
-- name: Athena Meyer
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
+  thesis_title: "Investigating the duration and effect of cycloheximide on l oheximide on loser effec oser effect in gn t in gnatocerus cornutus"
   sort_year: null
 
-- name: Douja Chamseddine
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-  
-- name: Houda Chamseddine
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Minh Nguyen
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Sara Richmond
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Tien Phan
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-  
-- name: Prabha Nair
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-  
-- name: Annie Nguyen
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-  
-- name: Abanob Mady
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Shrayan Shrestha
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Vaidehi Gandhe
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Preston Truong
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
+# Alumni_Undergrad
 - name: Yussef Al-Zubi
   status: alumni
   role: undergraduate
@@ -513,73 +380,7 @@
   thesis_title: null
   sort_year: null
 
-- name: Gwen Schultz
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Mason Bartels
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
 - name: Emily Armstrong
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Darelle Collinot
-  rstatus: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Rachel Swain
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Natalie Wagener
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Andrew George
   status: alumni
   role: undergraduate
   degree: BS
@@ -601,7 +402,7 @@
   thesis_title: null
   sort_year: null
 
-- name: Samuel Hernandez
+- name: Mason Bartels
   status: alumni
   role: undergraduate
   degree: BS
@@ -612,7 +413,7 @@
   thesis_title: null
   sort_year: null
 
-- name: Reema Mahdawi
+- name: Douja Chamseddine
   status: alumni
   role: undergraduate
   degree: BS
@@ -623,7 +424,7 @@
   thesis_title: null
   sort_year: null
 
-- name: Abhijeet Rajpurohit
+- name: Houda Chamseddine
   status: alumni
   role: undergraduate
   degree: BS
@@ -634,7 +435,18 @@
   thesis_title: null
   sort_year: null
 
-- name: Shaam Mahasneh
+- name: Darelle Collinot
+  rstatus: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Vaidehi Gandhe
   status: alumni
   role: undergraduate
   degree: BS
@@ -645,40 +457,7 @@
   thesis_title: null
   sort_year: null
 
-- name: Kayla Wilhoit
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Emily Hale
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Alaisha Woodson
-  status: alumni
-  role: undergraduate
-  degree: BS
-  photo: null
-  bio: null
-  start_year: null
-  end_year: null
-  thesis_title: null
-  sort_year: null
-
-- name: Maria Maldonado
+- name: Andrew George
   status: alumni
   role: undergraduate
   degree: BS
@@ -700,7 +479,227 @@
   thesis_title: null
   sort_year: null
 
-# Alumni - Lab Managers
+- name: Emily Hale
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Samuel Hernandez
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Abanob Mady
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Shaam Mahasneh
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Reema Mahdawi
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Maria Maldonado
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Athena Meyer
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Prabha Nair
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Annie Nguyen
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Minh Nguyen
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Tien Phan
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Abhijeet Rajpurohit
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Sara Richmond
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Gwen Schultz
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Shrayan Shrestha
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Rachel Swain
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Preston Truong
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Natalie Wagener
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Kayla Wilhoit
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+- name: Alaisha Woodson
+  status: alumni
+  role: undergraduate
+  degree: BS
+  photo: null
+  bio: null
+  start_year: null
+  end_year: null
+  thesis_title: null
+  sort_year: null
+
+# Alumni_Lab_Managers
 - name: Emmanuela Mujica
   status: alumni
   role: lab_manager
