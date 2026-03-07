@@ -73,7 +73,7 @@ permalink: /people/
 
 ## Lab Alumni
 
-<h3>Postdocs</h3>
+<h3 class="alumni-heading">Postdocs</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "postdoc" %}
@@ -87,7 +87,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>PhD Students</h3>
+<h3 class="alumni-heading">PhD Students</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "graduate" and person.degree == "PhD" %}
@@ -104,7 +104,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>M.S. Students</h3>
+<h3 class="alumni-heading">M.S. Students</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "graduate" and person.degree == "MS" %}
@@ -123,7 +123,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>Lab Managers</h3>
+<h3 class="alumni-heading">Lab Managers</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "lab_manager" %}
@@ -137,7 +137,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>Undergraduate Research Assistants</h3>
+<h3 class="alumni-heading">Undergraduate Research Assistants</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title %}
