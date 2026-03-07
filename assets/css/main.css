@@ -234,10 +234,10 @@ a:hover{text-decoration:underline}
 }
 
 .pi-photo{
-  width:180px;
+  width:220px;
+  height:220px;
   border-radius:8px;
   object-fit:cover;
-  box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
 .pi-text{
@@ -305,8 +305,10 @@ a:hover{text-decoration:underline}
     text-align:left;
 }
 
-  .pi-photo{
+  .pi-photo,
+  .person-card img{
     width:160px;
+    height:160px;
   }
 
 }
