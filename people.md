@@ -33,7 +33,7 @@ permalink: /people/
     </p>
 
     <p class="pi-admin">
-      Associate Chair of Biology: 2014–2015; 2020–2025
+      Associate Chair of Biology: 2014–2015; 2020–2025<br>
       Executive Member of the Division of Data Science: 2018-present
     </p>
 
