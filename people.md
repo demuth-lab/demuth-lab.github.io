@@ -61,7 +61,7 @@ permalink: /people/
   <div class="person-card grad-card">
     <img src="{{ person.photo }}" alt="{{ person.name }}">
     <h4>{{ person.name }}</h4>
-    {% if person.degree %}<p class="grad-degree">{{ person.degree }}</p>{% endif %}
+    {% if person.degree %}<p class="grad-degree">{{ person.degree }} Student</p>{% endif %}
     {% if person.bio %}<p class="grad-topic">{{ person.bio }}</p>{% endif %}
   </div>
 {% endif %}
