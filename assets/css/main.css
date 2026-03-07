@@ -291,9 +291,15 @@ a:hover{text-decoration:underline}
   align-items:baseline;
 }
 
+.alumni-name strong{
+  color:var(--fg);
+  font-weight:300;
+  font-size:0.95rem;
+}
+
 .alumni-degree{
   color:var(--muted);
-  font-variant-numeric:tabular-nums;
+  font-size:0.95rem;
 }
 
 .alumni-thesis{
@@ -302,15 +308,11 @@ a:hover{text-decoration:underline}
   font-size:0.95rem;
 }
 
-.alumni-name strong{
-  color:var(--fg);
-  font-weight:200;
-}
-
 .alumni-thesis em{
   font-style:italic;
   color:var(--muted-light);
   font-weight: 200;
+  font-size:0.95rem;
 }
 
 /* =========================
