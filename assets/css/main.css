@@ -234,10 +234,13 @@ a:hover{text-decoration:underline}
 }
 
 .pi-photo{
-  width:210px;
-  height:210px;
-  border-radius:8px;
+  width:220px;
+  height:220px;
   object-fit:cover;
+  border-radius:12px;
+  border:none;
+  background:var(--card);
+  margin-top:0.75rem;
 }
 
 .pi-text{
