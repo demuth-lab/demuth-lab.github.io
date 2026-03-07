@@ -295,16 +295,18 @@ a:hover{text-decoration:underline}
   color:var(--fg);
   font-weight:400;
   font-size:0.95rem;
+  margin-bottom:2px;
 }
 
 .alumni-degree{
   color:var(--muted);
   font-size:0.95rem;
+  margin-bottom:2px;
 }
 
 .alumni-thesis{
   margin-top:4px;
-  color:var(--muted);
+  color:var(--fg);
   font-weight:200;
   font-size:0.95rem;
 }
