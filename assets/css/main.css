@@ -269,6 +269,11 @@ a:hover{text-decoration:underline}
    Alumni lists
    ========================= */
 
+.alumni-heading{
+  margin-top:1.2rem;
+  margin-bottom:2px;
+}
+
 .alumni-list{
   list-style:none;
   padding:0;
