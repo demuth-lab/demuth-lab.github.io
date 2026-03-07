@@ -291,10 +291,6 @@ a:hover{text-decoration:underline}
   align-items:baseline;
 }
 
-.alumni-name{
-  font-weight:700;
-}
-
 .alumni-degree{
   color:var(--muted);
   font-variant-numeric:tabular-nums;
