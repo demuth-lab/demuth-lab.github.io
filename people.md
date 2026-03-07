@@ -29,10 +29,11 @@ permalink: /people/
     </div>
 
     <p class="pi-title">
-      Associate Professor, Department of Biology<br>
-      <span class="pi-admin">
+      Associate Professor, UTA Department of Biology<br>
       Executive Board, <a href="https://www.uta.edu/academics/schools-colleges/science/departments/division-data-science" target="_blank" rel="noopener">Division of Data Science</a><br>
-      Associate Chair of Biology: 2014–2015; 2020–2025
+      <span class="pi-admin">
+      Associate Chair of Biology (2014–2015; 2020–2025)<br>
+      Assistant Professor, UTA Department of Biology (2007-2013)
       
       </span>
     </p>
