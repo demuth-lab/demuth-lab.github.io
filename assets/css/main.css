@@ -280,14 +280,14 @@ a:hover{text-decoration:underline}
   border-bottom:1px solid var(--line);
 }
 
-.alumni-row:last-child{
-  border-bottom:none;
-}
+#.alumni-row:last-child{
+#  border-bottom:none;
+#}
 
 .alumni-main{
   display:grid;
   grid-template-columns:260px 1fr;
-  column-gap:20px;
+  column-gap:10px;
   align-items:baseline;
 }
 
@@ -306,7 +306,7 @@ a:hover{text-decoration:underline}
   color:var(--fg);
   font-weight:200;
   font-size:0.95rem;
-  margin-left:1.5rem;
+  margin-left:2rem;
 }
 
 .alumni-thesis em{
