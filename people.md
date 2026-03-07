@@ -30,11 +30,11 @@ permalink: /people/
 
     <p class="pi-title">
       Associate Professor, Department of Biology<br>
-      University of Texas at Arlington
     </p>
 
     <p class="pi-admin">
       Associate Chair of Biology: 2014–2015; 2020–2025
+      Executive Member of the Division of Data Science: 2018-present
     </p>
 
     <p class="pi-degrees">
