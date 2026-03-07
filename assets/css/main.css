@@ -276,12 +276,19 @@ a:hover{text-decoration:underline}
   line-height:1.35;
 }
 
+.pi-title a{
+  color:var(--muted);
+}
+
+.pi-title a:hover{
+  color:var(--accent);
+}
+
 .pi-title .pi-admin{
   font-weight:400;
   color:var(--muted);
   font-size:0.95rem;
 }
-
 
 /* Degrees */
 
@@ -290,14 +297,6 @@ a:hover{text-decoration:underline}
   font-size:0.95rem;
   line-height:1.35;
   margin-bottom:12px;
-}
-
-.pi-degrees a{
-  color:var(--muted);
-}
-
-.pi-degrees a:hover{
-  color:var(--accent);
 }
 
 /* mobile */
