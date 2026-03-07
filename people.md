@@ -29,11 +29,11 @@ permalink: /people/
     </div>
 
     <p class="pi-title">
-      Associate Professor, <a href="https://www.uta.edu/academics/schools-colleges/science/departments/biology" target="_blank" rel="noopener">UTA Department of Biology</a><br>
+      Associate Professor, <a href="https://www.uta.edu/academics/schools-colleges/science/departments/biology" target="_blank" rel="noopener">Department of Biology</a><br>
       Executive Board, <a href="https://www.uta.edu/academics/schools-colleges/science/departments/division-data-science" target="_blank" rel="noopener">Division of Data Science</a><br>
       <span class="pi-admin">
       Associate Chair of Biology (2014–2015; 2020–2025)<br>
-      Assistant Professor, UTA Department of Biology (2007-2013)
+      Assistant Professor, Department of Biology (2007-2013)
       
       </span>
     </p>
@@ -69,7 +69,7 @@ permalink: /people/
 
 ---
 
-## Undergraduate Research Assistants
+## Undergraduate Researchers
 
 <div class="people-grid">
 {% for person in current_people %}
@@ -151,7 +151,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3 class="alumni-heading">Undergraduate Research Assistants</h3>
+<h3 class="alumni-heading">Undergraduate Students</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title %}
