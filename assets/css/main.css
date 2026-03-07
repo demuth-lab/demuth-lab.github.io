@@ -2,6 +2,7 @@
   --bg:#ffffff;
   --fg:#0f172a;
   --muted:#475569;
+  --muted-light: #64748b;
   --line:#e2e8f0;
   --accent:#0ea5e9;
   --accent2:#10b981;
@@ -222,98 +223,161 @@ a:hover{text-decoration:underline}
 .person-card p{margin:0;font-size:0.95rem;opacity:0.9}
 
 /* =========================
-   PI
+   PI section
    ========================= */
 
 .pi-wrap{
-  display:grid;
-  grid-template-columns:240px 1fr;
-  gap:1.5rem;
-  align-items:start;
-  margin:1.25rem 0 2rem 0;
+  display:flex;
+  gap:28px;
+  align-items:flex-start;
+  margin-bottom:1.75rem;
 }
 
 .pi-photo{
-  width:240px;
-  height:240px;
+  width:220px;
+  height:220px;
   object-fit:cover;
-  border-radius:14px;
-  border:1px solid var(--line);
+  border-radius:12px;
+  border:none;
   background:var(--card);
+  margin-top:0.7rem;
 }
+
+.pi-text{
+  max-width:640px;
+}
+
+.pi-name{
+  margin-top:0;
+  margin-bottom:6px;
+}
+
+/* Links under name */
 
 .pi-links{
   display:flex;
+  gap:14px;
   flex-wrap:wrap;
-  gap:12px;
-  align-items:center;
+  margin-bottom:10px;
 }
 
-.email-pill{
-  display:inline-flex;
-  align-items:center;
-  padding:6px 12px;
-  border-radius:8px;
-  border:1px solid var(--line);
-  background:#f0f0f0;
+.pi-links a{
+  font-size:0.9rem;
   color:var(--fg);
-  cursor:pointer;
-  user-select:none;
+  text-decoration:none;
 }
-.email-pill:hover{
-  background:#e6e6e6;
+
+.pi-links a:hover{
+  color:var(--accent);
+}
+
+/* Title / admin roles */
+
+.pi-title{
+  font-weight:500;
+  margin-bottom:2px;
+  line-height:1.35;
+}
+
+.pi-title a{
+  color:var(--fg);
+  text-decoration:none;
+}
+
+.pi-title a:hover{
+  color:var(--accent);
+}
+
+.pi-title .pi-admin{
+  font-weight:400;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* Degrees */
+
+.pi-degrees{
+  color:var(--muted);
+  font-size:0.95rem;
+  line-height:1.35;
+  margin-bottom:12px;
+}
+
+/* mobile */
+
+@media (max-width:700px){
+
+  .pi-wrap{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+ 
+ .pi-text{
+    text-align:left;
+}
+
+  .pi-photo,
+  .person-card img{
+    width:200px;
+    height:200px;
+  }
+
 }
 
 /* =========================
    Alumni lists
    ========================= */
 
+.alumni-heading{
+  margin-top:1.2rem;
+  margin-bottom:2px;
+}
+
 .alumni-list{
   list-style:none;
   padding:0;
-  margin:0 0 1.5rem 0;
+  margin:0 0 1rem 0;
 }
 
 .alumni-row{
-  padding:12px 0;
+  padding:2px 0;
   border-bottom:1px solid var(--line);
 }
 
-.alumni-row:last-child{
-  border-bottom:none;
-}
+#.alumni-row:last-child{
+#  border-bottom:none;
+#}
 
 .alumni-main{
   display:grid;
   grid-template-columns:260px 1fr;
-  column-gap:20px;
+  column-gap:10px;
   align-items:baseline;
 }
 
-.alumni-name{
-  font-weight:500;
-  letter-spacing:0.01em;
+.alumni-name strong{
+  color:var(--fg);
+  font-weight:400;
+  font-size:0.95rem;
 }
 
 .alumni-degree{
   color:var(--muted);
-  font-variant-numeric:tabular-nums;
+  font-size:0.95rem;
 }
 
 .alumni-thesis{
-  margin-top:4px;
-  color:var(--muted);
-  font-size:0.95rem;
-  line-height:1.45;
-}
-
-.alumni-thesis strong{
   color:var(--fg);
-  font-weight:600;
+  font-weight:200;
+  font-size:0.95rem;
+  margin-left:2rem;
 }
 
 .alumni-thesis em{
   font-style:italic;
+  color:var(--muted-light);
+  font-weight: 200;
+  font-size:0.95rem;
 }
 
 /* =========================

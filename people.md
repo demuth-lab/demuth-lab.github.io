@@ -7,31 +7,45 @@ permalink: /people/
 ## Principal Investigator
 
 <div class="pi-wrap">
-  <img class="pi-photo" src="/assets/img/people/Demuth_Headshot.jpg" alt="Jeff Demuth">
-  <div class="pi-text">
-    <h3>Jeff Demuth</h3>
-    <p><strong>Associate Professor, Department of Biology, University of Texas at Arlington</strong></p>
 
-    <p>
-      Jeff Demuth is an evolutionary geneticist studying how sex chromosomes and genome architecture shape behavioral responses to social conflict.
-      His research integrates comparative genomics, regulatory evolution, and behavioral genetics in horned beetles and related systems.
-    </p>
+  <img class="pi-photo" src="/assets/img/people/Demuth_Headshot.jpg" alt="Jeff Demuth">
+
+  <div class="pi-text">
+
+    <h3 class="pi-name">Jeff Demuth</h3>
 
     <div class="pi-links">
-      <a href="{{ site.data.links.scholar }}" target="_blank" rel="noopener" class="scholar-link">
-        <i class="bi bi-mortarboard-fill" aria-hidden="true"></i> Google Scholar
+      <a href="{{ site.data.links.scholar }}" target="_blank" rel="noopener">
+        <i class="bi bi-mortarboard-fill"></i> Scholar
       </a>
 
-      <a href="https://orcid.org/0000-0002-0471-3679" target="_blank" rel="noopener" class="scholar-link">
-        <i class="bi bi-link-45deg" aria-hidden="true"></i> ORCID
+      <a href="https://orcid.org/0000-0002-0471-3679" target="_blank" rel="noopener">
+        <i class="bi bi-link-45deg"></i> ORCID
       </a>
 
-      <a href="#" class="scholar-link" id="pi-email" data-user="jpdemuth" data-domain="uta.edu">
-        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-        Contact Me
+      <a href="#" id="pi-email" data-user="jpdemuth" data-domain="uta.edu">
+        <i class="bi bi-envelope-fill"></i> Email
       </a>
     </div>
+
+    <p class="pi-title">
+      Associate Professor, <a href="https://www.uta.edu/academics/schools-colleges/science/departments/biology" target="_blank" rel="noopener">Department of Biology</a><br>
+      Executive Board, <a href="https://www.uta.edu/academics/schools-colleges/science/departments/division-data-science" target="_blank" rel="noopener">Division of Data Science</a><br>
+      <span class="pi-admin">
+      Associate Chair of Biology (2014–2015; 2020–2025)<br>
+      Assistant Professor, Department of Biology (2007-2013)
+      
+      </span>
+    </p>
+
+    <p class="pi-degrees">
+      Ph.D. Indiana University<br>
+      M.S. Southeastern Louisiana University<br>
+      B.S. Harding University
+    </p>
+    
   </div>
+
 </div>
 
 {% assign current_people = site.data.people | where: "status", "current" %}
@@ -55,7 +69,7 @@ permalink: /people/
 
 ---
 
-## Undergraduate Research Assistants
+## Undergraduate Students
 
 <div class="people-grid">
 {% for person in current_people %}
@@ -73,48 +87,48 @@ permalink: /people/
 
 ## Lab Alumni
 
-<h3>Postdocs</h3>
+<h3 class="alumni-heading">Postdocs</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "postdoc" %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
-      <span class="alumni-degree">{{ person.degree }}{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
+      <span class="alumni-degree">{% if person.start_year and person.end_year %}{{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}{{ person.end_year }}{% elsif person.start_year %}{{ person.start_year }}{% endif %}</span>
     </div>
   </li>
 {% endif %}
 {% endfor %}
 </ul>
 
-<h3>PhD Alumni</h3>
+<h3 class="alumni-heading">PhD Students</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "graduate" and person.degree == "PhD" %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">PhD{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
     </div>
     {% if person.thesis_title %}
-    <div class="alumni-thesis"><strong>PhD Dissertation:</strong> <em>{{ person.thesis_title }}</em></div>
+    <div class="alumni-thesis">PhD Dissertation: <em>{{ person.thesis_title }}</em></div>
     {% endif %}
   </li>
 {% endif %}
 {% endfor %}
 </ul>
 
-<h3>M.S. Alumni</h3>
+<h3 class="alumni-heading">M.S. Students</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "graduate" and person.degree == "MS" %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">M.S.{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
     </div>
     {% if person.thesis_title %}
-    <div class="alumni-thesis"><strong>M.S. Thesis:</strong> <em>{{ person.thesis_title }}</em></div>
+    <div class="alumni-thesis">M.S. Thesis: <em>{{ person.thesis_title }}</em></div>
     {% else %}
     <div class="alumni-thesis">non-thesis</div>
     {% endif %}
@@ -123,13 +137,13 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>Lab Managers</h3>
+<h3 class="alumni-heading">Lab Managers</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "lab_manager" %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">{{ person.degree }}{% if person.start_year and person.end_year %}, {{ person.start_year }}–{{ person.end_year }}{% elsif person.end_year %}, {{ person.end_year }}{% elsif person.start_year %}, {{ person.start_year }}{% endif %}</span>
     </div>
   </li>
@@ -137,33 +151,35 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>Undergraduate Honors Theses</h3>
+<h3 class="alumni-heading">Undergraduate Students</h3>
+
+<p class="alumni-inline">
+{% assign first = true %}
+{% for person in alumni_people %}
+  {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
+
+    {% unless first %} · {% endunless %}
+    <span class="alumni-name"><strong>{{ person.name }}</strong></span>
+
+    {% assign first = false %}
+  {% endif %}
+{% endfor %}
+</p>
+
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title %}
   <li class="alumni-row">
     <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
+      <span class="alumni-name"><strong>{{ person.name }}</strong></span>
       <span class="alumni-degree">B.S. Biology{% if person.end_year %}, {{ person.end_year }}{% elsif person.sort_year %}, {{ person.sort_year }}{% endif %}</span>
     </div>
-    <div class="alumni-thesis"><strong>Honors Thesis:</strong> <em>{{ person.thesis_title }}</em></div>
+    <div class="alumni-thesis">Honors Thesis: <em>{{ person.thesis_title }}</em></div>
   </li>
 {% endif %}
 {% endfor %}
 </ul>
 
-<h3>Undergraduate Research Assistants</h3>
-<ul class="alumni-list">
-{% for person in alumni_people %}
-{% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
-  <li class="alumni-row">
-    <div class="alumni-main">
-      <span class="alumni-name">{{ person.name }}</span>
-    </div>
-  </li>
-{% endif %}
-{% endfor %}
-</ul>
 
 <script>
 (function () {
