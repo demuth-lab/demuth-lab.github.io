@@ -295,7 +295,6 @@ a:hover{text-decoration:underline}
   color:var(--fg);
   font-weight:400;
   font-size:0.95rem;
-  margin-bottom:2px;
 }
 
 .alumni-degree{
@@ -305,7 +304,7 @@ a:hover{text-decoration:underline}
 }
 
 .alumni-thesis{
-  margin-top:4px;
+  margin-top:0px;
   color:var(--fg);
   font-weight:200;
   font-size:0.95rem;
