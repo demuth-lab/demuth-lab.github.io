@@ -87,7 +87,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>PhD Alumni</h3>
+<h3>PhD Students</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "graduate" and person.degree == "PhD" %}
@@ -104,7 +104,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>M.S. Alumni</h3>
+<h3>M.S. Students</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "graduate" and person.degree == "MS" %}
@@ -137,7 +137,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>Undergraduate Honors Theses</h3>
+<h3>Undergraduate Research Assistants</h3>
 <ul class="alumni-list">
 {% for person in alumni_people %}
 {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title %}
@@ -152,15 +152,13 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h3>Undergraduate Research Assistants</h3>
-
 <p class="alumni-inline">
 {% assign first = true %}
 {% for person in alumni_people %}
   {% if person.role == "undergraduate" and person.degree == "BS" and person.thesis_title == nil %}
 
     {% unless first %} · {% endunless %}
-    <strong>{{ person.name }}</strong>
+    <span class="alumni-name"><strong>{{ person.name }}</strong></span>
 
     {% assign first = false %}
   {% endif %}
