@@ -3,23 +3,19 @@ layout: default
 show_title: false
 ---
 
-<section class="hero">
-  <div class="hero-grid">
-    <div>
-      <h1>Comparative genetics and genomics</h1>
-      <p>We study how genes and genomes evolve to generate population differences and, ultimately, new species. Most of our experimental work uses flour beetles (<em>Tribolium</em>), and we combine experimental and computational approaches.</p>
+<section class="hero-banner">
+  <div class="hero-banner-inner">
+    <div class="hero-banner-text">
+      <p class="hero-quote">“If one could conclude as to the nature of the Creator from a study of creation, it would appear that God has an inordinate fondness for stars and beetles.”</p>
+      <p class="hero-attrib">— J. B. S. Haldane</p>
+
       <div class="hero-actions">
         <a class="button primary" href="{{ '/join/' | relative_url }}">Join the Lab</a>
         <a class="button secondary" href="{{ '/research/' | relative_url }}">Explore Research</a>
         <a class="button" target="_blank" rel="noopener" href="{{ site.data.links.scholar }}">Google Scholar</a>
       </div>
-      <p class="muted" style="margin-top:10px;">Based at UT Arlington · Recruiting PhD students, postdocs, and undergraduates.</p>
-    </div>
-    <div class="card">
-      <h3>Quick links</h3>
-      <p><strong>Prospective trainees:</strong> start with <a href="{{ '/join/' | relative_url }}">Join the Lab</a>.</p>
-      <p><strong>Collaborators:</strong> see <a href="{{ '/research/' | relative_url }}">Research themes</a> and <a href="{{ '/publications/' | relative_url }}">Publications</a>.</p>
-      <p><strong>Resources:</strong> data/code/protocol links on <a href="{{ '/resources/' | relative_url }}">Resources</a>.</p>
+
+      <p class="hero-note">Comparative genetics and genomics at UT Arlington · Recruiting PhD students, postdocs, and undergraduates.</p>
     </div>
   </div>
 </section>
