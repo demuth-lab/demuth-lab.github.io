@@ -170,7 +170,7 @@ a:hover{text-decoration:underline}
   width:100%;
   max-width:1040px;
   margin:0 auto;
-  padding:56px 18px;
+  padding:28px 18px;
 }
 
 .hero-banner-text{
@@ -179,16 +179,16 @@ a:hover{text-decoration:underline}
 }
 
 .hero-quote{
-  margin:0 0 14px;
-  font-size:1.9rem;
-  line-height:1.4;
+  margin:0 0 10px;
+  font-size:1.8rem;
+  line-height:1.35;
   font-weight:300;
   color:#fff;
   max-width:650px;
 }
 
 .hero-attrib{
-  margin:0 0 24px;
+  margin:0 0 16px;
   font-size:1rem;
   color:rgba(255,255,255,0.88);
   text-align:right;
