@@ -750,6 +750,14 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
+   Homepage logo over banner 
+   ========================= */
+.home .brand{
+  color:#fff;
+}
+
+
+/* =========================
    Homepage after scrolling 
    ========================= */
 
@@ -759,8 +767,7 @@ a:hover{text-decoration:underline}
   box-shadow: 0 1px 8px rgba(0,0,0,0.06);
 }
 
-.home .site-header.scrolled .site-title,
-.home .site-header.scrolled .site-title strong,
+.home .site-header.scrolled .brand,
 .home .site-header.scrolled .site-nav a,
 .home .site-header.scrolled .nav-toggle{
   color: var(--fg);
