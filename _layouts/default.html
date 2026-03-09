@@ -3,7 +3,7 @@
 <head>
   {% include head.html %}
 </head>
-<body>
+<body class="{{ page.body-class }}">
   {% include nav.html %}
   <main class="site-main">
     <div class="container">
@@ -14,5 +14,26 @@
     </div>
   </main>
   {% include footer.html %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector(".site-header");
+  const hero = document.querySelector(".hero-banner");
+  if (!header || !hero) return;
+
+  function updateHeaderState() {
+    const trigger = hero.offsetHeight - header.offsetHeight - 20;
+    if (window.scrollY > trigger) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  }
+
+  updateHeaderState();
+  window.addEventListener("scroll", updateHeaderState);
+  window.addEventListener("resize", updateHeaderState);
+});
+</script>
 </body>
 </html>
