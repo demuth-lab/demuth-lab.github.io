@@ -18,6 +18,7 @@ body{
   line-height:1.55;
   color:var(--fg);
   background:var(--bg);
+  margin:0
 }
 
 a{color:var(--accent);text-decoration:none}
@@ -755,4 +756,10 @@ a:hover{text-decoration:underline}
 .home .site-header.scrolled .site-nav a,
 .home .site-header.scrolled .nav-toggle{
   color: var(--fg);
+}
+
+/* Homepage header link hover */
+.home .site-nav a:hover,
+.home .site-header.scrolled .site-nav a:hover{
+  color: var(--accent);
 }
