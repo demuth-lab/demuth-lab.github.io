@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Home
+body-class: home
 show_title: false
 ---
 
