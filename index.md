@@ -14,8 +14,7 @@ show_title: false
         <a class="button secondary" href="{{ '/research/' | relative_url }}">Explore Research</a>
         <a class="button" target="_blank" rel="noopener" href="{{ site.data.links.scholar }}">Google Scholar</a>
       </div>
-
-      <p class="hero-note">Comparative genetics and genomics at UT Arlington · Recruiting PhD students, postdocs, and undergraduates.</p>
+      
     </div>
   </div>
 </section>
