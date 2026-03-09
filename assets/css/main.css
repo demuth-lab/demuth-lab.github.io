@@ -155,7 +155,7 @@ a:hover{text-decoration:underline}
   width:100vw;
   margin-left:-50vw;
   margin-right:-50vw;
-  min-height:460px;
+  height: clamp(320px, 32vw, 520px);
   display:flex;
   align-items:center;
   background-image:
