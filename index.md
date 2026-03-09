@@ -8,8 +8,10 @@ show_title: false
 <section class="hero-banner">
   <div class="hero-banner-inner">
     <div class="hero-banner-text">
-      <p class="hero-quote">“If one could conclude as to the nature of the Creator from a study of creation, it would appear that God has an inordinate fondness for stars and beetles.”</p>
-      <p class="hero-attrib">— J. B. S. Haldane</p>
+      <p class="hero-quote">
+        “If one could conclude as to the nature of the Creator from a study of creation, it would appear that God has an inordinate fondness for stars and beetles.”
+      <span class="hero-attrib"> – J. B. S. Haldane</span>
+      </p>
 
       <div class="hero-actions">
         <a class="button primary" href="{{ '/join/' | relative_url }}">Join the Lab</a>
