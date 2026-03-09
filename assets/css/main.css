@@ -33,9 +33,19 @@ a:hover{text-decoration:underline}
   position:sticky;
   top:0;
   z-index:100;
-  background:rgba(10,15,25,0.45);
-  backdrop-filter:blur(8px);
-  border-bottom:1px solid rgba(255,255,255,0.08);
+  background:transparent;
+  border-bottom:none;
+  backdrop-filter:none;
+}
+
+.site-header .container{
+  background:transparent;
+}
+
+.site-header + main,
+.site-header + .page-content,
+.site-header + .content{
+  margin-top:0;
 }
 
 .header-inner{
@@ -155,6 +165,8 @@ a:hover{text-decoration:underline}
   width:100vw;
   margin-left:-50vw;
   margin-right:-50vw;
+  margin-top:-72px;
+  padding-top:72px;
   min-height:300px;
   display:flex;
   align-items:center;
