@@ -718,3 +718,41 @@ a:hover{text-decoration:underline}
 @media (max-width:520px){
   .cards{grid-template-columns:1fr}
 }
+
+/* =========================
+   page: header starts transparent over the banner 
+   ========================= */
+.home .site-header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+  border-bottom: none;
+  box-shadow: none;
+  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home .site-title,
+.home .site-title strong,
+.home .site-nav a,
+.home .nav-toggle{
+  color: #fff;
+  transition: color 0.25s ease;
+}
+
+/* =========================
+   Homepage after scrolling 
+   ========================= */
+
+.home .site-header.scrolled{
+  background: rgba(255,255,255,0.96);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+
+.home .site-header.scrolled .site-title,
+.home .site-header.scrolled .site-title strong,
+.home .site-header.scrolled .site-nav a,
+.home .site-header.scrolled .nav-toggle{
+  color: var(--fg);
+}
