@@ -166,8 +166,8 @@ a:hover{text-decoration:underline}
   width:100vw;
   margin-left:-50vw;
   margin-right:-50vw;
-  margin-top:-72px;
-  padding-top:72px;
+  margin-top:-64px;
+  padding-top:64px;
   min-height:300px;
   display:flex;
   align-items:center;
@@ -739,6 +739,11 @@ a:hover{text-decoration:underline}
 .home .nav-toggle{
   color: #fff;
   transition: color 0.25s ease;
+}
+
+/* Homepage: remove top padding so banner reaches the very top */
+.home .site-main{
+  padding-top: 0;
 }
 
 /* =========================
