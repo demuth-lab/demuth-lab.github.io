@@ -14,9 +14,9 @@ show_title: false
       </p>
 
       <div class="hero-actions">
-        <a class="button primary" href="{{ '/join/' | relative_url }}">Join the Lab</a>
+        <a class="button secondary" href="{{ '/join/' | relative_url }}">Join the Lab</a>
         <a class="button secondary" href="{{ '/research/' | relative_url }}">Explore Research</a>
-        <a class="button" target="_blank" rel="noopener" href="{{ site.data.links.scholar }}">Google Scholar</a>
+        <a class="button secondary" target="_blank" rel="noopener" href="{{ site.data.links.scholar }}">Google Scholar</a>
       </div>
       
     </div>
