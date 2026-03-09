@@ -734,7 +734,10 @@ a:hover{text-decoration:underline}
 }
 
 .home .site-title,
-.home .site-title strong,
+.home .site-title strong{
+  color:#fff;
+}
+
 .home .site-nav a,
 .home .nav-toggle{
   color: #fff;
