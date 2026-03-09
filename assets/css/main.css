@@ -196,7 +196,6 @@ a:hover{text-decoration:underline}
   font-size:1.9rem;
   line-height:1.4;
   font-weight:350;
-  font-style:italic;
   color:#fff;
   max-width:650px;
 }
@@ -204,7 +203,7 @@ a:hover{text-decoration:underline}
 .hero-attrib{
   margin:0 0 16px;
   font-size:1.05rem;
-  color:rgba(255,255,255,0.88);
+  color:rgba(255,255,255,0.90);
   text-align:right;
   max-width:650px;
 }
