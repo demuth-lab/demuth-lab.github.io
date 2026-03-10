@@ -30,11 +30,11 @@ show_title: false
 <div class="research-intro">
 
 <p>
-The (possibly apocryphal) quip above was no doubt motivated by the observation that roughly a quarter of all described species are beetles. With current estimates of about 1.5 million described species, their diversity is spectacular.
+The (possibly apocryphal) quip above was no doubt motivated in part by the observation that roughly a quarter of all species are beetles. With recent estimates of around 1.5 million, beetle diversity is spectacular... and it begs the question:
 </p>
 
 <p class="research-question">
-<em>Why ARE there so many different kinds?</em>
+<em>WHY ARE THERE SO MANY DIFFERENT KINDS?</em>
 </p>
 
 <p>
