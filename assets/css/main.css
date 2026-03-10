@@ -749,6 +749,21 @@ a:hover{text-decoration:underline}
   padding-top: 0;
 }
 
+/* Fix mobile menu colors on homepage */
+@media (max-width:720px){
+  .home .site-nav{
+    background: var(--bg);
+  }
+
+  .home .site-nav a{
+    color: var(--fg);
+  }
+
+  .home .site-nav a:hover{
+    color: var(--accent);
+  }
+}
+
 /* =========================
    Homepage logo over banner 
    ========================= */
