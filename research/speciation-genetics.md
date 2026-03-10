@@ -1,6 +1,6 @@
 ---
 title: "Speciation genetics"
-summary: "Roughly 1 in 4 species of EVERYTHING is a beetle...why?"
+summary: "Genetic architecture of population divergence and reproductive isolation."
 hero_image: "/assets/img/research/placeholder-research.jpg"
 key_pubs:
   - title: "Add a key paper here"
