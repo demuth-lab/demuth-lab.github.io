@@ -794,6 +794,16 @@ a:hover{text-decoration:underline}
   color:#fff;
 }
 
+/* Slightly transparent mobile nav button over homepage banner */
+.home .nav-toggle{
+  background:rgba(255,255,255,0.15);
+  border-color:rgba(255,255,255,0.35);
+  backdrop-filter:blur(4px);
+}
+
+.home .nav-toggle:hover{
+  background:rgba(255,255,255,0.25);
+}
 
 /* =========================
    Homepage after scrolling 
