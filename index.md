@@ -27,7 +27,7 @@ show_title: false
   <h2>Research themes</h2>
   <a class="muted" href="{{ '/research/' | relative_url }}">All research →</a>
 </div>
-
+From genes to genomes and individuals to species, we use the tools of evolutionary and functional genetics to understand how biological diversity originates and is maintained. 
 <div class="cards">
   {% for c in site.data.research_cards %}
     <a class="card" href="{{ c.url | relative_url }}">
