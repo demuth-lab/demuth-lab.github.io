@@ -27,7 +27,7 @@ show_title: false
   <h2>Research themes</h2>
   <a class="muted" href="{{ '/research/' | relative_url }}">All research →</a>
 </div>
-From genes to genomes and individuals to species, we use the tools of evolutionary and functional genetics to understand how biological diversity originates and is maintained. 
+The above quip often attributed to Haldane – a father of the Modern Synthesis – was no doubt prompted by the observation that >25% of all species on earth is a beetle... why ARE there ~400,000 different kinds? My group studies questions like these through the lens of evolutionary and functional genetics and genomics.  A recurring theme of our work is the extraordinary role that sex and sex chromosomes play in shaping phenotypic diversity. 
 <div class="cards">
   {% for c in site.data.research_cards %}
     <a class="card" href="{{ c.url | relative_url }}">
