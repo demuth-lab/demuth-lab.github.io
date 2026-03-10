@@ -27,7 +27,7 @@ show_title: false
   <h2>Research themes</h2>
   <a class="muted" href="{{ '/research/' | relative_url }}">All research →</a>
 </div>
-The above quip often attributed to Haldane – a father of the Modern Synthesis – was no doubt prompted by the observation that >25% of all species on earth is a beetle... why ARE there ~400,000 different kinds? My group studies questions like these through the lens of evolutionary and functional genetics and genomics.  A recurring theme of our work is the extraordinary role that sex and sex chromosomes play in shaping phenotypic diversity. 
+The (possibly apocryphal) quip above was no doubt motivated by the observation that roughly a quarter of all described species are beetles. With recent estimates of ~1.5 million total species, beetle diversity is spectacular, and it begs the question: <em>Why ARE there so many different kinds?</em> Our team studies questions like this through the lens of evolutionary and functional genetics and genomics.  A recurring theme of our work is the extraordinary role that sex and sex chromosomes play in shaping phenotypic diversity. 
 <div class="cards">
   {% for c in site.data.research_cards %}
     <a class="card" href="{{ c.url | relative_url }}">
