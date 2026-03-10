@@ -214,8 +214,8 @@ a:hover{
 .hero-quote{
   max-width:600px;
   margin:0 0 14px;
-  font-size:1.9rem;
-  line-height:1.4;
+  font-size:clamp(1.45rem, 1.6vw + 1rem, 2.15rem);
+  line-height:1.32;
   font-weight:350;
   color:#fff;
 }
@@ -223,7 +223,7 @@ a:hover{
 .hero-attrib{
   max-width:600px;
   margin:0 0 16px;
-  font-size:1.05rem;
+  font-size:clamp(0.95rem, 0.5vw + 0.8rem, 1.15rem);
   text-align:right;
   color:rgba(255,255,255,0.90);
 }
