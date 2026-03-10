@@ -1,8 +1,8 @@
- :root{
+:root{
   --bg:#ffffff;
   --fg:#0f172a;
   --muted:#475569;
-  --muted-light: #64748b;
+  --muted-light:#64748b;
   --line:#e2e8f0;
   --accent:#0ea5e9;
   --accent2:#10b981;
@@ -12,19 +12,34 @@
 }
 
 *{box-sizing:border-box}
-html,body{margin:0;padding:0}
+
+html,
+body{
+  margin:0;
+  padding:0;
+}
+
 body{
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   line-height:1.55;
   color:var(--fg);
   background:var(--bg);
-  margin:0
 }
 
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
+a{
+  color:var(--accent);
+  text-decoration:none;
+}
 
-.container{max-width:1040px;margin:0 auto;padding:0 18px}
+a:hover{
+  text-decoration:underline;
+}
+
+.container{
+  max-width:1040px;
+  margin:0 auto;
+  padding:0 18px;
+}
 
 /* =========================
    Header
@@ -58,8 +73,19 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
-   Blue vertical accent bar (left of nav header)
+   Brand
    ========================= */
+
+.brand{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  padding-left:10px;
+  font-weight:700;
+  font-size:1.1rem;
+  letter-spacing:0.3px;
+  color:var(--fg);
+}
 
 .brand::before{
   content:"";
@@ -73,37 +99,18 @@ a:hover{text-decoration:underline}
   border-radius:2px;
 }
 
-/* =========================
-   Brand (Demuth)
-   ========================= */
-
-.brand{
-  font-weight:700;
-  font-size:1.1rem;
-  letter-spacing:0.3px;
-  position:relative;
-  padding-left:10px;
-  color:var(--fg);
-  display:inline-flex;
-  align-items:center;
-}
-
-/* =========================
-   Brand Accent (Lab)
-   ========================= */
-
 .brand-accent{
   color:var(--accent);
 }
 
 /* =========================
-   Site Nav Links
+   Navigation
    ========================= */
 
 .site-nav{
   display:flex;
-  gap:18px;
   align-items:center;
+  gap:18px;
 }
 
 .site-nav a{
@@ -114,20 +121,17 @@ a:hover{text-decoration:underline}
   transition:color 0.25s ease;
 }
 
-.site-nav a:hover{
-  color:var(--accent);
-}
-
+.site-nav a:hover,
 .site-nav a.active{
   color:var(--accent);
 }
 
 .nav-toggle{
   display:none;
-  border:1px solid var(--line);
-  background:var(--bg);
-  border-radius:12px;
   padding:10px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--bg);
   cursor:pointer;
 }
 
@@ -135,19 +139,34 @@ a:hover{text-decoration:underline}
   display:block;
   width:20px;
   height:1.6px;
-  background:var(--fg);
   margin:5px 0;
   border-radius:2px;
+  background:var(--fg);
 }
 
 /* =========================
    Layout
    ========================= */
 
-.site-main{padding:28px 0 56px}
-.page-title{margin:0 0 16px;font-size:34px;letter-spacing:-0.02em}
-.muted{color:var(--muted)}
-.lede{font-size:18px;color:var(--muted);margin:8px 0 18px}
+.site-main{
+  padding:28px 0 56px;
+}
+
+.page-title{
+  margin:0 0 16px;
+  font-size:34px;
+  letter-spacing:-0.02em;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+.lede{
+  margin:8px 0 18px;
+  font-size:18px;
+  color:var(--muted);
+}
 
 .lede-links{
   display:flex;
@@ -157,7 +176,7 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
-   Hero banner
+   Hero Banner
    ========================= */
 
 .hero-banner{
@@ -193,44 +212,26 @@ a:hover{text-decoration:underline}
 }
 
 .hero-quote{
+  max-width:600px;
   margin:0 0 14px;
   font-size:1.9rem;
   line-height:1.4;
   font-weight:350;
   color:#fff;
-  max-width:600px;
 }
 
 .hero-attrib{
+  max-width:600px;
   margin:0 0 16px;
   font-size:1.05rem;
-  color:rgba(255,255,255,0.90);
   text-align:right;
-  max-width:600px;
-}
-
-@media (min-width:900px){
-  .hero-quote{
-    font-size:2.0rem;
-    line-height:1.34;
-  }
-
-  .hero-attrib{
-    font-size:1.08rem;
-  }
+  color:rgba(255,255,255,0.90);
 }
 
 .hero-actions{
   display:flex;
   gap:10px;
   flex-wrap:wrap;
-  margin-bottom:16px;
-}
-
-.hero-note{
-  margin:0;
-  font-size:1rem;
-  color:rgba(255,255,255,0.86);
 }
 
 /* =========================
@@ -240,8 +241,8 @@ a:hover{text-decoration:underline}
 .button{
   display:inline-block;
   padding:10px 14px;
-  border-radius:12px;
   border:1px solid var(--line);
+  border-radius:12px;
   color:var(--fg);
   background:var(--bg);
 }
@@ -251,9 +252,9 @@ a:hover{text-decoration:underline}
 }
 
 .button.primary{
+  color:#fff;
   background:var(--accent);
   border-color:var(--accent);
-  color:#fff;
 }
 
 .button.primary:hover{
@@ -261,9 +262,9 @@ a:hover{text-decoration:underline}
 }
 
 .button.secondary{
+  color:#fff;
   background:rgba(255,255,255,0.14);
   border-color:rgba(255,255,255,0.30);
-  color:#fff;
 }
 
 .button.secondary:hover{
@@ -271,9 +272,9 @@ a:hover{text-decoration:underline}
 }
 
 .hero-banner .button:not(.primary):not(.secondary){
+  color:#fff;
   background:rgba(255,255,255,0.10);
   border-color:rgba(255,255,255,0.30);
-  color:#fff;
 }
 
 .hero-banner .button:not(.primary):not(.secondary):hover{
@@ -281,16 +282,79 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
-   Cards
+   Section Blocks / Cards
    ========================= */
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
-.card{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:14px}
-.card h3{margin:0 0 8px;font-size:18px}
-.card p{margin:0;color:var(--muted)}
-.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:30px}
-.section-title h2{margin:0;font-size:22px}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.section-title{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:30px;
+}
+
+.section-title h2{
+  margin:0;
+  font-size:22px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin:18px 0;
+}
+
+.card{
+  padding:14px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:var(--card);
+}
+
+.card h3{
+  margin:0 0 8px;
+  font-size:18px;
+}
+
+.card p{
+  margin:0;
+  color:var(--muted);
+}
+
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+/* =========================
+   Home: Research Intro
+   ========================= */
+
+.research-intro{
+  max-width:820px;
+  margin:0 auto 28px;
+  text-align:left;
+  font-size:1.05rem;
+  line-height:1.6;
+}
+
+.research-question{
+  margin:18px 0;
+  text-align:center;
+  font-size:1.45rem;
+  font-weight:500;
+}
+
+.research-question::before{
+  content:"";
+  display:block;
+  width:60px;
+  height:2px;
+  margin:0 auto 12px;
+  background:var(--accent);
+}
 
 /* =========================
    People
@@ -305,41 +369,44 @@ a:hover{text-decoration:underline}
 
 .person,
 .person-card{
-  border:none;
-  background:var(--bg);
-  border-radius:16px;
   padding:12px;
+  border:none;
+  border-radius:16px;
+  background:var(--bg);
 }
 
 .person-card{
-  text-align:center;
   display:flex;
   flex-direction:column;
   align-items:center;
+  text-align:center;
 }
 
 .person-card img{
   width:220px;
   height:220px;
-  object-fit:cover;
-  border-radius:12px;
-  border:none;
-  background:var(--card);
   margin-bottom:0.75rem;
+  object-fit:cover;
+  border:none;
+  border-radius:12px;
+  background:var(--card);
 }
 
-.person-card h4{margin:0.25rem 0;font-size:1.05rem}
-.person-card p{margin:0;font-size:0.95rem;opacity:0.9}
+.person-card h4{
+  margin:0.25rem 0;
+  font-size:1.05rem;
+}
 
-
-/* Undergrad cards: name only */
+.person-card p{
+  margin:0;
+  font-size:0.95rem;
+  opacity:0.9;
+}
 
 .undergrad-card h4{
   width:220px;
   margin:0;
 }
-
-/* Graduate card formatting */
 
 .grad-card h4,
 .grad-card .grad-degree,
@@ -350,7 +417,7 @@ a:hover{text-decoration:underline}
 }
 
 .grad-card h4{
-  margin:0 0 0.2rem 0;
+  margin:0 0 0.2rem;
 }
 
 .grad-card .grad-degree{
@@ -362,29 +429,29 @@ a:hover{text-decoration:underline}
 .grad-card .grad-topic{
   margin-top:0;
   margin-bottom:0;
-  color:var(--muted);
   line-height:1.4;
+  color:var(--muted);
 }
 
 /* =========================
-   PI section
+   PI Section
    ========================= */
 
 .pi-wrap{
   display:flex;
-  gap:28px;
   align-items:flex-start;
+  gap:28px;
   margin-bottom:1.75rem;
 }
 
 .pi-photo{
   width:220px;
   height:220px;
-  object-fit:cover;
-  border-radius:12px;
-  border:none;
-  background:var(--card);
   margin-top:0.7rem;
+  object-fit:cover;
+  border:none;
+  border-radius:12px;
+  background:var(--card);
 }
 
 .pi-text{
@@ -395,8 +462,6 @@ a:hover{text-decoration:underline}
   margin-top:0;
   margin-bottom:6px;
 }
-
-/* Links under name */
 
 .pi-links{
   display:flex;
@@ -415,11 +480,9 @@ a:hover{text-decoration:underline}
   color:var(--accent);
 }
 
-/* Title / admin roles */
-
 .pi-title{
-  font-weight:500;
   margin-bottom:2px;
+  font-weight:500;
   line-height:1.35;
 }
 
@@ -433,43 +496,20 @@ a:hover{text-decoration:underline}
 }
 
 .pi-title .pi-admin{
+  font-size:0.95rem;
   font-weight:400;
   color:var(--muted);
-  font-size:0.95rem;
 }
-
-/* Degrees */
 
 .pi-degrees{
-  color:var(--muted);
+  margin-bottom:12px;
   font-size:0.95rem;
   line-height:1.35;
-  margin-bottom:12px;
-}
-
-/* mobile */
-
-@media (max-width:700px){
-
-  .pi-wrap{
-    flex-direction:column;
-    align-items:flex-start;
-  }
- 
- .pi-text{
-    text-align:left;
-}
-
-  .pi-photo,
-  .person-card img{
-    width:200px;
-    height:200px;
-  }
-
+  color:var(--muted);
 }
 
 /* =========================
-   Alumni lists
+   Alumni
    ========================= */
 
 .alumni-heading{
@@ -479,18 +519,14 @@ a:hover{text-decoration:underline}
 
 .alumni-list{
   list-style:none;
+  margin:0 0 1rem;
   padding:0;
-  margin:0 0 1rem 0;
 }
 
 .alumni-row{
   padding:2px 0;
   border-bottom:1px solid var(--line);
 }
-
-#.alumni-row:last-child{
-#  border-bottom:none;
-#}
 
 .alumni-main{
   display:grid;
@@ -500,81 +536,84 @@ a:hover{text-decoration:underline}
 }
 
 .alumni-name strong{
-  color:var(--fg);
-  font-weight:400;
   font-size:0.95rem;
+  font-weight:400;
+  color:var(--fg);
 }
 
 .alumni-degree{
-  color:var(--muted);
   font-size:0.95rem;
+  color:var(--muted);
 }
 
 .alumni-thesis{
-  color:var(--fg);
-  font-weight:200;
-  font-size:0.95rem;
   margin-left:2rem;
+  font-size:0.95rem;
+  font-weight:200;
+  color:var(--fg);
 }
 
 .alumni-thesis em{
-  font-style:italic;
-  color:var(--muted-light);
-  font-weight: 200;
   font-size:0.95rem;
+  font-style:italic;
+  font-weight:200;
+  color:var(--muted-light);
 }
 
 /* =========================
    Publications
    ========================= */
 
-.pub-list{list-style:none;padding:0;margin:0 0 1.5rem 0}
+.pub-list{
+  list-style:none;
+  margin:0 0 1.5rem;
+  padding:0;
+}
 
 .pub-item{
   padding:1rem 0;
   border-bottom:1px solid rgba(0,0,0,0.08);
 }
 
-.pub-title{font-weight:600;margin-bottom:0.25rem}
+.pub-title{
+  margin-bottom:0.25rem;
+  font-weight:600;
+}
 
 .pub-meta{
-  opacity:0.9;
   margin-bottom:0.4rem;
-  color:var(--muted);
   font-size:14px;
+  opacity:0.9;
+  color:var(--muted);
 }
 
 /* =========================
-   Publication Buttons
+   Publication / Software Links
    ========================= */
 
-.pub-links a.pub-link{
+.pub-links a.pub-link,
+.pub-links a.software-link{
   display:inline-block;
   padding:2px 8px;
   border-radius:6px;
   font-size:0.9rem;
-  background:#f0f0f0;
-  color:var(--muted);
   text-decoration:none;
 }
+
+.pub-links a.pub-link{
+  background:#f0f0f0;
+  color:var(--muted);
+}
+
 .pub-links a.pub-link:hover{
   background:#e6e6e6;
   color:var(--fg);
   text-decoration:none;
 }
 
-/* =========================
-   Software Buttons
-   ========================= */
-
 .pub-links a.software-link{
-  display:inline-block;
-  padding:2px 8px;
-  border-radius:6px;
-  font-size:0.9rem;
   background:var(--accent-soft);
   color:var(--fg);
-  text-decoration:none;
 }
 
 .pub-links a.software-link:hover{
@@ -584,15 +623,15 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
-   Dropdown controls
+   Publication Controls
    ========================= */
 
 .pub-controls{
   display:flex;
   flex-wrap:wrap;
-  gap:14px;
   align-items:center;
-  margin:1rem 0 1.25rem 0;
+  gap:14px;
+  margin:1rem 0 1.25rem;
 }
 
 .pub-year-jump,
@@ -605,8 +644,8 @@ a:hover{text-decoration:underline}
 .pub-year-jump select,
 .pub-topic-jump select{
   padding:6px 10px;
-  border-radius:8px;
   border:1px solid rgba(0,0,0,0.15);
+  border-radius:8px;
   background:#fff;
 }
 
@@ -617,24 +656,7 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
-   Footer
-   ========================= */
-
-.site-footer{
-  border-top:1px solid var(--line);
-  padding:22px 0;
-  background:var(--bg);
-}
-
-.footer-inner{
-  display:flex;
-  justify-content:space-between;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-/* =========================
-   Scholar + ORCID links
+   Scholar / ORCID Links
    ========================= */
 
 .scholar-links{
@@ -650,12 +672,12 @@ a:hover{text-decoration:underline}
   gap:6px;
   padding:6px 10px;
   line-height:1;
-  border-radius:8px;
+  font-size:0.90rem;
   border:1px solid var(--line);
+  border-radius:8px;
   background:#f0f0f0;
   color:var(--fg);
   text-decoration:none;
-  font-size:0.90rem;
 }
 
 .scholar-link:hover{
@@ -664,11 +686,109 @@ a:hover{text-decoration:underline}
 }
 
 /* =========================
-   Mobile
+   Footer
    ========================= */
 
+.site-footer{
+  padding:22px 0;
+  border-top:1px solid var(--line);
+  background:var(--bg);
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+/* =========================
+   Home Header States
+   ========================= */
+
+.home .site-header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:transparent;
+  border-bottom:none;
+  box-shadow:none;
+  transition:background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home .site-main{
+  padding-top:0;
+}
+
+.home .brand,
+.home .site-nav a,
+.home .nav-toggle{
+  color:#fff;
+  transition:color 0.25s ease;
+}
+
+.home .nav-toggle{
+  background:rgba(255,255,255,0.15);
+  border-color:rgba(255,255,255,0.35);
+  backdrop-filter:blur(4px);
+}
+
+.home .nav-toggle:hover{
+  background:rgba(255,255,255,0.25);
+}
+
+.home .nav-toggle span{
+  background:#fff;
+}
+
+.home .site-nav a:hover{
+  color:var(--accent);
+}
+
+.home .site-header.scrolled{
+  background:rgba(255,255,255,0.96);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 1px 8px rgba(0,0,0,0.06);
+}
+
+.home .site-header.scrolled .brand,
+.home .site-header.scrolled .site-nav a,
+.home .site-header.scrolled .nav-toggle{
+  color:var(--fg);
+}
+
+.home .site-header.scrolled .nav-toggle{
+  background:var(--bg);
+  border-color:var(--line);
+}
+
+.home .site-header.scrolled .nav-toggle span{
+  background:var(--fg);
+}
+
+.home .site-header.scrolled .site-nav a:hover{
+  color:var(--accent);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (min-width:900px){
+  .hero-quote{
+    font-size:2rem;
+    line-height:1.34;
+  }
+
+  .hero-attrib{
+    font-size:1.08rem;
+  }
+}
+
 @media (max-width:860px){
-  .cards{grid-template-columns:1fr 1fr}
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
 
   .hero-banner{
     min-height:440px;
@@ -690,18 +810,15 @@ a:hover{text-decoration:underline}
     top:64px;
     left:0;
     right:0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:10px 18px;
     background:var(--bg);
     border-bottom:1px solid var(--line);
-    padding:10px 18px;
-    flex-direction:column;
-
-    display:flex;
-    gap:10px;
-
     max-height:0;
     opacity:0;
     overflow:hidden;
-
     transition:max-height 0.25s ease, opacity 0.2s ease;
   }
 
@@ -714,8 +831,9 @@ a:hover{text-decoration:underline}
     width:100%;
   }
 
-}
-  .page-title{font-size:30px}
+  .page-title{
+    font-size:30px;
+  }
 
   .hero-banner{
     min-height:400px;
@@ -734,11 +852,34 @@ a:hover{text-decoration:underline}
     font-size:1rem;
   }
 
-  .hero-note{
-    font-size:0.95rem;
+  .pi-wrap{
+    flex-direction:column;
+    align-items:flex-start;
   }
 
-  .pi-wrap{grid-template-columns:1fr}
+  .home .site-nav{
+    background:var(--bg);
+  }
+
+  .home .site-nav a{
+    color:var(--fg);
+  }
+
+  .home .site-nav a:hover{
+    color:var(--accent);
+  }
+}
+
+@media (max-width:700px){
+  .pi-text{
+    text-align:left;
+  }
+
+  .pi-photo,
+  .person-card img{
+    width:200px;
+    height:200px;
+  }
 }
 
 @media (max-width:640px){
@@ -749,134 +890,7 @@ a:hover{text-decoration:underline}
 }
 
 @media (max-width:520px){
-  .cards{grid-template-columns:1fr}
-}
-
-/* =========================
-   page: header starts transparent over the banner 
-   ========================= */
-.home .site-header{
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: transparent;
-  border-bottom: none;
-  box-shadow: none;
-  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.home .site-title,
-.home .site-title strong{
-  color:#fff;
-}
-
-.home .site-nav a,
-.home .nav-toggle{
-  color: #fff;
-  transition: color 0.25s ease;
-}
-.home .nav-toggle span{
-  background:#fff;
-}
-
-/* Homepage: remove top padding so banner reaches the very top */
-.home .site-main{
-  padding-top: 0;
-}
-
-/* Fix mobile menu colors on homepage */
-@media (max-width:720px){
-  .home .site-nav{
-    background: var(--bg);
+  .cards{
+    grid-template-columns:1fr;
   }
-
-  .home .site-nav a{
-    color: var(--fg);
-  }
-
-  .home .site-nav a:hover{
-    color: var(--accent);
-  }
-}
-
-/* =========================
-   Homepage logo over banner 
-   ========================= */
-.home .brand{
-  color:#fff;
-}
-
-/* Slightly transparent mobile nav button over homepage banner */
-.home .nav-toggle{
-  background:rgba(255,255,255,0.15);
-  border-color:rgba(255,255,255,0.35);
-  backdrop-filter:blur(4px);
-}
-
-.home .nav-toggle:hover{
-  background:rgba(255,255,255,0.25);
-}
-
-.home .site-header.scrolled .nav-toggle{
-  background:var(--bg);
-  border-color:var(--line);
-}
-
-/* =========================
-   Homepage after scrolling 
-   ========================= */
-
-.home .site-header.scrolled{
-  background: rgba(255,255,255,0.96);
-  border-bottom: 1px solid var(--line);
-  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
-}
-
-.home .site-header.scrolled .brand,
-.home .site-header.scrolled .site-nav a,
-.home .site-header.scrolled .nav-toggle{
-  color: var(--fg);
-}
-
-/* Homepage header link hover */
-.home .site-nav a:hover,
-.home .site-header.scrolled .site-nav a:hover{
-  color: var(--accent);
-}
-
-/* Hamburger lines over banner */
-.home .nav-toggle span{
-  background:#fff;
-}
-
-/* Hamburger lines after scrolling */
-.home .site-header.scrolled .nav-toggle span{
-  background:var(--fg);
-}
-
-/* =========================
-   Research Themes Text on Home page
-   ========================= */
-.research-intro{
-  max-width:820px;
-  margin:0 auto 28px auto;
-  text-align:left;
-  font-size:1.05rem;
-  line-height:1.6;
-}
-
-.research-question{
-  text-align:center;
-  font-size:1.45rem;
-  margin:18px 0 18px 0;
-  font-weight:500;
-}
-
-.research-question::before{
-  content:"";
-  display:block;
-  width:60px;
-  height:2px;
-  background:var(--accent);
-  margin:0 auto 12px auto;
 }
