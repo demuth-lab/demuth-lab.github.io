@@ -352,7 +352,7 @@ a:hover{
   display:block;
   width:60px;
   height:2px;
-  margin:0 0 18px 0;
+  margin:18px 0 18px 0;
   background:var(--accent);
 }
 
