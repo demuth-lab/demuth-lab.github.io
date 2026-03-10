@@ -831,3 +831,13 @@ a:hover{text-decoration:underline}
 .home .site-header.scrolled .site-nav a:hover{
   color: var(--accent);
 }
+
+/* Hamburger lines over banner */
+.home .nav-toggle span{
+  background:#fff;
+}
+
+/* Hamburger lines after scrolling */
+.home .site-header.scrolled .nav-toggle span{
+  background:var(--fg);
+}
