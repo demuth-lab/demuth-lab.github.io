@@ -805,6 +805,11 @@ a:hover{text-decoration:underline}
   background:rgba(255,255,255,0.25);
 }
 
+.home .site-header.scrolled .nav-toggle{
+  background:var(--bg);
+  border-color:var(--line);
+}
+
 /* =========================
    Homepage after scrolling 
    ========================= */
