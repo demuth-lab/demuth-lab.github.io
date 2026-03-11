@@ -29,16 +29,15 @@ show_title: false
 </div>
 <div class="research-intro">
 
-<p>
-The (possibly apocryphal) quip above was no doubt motivated in part by the observation that roughly a quarter of all species are beetles. With recent estimates of around 1.5 million, beetle diversity is spectacular... and it begs the question:
-</p>
-
 <p class="research-question">
-<em>WHY ARE THERE SO MANY DIFFERENT KINDS?</em>
+<em>Why ARE there so many kinds of beeltes?</em>
 </p>
 
 <p>
-Our lab studies questions like this through the lens of evolutionary and functional genetics and genomics. A recurring theme of our work is the extraordinary role that sex and sex chromosomes play in shaping phenotypic diversity.
+Our group studies questions like this through the lens of evolutionary and functional genetics and genomics. A recurring theme of our work is the extraordinary role that sex and sex chromosomes play in shaping phenotypic diversity. 
+</p>
+
+<p>The quip by Haldane above, though possibly apocryphal, was no doubt motivated in part by the observation that roughly a quarter of all species (~1.5 million) are beetles. While the theoretical and computational work in our group knows no taxonomic boundaries, their spectacular diversity and experimental tractability make beetles a better option than classical model systems for many questions we study.
 </p>
 
 </div>
