@@ -32,7 +32,7 @@ show_title: false
 <p>The quip above – often attributed to Haldane, an architect of the Modern Synthesis – was no doubt motivated in part by the observation that roughly a quarter of all species are beetles... and begs the question: <br><strong><em>Why are there over a million different kinds of beetles!?</em></strong></p>
 
 <p>
-Our group studies questions like this through the lens of evolutionary and functional genetics and genomics. While the theoretical and computational work in our group knows no taxonomic boundaries, the spectacular diversity and experimental tractability of beetles make them good model systems for many of the questions we study.  In particular, a recurring theme of our work is the extraordinary role that sex and sex chromosomes play in shaping phenotypic diversity. 
+Our group studies questions like this through the lens of evolutionary and functional genetics and genomics. While our theoretical and computational work spans the tree of life, the spectacular diversity and laboratory tractability of beetles make them powerful experimental systems for many of the questions we study.
 </p>
 </div>
 
