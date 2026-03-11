@@ -328,6 +328,54 @@ a:hover{
   gap:14px;
 }
 
+.card-image{
+  position:relative;
+  overflow:hidden;
+  min-height:180px;
+  color:var(--fg);
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.35) 65%,
+      rgba(255,255,255,0.0) 100%
+    ),
+    var(--card-img);
+
+  background-size:cover;
+  background-position:bottom center;
+
+  transition:transform .35s ease;
+}
+
+/* Zoom effect on cards */
+.card-image::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image:var(--card-img);
+  background-size:cover;
+  background-position:bottom center;
+
+  transform:scale(1);
+  transition:transform .45s ease;
+
+  z-index:-1;
+}
+
+.card-image:hover::before{
+  transform:scale(1.06);
+}
+
+.card-image h3,
+.card-image p{
+  position:relative;
+  z-index:2;
+}
+
 /* =========================
    Home: Research Intro
    ========================= */
