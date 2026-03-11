@@ -27,15 +27,15 @@ show_title: false
   <h2>Research themes</h2>
   <a class="muted" href="{{ '/research/' | relative_url }}">All research →</a>
 </div>
-<div class="research-intro">
 
-<p>The quip above, though possibly apocryphal, was no doubt motivated in part by the observation that roughly a quarter of all species are beetles... and begs the question: <strong><em>Why & how have over a million different kinds of beetles evolved!?</em></strong> 
+<div class="research-intro">
+<p>The quip above, though possibly apocryphal, was no doubt motivated in part by the observation that roughly a quarter of all species are beetles... and begs the question: <br><strong><em>Why are there likely more than a million different kinds of beetles!?</em></strong></p>
 
 <p>
 Our group studies questions like this through the lens of evolutionary and functional genetics and genomics. While the theoretical and computational work in our group knows no taxonomic boundaries, the spectacular diversity and experimental tractability of beetles make them good model systems for many of the questions we study.  In particular, a recurring theme of our work is the extraordinary role that sex and sex chromosomes play in shaping phenotypic diversity. 
 </p>
-
 </div>
+
 <div class="cards">
   {% for c in site.data.research_cards %}
     <a class="card" href="{{ c.url | relative_url }}">
