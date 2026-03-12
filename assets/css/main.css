@@ -350,10 +350,10 @@ a:hover{
   inset:0;
 
   background-image:var(--card-img);
-  background-size:cover;
-  background-position:center 120%;
+  background-size:108%;
+  background-position:center center;
 
-  transform:scale(1);
+  transform:translateY(10px);
   transition:transform .45s ease;
 
   z-index:0;
@@ -378,7 +378,8 @@ a:hover{
 }
 
 .card-image:hover::before{
-  transform:scale(1.06);
+  transform:scale(1.06) translateY(4px);
+
 }
 
 .card-image h3,
