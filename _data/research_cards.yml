@@ -2,10 +2,10 @@
   url: /research/combat/
   image: /assets/img/research/gcorn_fight.webp
 
-- title: "Sex Chromosome Evolution"
+- title: "Sex Chromosome<br>
+          Evolution"
   url: "/research/sex-biased-expression/"
-  image: /assets/img/research/sex_chr_evol.jpg
-
+  image: /assets/img/research/sex_chr_evol.webp
 
 - title: "Evolution of Genetic and Genomic Architecture"
   url: "/research/computational-genomics/"
