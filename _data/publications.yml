@@ -196,6 +196,8 @@
   venue: BioEssays
   type: article
   doi: 10.1002/bies.201400049
+  tags:
+  - sex-chromosome-evolution
 - year: 2014
   title: 'Estimating tempo and mode of Y chromosome turnover: explaining Y chromosome
     loss with the fragile Y hypothesis'
@@ -213,6 +215,10 @@
   venue: Evolution
   type: article
   doi: 10.1111/evo.12269
+  tags:
+  - sex-chromosome-evolution
+  - PEGQ
+  - plants
 - year: 2013
   title: The Role of Transposable Elements in Speciation
   authors: Watson, Eric T. and Demuth, Jeffery P.
@@ -239,12 +245,15 @@
   tags:
   - sex-chromosome-evolution
   - PEGQ
+  - mammals
 - year: 2012
   title: Why chromosome palindromes?
   authors: Betrán, Esther, Demuth, Jeffery P., and Williford, Anna
   venue: International journal of evolutionary biology
   type: article
   doi: 10.1155/2012/207958
+  tags:
+  - sex-chromosome-evolution
 - year: 2012
   title: Gene expression levels are correlated with synonymous codon usage, amino
     acid composition, and gene architecture in the red flour beetle, Tribolium castaneum
@@ -281,7 +290,6 @@
   doi: 10.1002/bies.080085
   tags:
   - gene-family-evolution
-  - mammals
 - year: 2009
   title: Adaptive evolution of young gene duplicates in mammals
   authors: Han, Mira V and Demuth, Jeffery P and McGrath, Casey L and Casola, Claudio
@@ -300,6 +308,8 @@
   venue: Nature
   type: article
   doi: 10.1038/nature06784
+  tags:
+  - beetles
 - year: 2007
   title: Accelerated rate of gene gain and loss in primates
   authors: Hahn, Matthew W and Demuth, Jeffery P and Han, Sang-Gook
@@ -339,6 +349,8 @@
   venue: Genetica
   type: article
   doi: 10.1007/s10709-006-0031-4
+  tags:
+  - PEGQ
 - year: 2007
   title: Genome-wide survey of Tribolium castaneum microsatellites and description
     of 509 polymorphic markers
@@ -357,6 +369,9 @@
   venue: science
   type: article
   doi: 10.1126/science.1139247
+  tags:
+  - gene-family-evolution
+  - mammals
 - year: 2006
   title: The evolution of mammalian gene families
   authors: Demuth, Jeffery P and Bie, Tijl De and Stajich, Jason E and Cristianini,
