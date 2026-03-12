@@ -27,14 +27,16 @@ show_title: false
 <p>The quip above – often attributed to Haldane, an architect of the Modern Synthesis – was no doubt motivated in part by the observation that roughly a quarter of all species are beetles... and it begs the question:<strong><em> Why are there over a million different kinds of beetles!?</em></strong></p>
 
 <p>
-Our group studies questions like this through the lens of evolutionary and functional genetics and genomics. While our theoretical and computational work spans the tree of life, the spectacular diversity and laboratory tractability of many beetles make them powerful experimental systems for many of the topics we study.
+Our group studies questions like this through the lens of evolutionary and functional genetics and genomics. While our theoretical and computational work spans the tree of life, the spectacular diversity of beetles makes them powerful experimental systems for many of the topics we study.
 </p>
 </div>
 
 <div class="section-title">
-  <h2>Research themes</h2>
-  <a class="muted" href="{{ '/research/' | relative_url }}">All research →</a>
+<p> <h2>Research themes</h2>
+    <a class="muted" href="{{ '/research/' | relative_url }}">All research →</a>
+</p>
 </div>
+
 
 <div class="cards">
   {% for c in site.data.research_cards %}
