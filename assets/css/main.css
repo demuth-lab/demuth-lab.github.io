@@ -32,7 +32,8 @@ a{
 }
 
 a:hover{
-  text-decoration:underline;
+  color:var(--accent);
+  text-decoration:none;
 }
 
 .container{
@@ -332,11 +333,12 @@ a:hover{
   overflow:hidden;
 
   aspect-ratio:3 / 2;
-
+  
   background-size:cover;
   background-position:bottom center;
-
+  
   color:var(--fg);
+  text-decoration:none;
 
   display:flex;
   flex-direction:column;
@@ -346,6 +348,21 @@ a:hover{
 }
 
 .card-image::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image:var(--card-img);
+  background-size:cover;
+  background-position:bottom center;
+
+  transform:scale(1);
+  transition:transform .45s ease;
+
+  z-index:0;
+}
+
+.card-image::after{
   content:"";
   position:absolute;
   inset:0;
@@ -363,22 +380,6 @@ a:hover{
   z-index:1;
 }
 
-/* Zoom effect on cards */
-.card-image::before{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background-image:var(--card-img);
-  background-size:cover;
-  background-position:bottom center;
-
-  transform:scale(1);
-  transition:transform .45s ease;
-
-  z-index:-1;
-}
-
 .card-image:hover::before{
   transform:scale(1.06);
 }
@@ -389,23 +390,12 @@ a:hover{
   z-index:2;
 }
 
-.card-image::after{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background-image:var(--card-img);
-  background-size:cover;
-  background-position:bottom center;
-
-  transform:scale(1);
-  transition:transform .45s ease;
-
-  z-index:0;
+.card-image h3{
+  transition:color .25s ease;
 }
 
-.card-image:hover::after{
-  transform:scale(1.06);
+.card-image:hover h3{
+  color:var(--accent);
 }
 
 .card-image:hover{
