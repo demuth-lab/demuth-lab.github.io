@@ -15,6 +15,7 @@
   </main>
   {% include footer.html %}
 
+#Script to listen for click off nav toggle on mobile
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".site-header");
@@ -35,5 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", updateHeaderState);
 });
 </script>
+  <script>
+document.addEventListener("click", function(e){
+
+  const nav = document.querySelector(".site-nav");
+  const toggle = document.querySelector(".nav-toggle");
+
+  if(!nav || !toggle) return;
+
+  const navOpen = nav.classList.contains("open");
+
+  if(navOpen && !nav.contains(e.target) && !toggle.contains(e.target)){
+    toggle.click();
+  }
+
+});
+</script>
+  
 </body>
 </html>
