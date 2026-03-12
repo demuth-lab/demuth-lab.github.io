@@ -33,8 +33,8 @@ ROOT = Path(__file__).resolve().parents[1]
 BIB = ROOT / "data" / "publications.bib"
 OUT = ROOT / "_data" / "publications.yml"
 
-EXTRAS = ROOT / "data" / "publication_extras.yml"
-TOPICS = ROOT / "data" / "topics.yml"
+EXTRAS = ROOT / "_data" / "publication_extras.yml"
+TOPICS = ROOT / "_data" / "topics.yml"
 
 CACHE_DIR = ROOT / ".cache"
 CACHE_FILE = CACHE_DIR / "crossref_doi_cache.json"
