@@ -347,11 +347,15 @@ a:hover{
 .card-image::before{
   content:"";
   position:absolute;
-  inset:0;
+  left:0;
+  right:0;
+  top:-14px;
+  bottom:-14px;
 
   background-image:var(--card-img);
   background-size:108%;
   background-position:center center;
+  background-repeat:no-repeat;
 
   transform:translateY(10px);
   transition:transform .45s ease;
