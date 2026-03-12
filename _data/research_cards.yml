@@ -1,12 +1,12 @@
-- title: "Behavioral Neurogenetics of Stress & Aggression."
-  
+- title: "Behavioral Neurogenetics of Stress & Aggression"
   url: /research/combat/
   image: /assets/img/research/gcorn_fight.webp
 
-- title: "Sex Chromosome Evolution."
+- title: "Sex Chromosome Evolution"
   url: "/research/sex-biased-expression/"
-  blurb: "Sex chromosome evolution – sex determination; structural evolution; dosage compensation; MSCI - meiotic sex chromosome inactivation"
+  image: /assets/img/research/gcorn_fight.webp
 
-- title: "Comparative genomics."
+
+- title: "Evolution of Genetic and Genomic Architecture"
   url: "/research/computational-genomics/"
-  blurb: "Gene family evolution; Methods and pipelines for comparative and population genomics."
+  image: /assets/img/research/gcorn_fight.webp
