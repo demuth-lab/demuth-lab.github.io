@@ -1,8 +1,21 @@
 ---
 title: "Research"
 ---
+<div class="research-quotes">
 
-<p class="lede">We use evolutionary genetics and genomics to understand how populations diverge and how gene and genome evolution shapes biological novelty.</p>
+  <blockquote>
+    Nothing in biology makes sense except in the light of evolution
+    <span class="quote-author">– T. Dobzhansky</span>
+  </blockquote>
+
+  <blockquote>
+    Nothing in evolution makes sense except in the light of population genetics
+    <span class="quote-author">– M. Lynch</span>
+  </blockquote>
+
+</div>
+
+<p class="lede">We use a mixture of dry-lab (theoretical & computational) and wet-lab (molecular genetics and genomics) to understand how life works.</p>
 
 <div class="cards">
   {% for c in site.data.research_cards %}
