@@ -414,38 +414,36 @@ a:hover{
    ========================= */
 
 .research-quotes{
-  max-width:900px;
-  margin:1.5rem auto 2rem auto;  
+  width:100%;
+  margin:1.5rem 0 2rem 0;   /* remove auto-centering */
   display:flex;
   flex-direction:column;
-  gap:0.6rem;                    
+  gap:0.35rem;
+  padding-left:0;
+  padding-right:0;
 }
 
 .research-quotes blockquote{
-  margin-top:0;
-  margin-bottom:0;
+  margin-block:0;
   margin-left:0;
   margin-right:0;
-  
-  max-width:700px;
+  max-width:650px;
   font-size:1.3rem;
   opacity:0.8;
   line-height:1.2;
   font-style:normal;
-  color:var(--text);
   padding:0.6rem 0.9rem;       
   border-radius:8px;
-  position:relative;
 }
 
 .quote-left{
-  border-left:2px solid var(--accent);
+  border-left:3px solid var(--accent);
   margin-right:auto;
   background:linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0));
 }
 
 .quote-right{
-  border-right:2px solid var(--accent);
+  border-right:3px solid var(--accent);
   margin-left:auto;
   text-align:right;
   background:linear-gradient(to left, rgba(0,0,0,0.05), rgba(0,0,0,0));
