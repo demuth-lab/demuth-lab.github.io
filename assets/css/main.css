@@ -431,7 +431,6 @@ a:hover{
   font-style:normal;
   color:var(--text);
   padding:0.6rem 0.9rem;       
-  background:var(--accent-soft);
   border-radius:8px;
   position:relative;
 }
