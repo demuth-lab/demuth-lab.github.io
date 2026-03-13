@@ -438,14 +438,14 @@ a:hover{
 .quote-left{
   border-left:4px solid var(--accent);
   margin-right:auto;
-  background:linear-gradient(to right, var(--accent-soft), transparent);
+  background:linear-gradient(to right, rgba(0,0,0,0.08), rgba(0,0,0,0));
 }
 
 .quote-right{
   border-right:4px solid var(--accent);
   margin-left:auto;
   text-align:right;
-  background:linear-gradient(to left, var(--accent-soft), transparent);
+  background:linear-gradient(to left, rgba(0,0,0,0.08), rgba(0,0,0,0));
 }
 
 .quote-author{
