@@ -462,28 +462,28 @@ a:hover{
   top:0;
   left:4;
   right:4;
-  background:linear-gradient(to right, var(--accent), transparent 60%);
+  background:linear-gradient(to right, var(--accent), transparent);
 }
 
 .quote-left::after{
   bottom:0;
   left:4;
   right:4;
-  background:linear-gradient(to right, var(--accent), transparent 60%);
+  background:linear-gradient(to right, var(--accent), transparent);
 }
 
 .quote-right::before{
   top:0;
   left:4;
   right:4;
-  background:linear-gradient(to left, var(--accent), transparent 60%);
+  background:linear-gradient(to left, var(--accent), transparent);
 }
 
 .quote-right::after{
   bottom:0;
   left:4;
   right:4;
-  background:linear-gradient(to left, var(--accent), transparent 60%);
+  background:linear-gradient(to left, var(--accent), transparent);
 }
 .quote-author{
   display:block;
