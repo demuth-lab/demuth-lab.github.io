@@ -3,13 +3,13 @@ title: "Research"
 ---
 <div class="research-quotes">
 
-  <blockquote>
-    Nothing in biology makes sense except in the light of evolution
+  <blockquote class="quote-left">
+    “Nothing in biology makes sense except in the light of evolution”
     <span class="quote-author">– T. Dobzhansky</span>
   </blockquote>
 
-  <blockquote>
-    Nothing in evolution makes sense except in the light of population genetics
+  <blockquote class="quote-right">
+    “Nothing in evolution makes sense except in the light of population genetics”
     <span class="quote-author">– M. Lynch</span>
   </blockquote>
 
