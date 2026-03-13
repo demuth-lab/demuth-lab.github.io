@@ -415,38 +415,37 @@ a:hover{
 
 .research-quotes{
   width:100%;
-  margin:1.5rem 0 2rem 0;   /* remove auto-centering */
+  margin:1.5rem 0 2rem 0;
   display:flex;
   flex-direction:column;
   gap:0.35rem;
-  padding-left:0;
-  padding-right:0;
 }
 
 .research-quotes blockquote{
-  margin-block:0;
-  margin-left:0;
-  margin-right:0;
+  margin:0;                     /* safe now */
+  width:fit-content;            /* prevents full-width stretching */
   max-width:650px;
   font-size:1.3rem;
   opacity:0.8;
   line-height:1.2;
   font-style:normal;
-  padding:0.6rem 0.9rem;       
+  padding:0.6rem 0.9rem;
   border-radius:8px;
+  position:relative;
 }
 
 .quote-left{
-  border-left:3px solid var(--accent);
-  margin-right:auto;
-  background:linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0));
+  align-self:flex-start;
+  text-align:left;
+  border-left:4px solid var(--accent);
+  background:linear-gradient(to right, rgba(0,0,0,0.05), transparent);
 }
 
 .quote-right{
-  border-right:3px solid var(--accent);
-  margin-left:auto;
+  align-self:flex-end;
   text-align:right;
-  background:linear-gradient(to left, rgba(0,0,0,0.05), rgba(0,0,0,0));
+  border-right:4px solid var(--accent);
+  background:linear-gradient(to left, rgba(0,0,0,0.05), transparent);
 }
 
 .quote-author{
