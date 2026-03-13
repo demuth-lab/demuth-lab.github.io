@@ -422,7 +422,8 @@ a:hover{
 }
 
 .research-quotes blockquote{
-  
+  margin-top:0;
+  margin-bottom:0;
   max-width:600px;
   font-size:1.4rem;
   line-height:1.2;
