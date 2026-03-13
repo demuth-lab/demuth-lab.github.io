@@ -460,30 +460,30 @@ a:hover{
 
 .quote-left::before{
   top:0;
-  left:4;
-  right:4;
-  background:linear-gradient(to right, var(--accent), transparent);
+  left:0;
+  right:0;
+  background:linear-gradient(to right, var(--accent), transparent 60%);
 }
 
 .quote-left::after{
   bottom:0;
-  left:4;
-  right:4;
-  background:linear-gradient(to right, var(--accent), transparent);
+  left:0;
+  right:0;
+  background:linear-gradient(to right, var(--accent), transparent 60%);
 }
 
 .quote-right::before{
   top:0;
-  left:4;
-  right:4;
-  background:linear-gradient(to left, var(--accent), transparent);
+  left:0;
+  right:0;
+  background:linear-gradient(to left, var(--accent), transparent 60%);
 }
 
 .quote-right::after{
   bottom:0;
-  left:4;
-  right:4;
-  background:linear-gradient(to left, var(--accent), transparent);
+  left:0;
+  right:0;
+  background:linear-gradient(to left, var(--accent), transparent 60%);
 }
 .quote-author{
   display:block;
