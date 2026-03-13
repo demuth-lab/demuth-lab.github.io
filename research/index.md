@@ -15,7 +15,7 @@ title: "Research"
 
 </div>
 
-<p class="lede">We are trying to understand how life works and how it got that way from both evolutionary and functional perspectives.  We employ a variety of wet (molecular) and dry (computational) approaches to investigate the research topics below.</p>
+<p class="lede">We are trying to understand how life works using the tools of evolutionary and functional genetics and genomics.  We employ a variety of wet (molecular) and dry (computational) approaches to pursue the research topics below.</p>
 
 <div class="cards">
   {% for c in site.data.research_cards %}
