@@ -424,7 +424,8 @@ a:hover{
 .research-quotes blockquote{
   margin:0;
   max-width:600px;
-  font-size:1.2rem;
+  font-size:1.4rem;
+  font-weight:500;
   line-height:1.5;
   font-style:italic;
   color:var(--text);
@@ -442,6 +443,7 @@ a:hover{
 .quote-right{
   border-right:4px solid var(--accent);
   margin-left:auto;
+  margin-right:0;
   text-align:right;
 }
 
@@ -449,8 +451,10 @@ a:hover{
   display:block;
   margin-top:0.25rem;             /* reduced */
   font-style:normal;
-  font-weight:500;
-  color:var(--muted);
+  font-size:0.9rem;
+  opacity:0.8;
+  letter-spacing:0.02em;
+  color:var(--fg);
 }
 
 .research-intro{
