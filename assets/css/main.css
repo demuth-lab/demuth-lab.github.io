@@ -426,8 +426,8 @@ a:hover{
   max-width:600px;
   font-size:1.4rem;
   font-weight:500;
-  line-height:1.5;
-  font-style:italic;
+  line-height:1.2;
+  font-style:normal;
   color:var(--text);
   padding:0.6rem 0.9rem;          /* reduced */
   background:var(--accent-soft);
@@ -450,7 +450,7 @@ a:hover{
 .quote-author{
   display:block;
   margin-top:0.25rem;             /* reduced */
-  font-style:normal;
+  font-style:italic;
   font-size:0.9rem;
   opacity:0.8;
   letter-spacing:0.02em;
