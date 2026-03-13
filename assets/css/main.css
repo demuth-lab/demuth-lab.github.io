@@ -414,7 +414,7 @@ a:hover{
   margin:2.5rem auto 3rem auto;
   padding:1.5rem 2rem;
   border-left:4px solid var(--accent);
-  background:var(--accent-soft);
+  background:linear-gradient(to right, var(--accent-soft), transparent);
 }
 
 .research-quotes blockquote{
