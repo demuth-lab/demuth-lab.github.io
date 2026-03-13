@@ -424,7 +424,10 @@ a:hover{
 .research-quotes blockquote{
   margin-top:0;
   margin-bottom:0;
-  max-width:600px;
+  margin-left:0;
+  margin-right:0;
+  
+  max-width:700px;
   font-size:1.3rem;
   opacity:0.8;
   line-height:1.2;
@@ -436,16 +439,16 @@ a:hover{
 }
 
 .quote-left{
-  border-left:4px solid var(--accent);
+  border-left:2px solid var(--accent);
   margin-right:auto;
-  background:linear-gradient(to right, rgba(0,0,0,0.08), rgba(0,0,0,0));
+  background:linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0));
 }
 
 .quote-right{
-  border-right:4px solid var(--accent);
+  border-right:2px solid var(--accent);
   margin-left:auto;
   text-align:right;
-  background:linear-gradient(to left, rgba(0,0,0,0.08), rgba(0,0,0,0));
+  background:linear-gradient(to left, rgba(0,0,0,0.05), rgba(0,0,0,0));
 }
 
 .quote-author{
