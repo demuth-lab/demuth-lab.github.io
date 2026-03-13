@@ -415,21 +415,20 @@ a:hover{
 
 .research-quotes{
   max-width:900px;
-  margin:1.5rem auto 2rem auto;   /* reduced */
+  margin:1.5rem auto 2rem auto;  
   display:flex;
   flex-direction:column;
-  gap:0.6rem;                     /* reduced */
+  gap:0.6rem;                    
 }
 
 .research-quotes blockquote{
   
   max-width:600px;
   font-size:1.4rem;
-  font-weight:500;
   line-height:1.2;
   font-style:normal;
   color:var(--text);
-  padding:0.6rem 0.9rem;          /* reduced */
+  padding:0.6rem 0.9rem;       
   background:var(--accent-soft);
   border-radius:8px;
   position:relative;
@@ -443,13 +442,12 @@ a:hover{
 .quote-right{
   border-right:4px solid var(--accent);
   margin-left:auto;
-  margin-right:0;
   text-align:right;
 }
 
 .quote-author{
   display:block;
-  margin-top:0.25rem;             /* reduced */
+  margin-top:0.25rem;          
   font-style:italic;
   font-size:0.9rem;
   opacity:0.8;
