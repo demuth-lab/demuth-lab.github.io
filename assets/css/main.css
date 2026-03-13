@@ -409,29 +409,49 @@ a:hover{
    Home: Research Intro
    ========================= */
 
+/* =========================
+   Paired research quotes
+   ========================= */
+
 .research-quotes{
   max-width:900px;
   margin:2.5rem auto 3rem auto;
-  padding:1.5rem 2rem;
-  border-left:4px solid var(--accent);
-  background:linear-gradient(to right, var(--accent-soft), transparent);
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
 }
 
 .research-quotes blockquote{
-  margin:0 0 1.2rem 0;
-  font-size:1.15rem;
+  max-width:600px;
+  font-size:1.2rem;
   line-height:1.5;
-  color:var(--text);
   font-style:italic;
+  color:var(--text);
+  padding:1rem 1.25rem;
+  background:var(--accent-soft);
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+  border-radius:8px;
+  position:relative;
 }
 
-.research-quotes blockquote:last-child{
-  margin-bottom:0;
+/* Left quote */
+
+.quote-left{
+  border-left:4px solid var(--accent);
+  margin-right:auto;
+}
+
+/* Right quote */
+
+.quote-right{
+  border-right:4px solid var(--accent);
+  margin-left:auto;
+  text-align:right;
 }
 
 .quote-author{
   display:block;
-  margin-top:0.4rem;
+  margin-top:0.5rem;
   font-style:normal;
   font-weight:500;
   color:var(--muted);
