@@ -15,7 +15,7 @@ title: "Research"
 
 </div>
 
-<p class="lede">We use a mixture of dry-lab (theoretical & computational) and wet-lab (molecular genetics and genomics) to understand how life works.</p>
+<p class="lede">We are trying to understand how life works and how it got that way from both evolutionary and functional perspectives.  We employ a variety of wet (molecular) and dry (computational) approaches to investigate the research topics below.</p>
 
 <div class="cards">
   {% for c in site.data.research_cards %}
