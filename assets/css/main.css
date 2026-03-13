@@ -415,10 +415,10 @@ a:hover{
 
 .research-quotes{
   max-width:900px;
-  margin:2.5rem auto 3rem auto;
+  margin:1.5rem auto 2rem auto;   /* reduced */
   display:flex;
   flex-direction:column;
-  gap:1.5rem;
+  gap:0.6rem;                     /* reduced */
 }
 
 .research-quotes blockquote{
@@ -427,21 +427,16 @@ a:hover{
   line-height:1.5;
   font-style:italic;
   color:var(--text);
-  padding:1rem 1.25rem;
+  padding:0.6rem 0.9rem;          /* reduced */
   background:var(--accent-soft);
-  box-shadow:0 2px 8px rgba(0,0,0,0.05);
   border-radius:8px;
   position:relative;
 }
-
-/* Left quote */
 
 .quote-left{
   border-left:4px solid var(--accent);
   margin-right:auto;
 }
-
-/* Right quote */
 
 .quote-right{
   border-right:4px solid var(--accent);
@@ -451,7 +446,7 @@ a:hover{
 
 .quote-author{
   display:block;
-  margin-top:0.5rem;
+  margin-top:0.25rem;             /* reduced */
   font-style:normal;
   font-weight:500;
   color:var(--muted);
