@@ -322,6 +322,63 @@ a:hover{
   color:var(--muted);
 }
 
+/* =========================
+   Home Cards
+   ========================= */
+
+.home-cards{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.home-card{
+  display:block;
+  padding:16px 16px 15px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:linear-gradient(to bottom, #ffffff, #f8fafc);
+  color:var(--fg);
+  text-decoration:none;
+  box-shadow:0 1px 2px rgba(0,0,0,0.03);
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    border-color .22s ease,
+    background .22s ease;
+}
+
+.home-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  border-color:var(--accent-hover);
+  text-decoration:none;
+}
+
+.home-card h3{
+  margin:0 0 4px;
+  font-size:1.15rem;
+  line-height:1.2;
+  color:var(--fg);
+}
+
+.home-card-kicker{
+  display:block;
+  margin:0 0 10px;
+  font-size:0.78rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+
+.home-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.55;
+}
+
 .grid-2{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -405,9 +462,6 @@ a:hover{
   box-shadow:0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* =========================
-   Home: Research Intro
-   ========================= */
 
 /* =========================
    Paired research quotes
@@ -1055,6 +1109,18 @@ a:hover{
 
 @media (max-width:520px){
   .cards{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:860px){
+  .home-cards{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media (max-width:520px){
+  .home-cards{
     grid-template-columns:1fr;
   }
 }
