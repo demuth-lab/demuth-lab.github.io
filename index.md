@@ -24,7 +24,9 @@ show_title: false
 </section>
 
 <div class="research-intro">
-<p>Haldane’s famous (possibly apocryphal) quip captures a deep truth about the natural world: from morphology to behavior, biological diversity is uneven. <em>What are the rules that govern this seemingly idiosyncratic, even arbitrary diversity of form and behavior in nature, and how do those rules shape innovation and disease?</em></p>
+<p>Haldane’s famous (possibly apocryphal) quip captures a deep truth about the natural world: from morphology to behavior, biological diversity is uneven. </p>
+  
+<p><em><strong>What are the rules that govern the seemingly idiosyncratic, even arbitrary diversity of form and behavior in nature, and how do those rules shape innovation and disease?</strong></em></p>
 
 <p>Our research seeks to answer questions about the rules of life using evolutionary, population, and functional genetics and genomics. Current projects focus on two areas: the evolution of sex chromosome structure and regulation, and the neurogenetics of social stress and aggression. This work has broad implications for questions ranging from the genetic basis of disease to the origin of new species. 
 </p>
