@@ -20,7 +20,7 @@ title: "Research"
 
 <div class="cards">
   {% for c in site.data.research_cards %}
-    <a class="card" href="{{ c.url | relative_url }}">
+    <a class="card card-image" href="{{ c.url | relative_url }}" style="--card-img:url('{{ c.image }}')">
       <h3>{{ c.title }}</h3>
       <p>{{ c.blurb }}</p>
     </a>
