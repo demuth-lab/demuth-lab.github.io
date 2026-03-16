@@ -24,24 +24,18 @@ show_title: false
 </section>
 
 <div class="research-intro">
-<p>Haldane’s famous (possibly apocryphal) quip captures a deep truth about the natural world: from morphology to behavior, biological diversity is uneven and seemingly idiosyncratic, even arbitrary. <em>Why does life appear to diversify so unevenly? What genetic and genomic processes underlie the diversity of biological forms and behaviors observed in nature?</em></p>
+<p>Haldane’s famous (possibly apocryphal) quip captures a deep truth about the natural world: from morphology to behavior, biological diversity is uneven and seemingly idiosyncratic, even arbitrary. <em>What genetic and genomic rules govern the diversity of biological forms and behaviors observed in nature? How do those same rules shape innovation and disease?</em></p>
 
 <p>Our research seeks to answer questions like these about the rules of life using evolutionary, population, and functional genetics and genomics. Current projects focus on two areas: the evolution of sex chromosome structure and regulation, and the neurogenetics of social stress and aggression. This work has broad implications for questions ranging from the genetic basis of disease to the origin of new species. 
 </p>
 </div>
 
-<div class="section-title">
-<p> <h2>Research themes</h2>
-    <a class="muted" href="{{ '/research/' | relative_url }}">All research →</a>
-</p>
-</div>
-
-
-<div class="cards">
-  {% for c in site.data.research_cards %}
-    <a class="card card-image" href="{{ c.url | relative_url }}" style="--card-img:url('{{ c.image }}')">
-      <h3>{{ c.title }}</h3>
-      <p>{{ c.blurb }}</p>
+<div class="cards home-cards">
+  {% for card in site.data.home_cards %}
+    <a class="card" href="{{ card.url | relative_url }}">
+      <h3>{{ card.title }}</h3>
+      <p class="card-kicker">{{ card.kicker }}</p>
+      <p>{{ card.description }}</p>
     </a>
   {% endfor %}
 </div>
