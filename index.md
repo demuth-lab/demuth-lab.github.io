@@ -30,11 +30,11 @@ show_title: false
 </p>
 </div>
 
-<div class="cards home-cards">
+<div class="home-cards">
   {% for card in site.data.home_cards %}
-    <a class="card" href="{{ card.url | relative_url }}">
+    <a class="home-card" href="{{ card.url | relative_url }}">
       <h3>{{ card.title }}</h3>
-      <p class="card-kicker">{{ card.kicker }}</p>
+      <span class="home-card-kicker">{{ card.kicker }}</span>
       <p>{{ card.description }}</p>
     </a>
   {% endfor %}
