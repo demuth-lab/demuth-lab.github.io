@@ -24,10 +24,9 @@ show_title: false
 </section>
 
 <div class="research-intro">
-<p>The quip above – often attributed to Haldane, an architect of the Modern Synthesis – was no doubt motivated in part by the observation that roughly a quarter of all species are beetles... and it begs the question:<strong><em> Why are there over a million different kinds of beetles!?</em></strong></p>
+<p>Haldane’s famous (possibly apocryphal) quip captures a deep truth about the natural world: biological diversity often appears uneven, idiosyncratic, or even arbitrary. This unevenness is evident not only in the diversity of organisms, but also in the structure and evolution of their genomes. <em></em>Why does life diversify so unevenly? What genetic and genomic processes underlie the diversity of biological forms and behaviors observed in nature?</em></p>
 
-<p>
-Our group studies questions like this through the lens of evolutionary and functional genetics and genomics. While our theoretical and computational work spans the tree of life, the spectacular diversity of beetles makes them powerful experimental systems for many of the topics we study.
+<p>Our research seeks to answer questions like these about the rules of life using evolutionary, population, and functional genetics and genomics. Current projects focus on two areas: the evolution of sex chromosome structure and regulation, and the neurogenetics of social stress and aggression. This work has broad implications for questions ranging from the genetic basis of disease to the origin of new species. 
 </p>
 </div>
 
