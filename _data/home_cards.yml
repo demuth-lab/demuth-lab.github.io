@@ -1,11 +1,11 @@
-- title: Science
-  kicker: Research Overview
+- title: Research
+  kicker: Science Overview
   description: Explore the questions and technologies driving our work.
   url: /research/
 
 - title: People
   kicker: Lab Team
-  description: Meet the people and alumni of the Demuth Lab.
+  description: Meet the current members and alumni of the Demuth Lab.
   url: /people/
 
 - title: Opportunities
