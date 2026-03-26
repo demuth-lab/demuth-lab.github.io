@@ -1,7 +1,7 @@
 ---
 title: "Behavior"
 summary: "Genetic mechanisms underlying male-male contest behaviors"
-hero_image: "/assets/img/research/placeholder-research.jpg"
+hero_image: null
 card_image: "/assets/img/research/gcorn_fight.webp"
 card_title: "Neurogenetics of Stress and Aggression"
 card_blurb: "A beetle model for understanding PTSD"
