@@ -386,80 +386,79 @@ a:hover{
 }
 
 .card-image{
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
 
-  aspect-ratio:3 / 2;
-  
-  color:var(--fg);
-  text-decoration:none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
 
-  transition:transform .35s ease, box-shadow .25s ease;
+  color: var(--fg);
+  text-decoration: none;
+
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .card-image::before{
-  content:"";
-  position:absolute;
-  left:0;
-  right:0;
-  top:-14px;
-  bottom:-14px;
+  content: "";
+  position: absolute;
+  inset: 0;
 
-  background-image:var(--card-img);
-  background-size:108%;
-  background-position:center center;
-  background-repeat:no-repeat;
+  background-image: var(--card-img);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 
-  transform:translateY(10px);
-  transition:transform .45s ease;
-
-  z-index:0;
+  z-index: 0;
 }
 
 .card-image::after{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(255,255,255,0.80) 0%,
-      rgba(255,255,255,0.60) 28%,
-      rgba(255,255,255,0.25) 48%,
-      rgba(255,255,255,0.06) 64%,
-      rgba(255,255,255,0.00) 78%
-    );
-
-  z-index:1;
-}
-
-.card-image:hover::before{
-  transform:scale(1.06) translateY(4px);
-
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.88) 0%,
+    rgba(255,255,255,0.68) 24%,
+    rgba(255,255,255,0.28) 46%,
+    rgba(255,255,255,0.06) 64%,
+    rgba(255,255,255,0.00) 78%
+  );
+  z-index: 1;
 }
 
 .card-image h3,
 .card-image p{
-  position:relative;
-  z-index:2;
+  position: relative;
+  z-index: 2;
+  text-align: left;
 }
 
 .card-image h3{
-  transition:color .25s ease;
+  margin: 0 0 8px;
+  font-size: 18px;
+  transition: color .25s ease;
 }
 
-.card-image:hover h3{
-  color:var(--accent);
+.card-image p{
+  margin: 0;
+  color: var(--muted);
 }
 
 .card-image:hover{
-  transform:translateY(-3px);
-  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  text-decoration: none;
+}
+
+.card-image:hover h3{
+  color: var(--accent);
 }
 
 
