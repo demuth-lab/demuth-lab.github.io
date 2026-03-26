@@ -19,10 +19,11 @@ title: "Research"
 </p>
 
 <div class="cards">
-  {% for c in site.data.research_cards %}
-    <a class="card card-image" href="{{ c.url | relative_url }}" style="--card-img:url('{{ c.image }}')">
-      <h3>{{ c.title }}</h3>
-      <p>{{ c.blurb }}</p>
+  {% assign research_pages = site.research | sort: "order" %}
+  {% for p in research_pages %}
+    <a class="card card-image" href="{{ p.url | relative_url }}" style="--card-img:url('{{ p.card_image | relative_url }}')">
+      <h3>{{ p.card_title | default: p.title }}</h3>
+      <p>{{ p.card_blurb | default: p.summary }}</p>
     </a>
   {% endfor %}
 </div>
