@@ -1,7 +1,15 @@
 ---
-title: "Sex chromosome evolution"
-summary: "Sex chromosome sequence and expression evolution."
+title: "Sex Chromosome Evolution"
+summary: "How sex chromosomes evolve and diverge"
 hero_image: "/assets/img/research/placeholder-research.jpg"
+card_image: "/assets/img/research/sex_chr_evol.webp"
+card_title: "Sex Chromosome Evolution"
+card_blurb: "Add a short card description here."
+key_pubs:
+  - title: "Add a key paper here"
+    citation: "Author A, Author B (Year) Journal"
+    doi: ""
+order: 2
 ---
 
 ## Questions we ask
