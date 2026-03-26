@@ -1,7 +1,15 @@
 ---
-title: "Gene family evolution"
-summary: "Birth–death dynamics, adaptation, and turnover across genomes."
+title: "Evolution of Genetic and Genomic Architecture"
+summary: "How genomes change across evolutionary time"
 hero_image: "/assets/img/research/placeholder-research.jpg"
+card_image: "/assets/img/research/tcas_tcon_synteny.webp"
+card_title: "Evolution of Genetic and Genomic Architecture"
+card_blurb: "Add a short card description here."
+key_pubs:
+  - title: "Add a key paper here"
+    citation: "Author A, Author B (Year) Journal"
+    doi: ""
+order: 3
 ---
 
 ## Questions we ask
