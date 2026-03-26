@@ -39,7 +39,7 @@ show_title: false
         <span class="card-kicker">{{ c.kicker }}</span>
       {% endif %}
       <h3>{{ c.title }}</h3>
-      <p>{{ c.blurb }}</p>
+      <p>{{ c.description | default: c.blurb }}</p>
     </a>
   {% endfor %}
 </div>
