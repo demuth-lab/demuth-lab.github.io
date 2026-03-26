@@ -1,10 +1,10 @@
 ---
-title: "Sexually Antagonistic Selection and Neurogenetics of Social Stress"
+title: "Behavior"
 summary: "Genetic mechanisms underlying male-male contest behaviors"
 hero_image: "/assets/img/research/placeholder-research.jpg"
 card_image: "/assets/img/research/gcorn_fight.webp"
-card_title: "Sexually Antagonistic Selection and Neurogenetics of Social Stress"
-card_blurb: "Add a short card description here."
+card_title: "Neurogenetics of Stress and Aggression"
+card_blurb: "A beetle model for understanding PTSD"
 key_pubs:
   - title: "Add a key paper here"
     citation: "Author A, Author B (Year) Journal"
