@@ -32,12 +32,14 @@ show_title: false
 </p>
 </div>
 
-<div class="home-cards">
-  {% for card in site.data.home_cards %}
-    <a class="home-card" href="{{ card.url | relative_url }}">
-      <h3>{{ card.title }}</h3>
-      <span class="home-card-kicker">{{ card.kicker }}</span>
-      <p>{{ card.description }}</p>
+<div class="cards">
+  {% for c in site.data.home_cards %}
+    <a class="card card--plain" href="{{ c.url | relative_url }}">
+      {% if c.kicker %}
+        <span class="card-kicker">{{ c.kicker }}</span>
+      {% endif %}
+      <h3>{{ c.title }}</h3>
+      <p>{{ c.blurb }}</p>
     </a>
   {% endfor %}
 </div>
