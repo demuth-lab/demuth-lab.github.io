@@ -1,11 +1,15 @@
 ---
 title: "Sexually Antagonistic Selection and Neurogenetics of Social Stress"
-summary: "Using broad-horned flour beetles to study sexual conflict, male-male contest evolution, and loser effects as a model for stress-induced behavioral change."
+summary: "Genetic mechanisms underlying male-male contest behaviors"
 hero_image: "/assets/img/research/placeholder-research.jpg"
+card_image: "/assets/img/research/gcorn_fight.webp"
+card_title: "Sexually Antagonistic Selection and Neurogenetics of Social Stress"
+card_blurb: "Add a short card description here."
 key_pubs:
   - title: "Add a key paper here"
     citation: "Author A, Author B (Year) Journal"
     doi: ""
+order: 1
 ---
 
 ## Questions we ask
