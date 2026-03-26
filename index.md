@@ -35,11 +35,11 @@ show_title: false
 <div class="cards">
   {% for c in site.data.home_cards %}
     <a class="card card--plain" href="{{ c.url | relative_url }}">
+      <h3>{{ c.title }}</h3>
       {% if c.kicker %}
         <span class="card-kicker">{{ c.kicker }}</span>
       {% endif %}
-      <h3>{{ c.title }}</h3>
-      <p>{{ c.blurb }}</p>
+      <p>{{ c.description | default: c.blurb }}</p>
     </a>
   {% endfor %}
 </div>

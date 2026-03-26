@@ -11,6 +11,10 @@ key_pubs:
     doi: ""
 order: 1
 ---
+<video controls width="100%" preload="metadata">
+  <source src="/assets/video/beetle-fight.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Questions we ask
 - How does selection for increased male horn size generate correlated costs in female abdomen size and reproductive capacity?
