@@ -286,6 +286,10 @@ a:hover{
    General Cards
    ========================= */
 
+/* =========================
+   Section Blocks / Cards
+   ========================= */
+
 .section-title{
   display:flex;
   align-items:baseline;
@@ -305,65 +309,77 @@ a:hover{
   gap:14px;
 }
 
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+/* =========================
+   Base card    
+   ========================= */
+
+
 .card{
+  display:block;
+  position:relative;
+  overflow:hidden;
+
   padding:14px;
   border:1px solid var(--line);
   border-radius:16px;
-  background:var(--card);
+
+  color:var(--fg);
+  text-decoration:none;
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease,
+    background .25s ease;
 }
 
 .card h3{
   margin:0 0 8px;
   font-size:18px;
+  line-height:1.2;
 }
 
 .card p{
   margin:0;
   color:var(--muted);
+  line-height:1.55;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  text-decoration:none;
 }
 
 /* =========================
-   Home Cards
+   Plain/text card variant
    ========================= */
 
-.home-cards{
-  margin-top:20px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-}
 
-.home-card{
-  display:block;
-  padding:16px 16px 15px;
-  border:1px solid var(--line);
-  border-radius:16px;
+.card--plain{
   background:linear-gradient(to bottom, #ffffff, #f8fafc);
-  color:var(--fg);
-  text-decoration:none;
   box-shadow:0 1px 2px rgba(0,0,0,0.03);
-  transition:
-    transform .22s ease,
-    box-shadow .22s ease,
-    border-color .22s ease,
-    background .22s ease;
 }
 
-.home-card:hover{
-  transform:translateY(-3px);
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+.card--plain:hover{
   border-color:var(--accent-hover);
-  text-decoration:none;
 }
 
-.home-card h3{
-  margin:0 0 4px;
-  font-size:1.15rem;
-  line-height:1.2;
+.card--plain h3{
   color:var(--fg);
 }
 
-.home-card-kicker{
+.card--plain:hover h3{
+  color:var(--accent);
+}
+
+.card-kicker{
   display:block;
   margin:0 0 10px;
   font-size:0.78rem;
@@ -373,24 +389,12 @@ a:hover{
   color:var(--accent);
 }
 
-.home-card p{
-  margin:0;
-  color:var(--muted);
-  line-height:1.55;
-}
-
-.grid-2{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
-
 /* =========================
-   Card Images
-   ========================= */
-.card-image{
-  position:relative;
-  overflow:hidden;
+Image card variant
+========================= */
+
+
+.card--image{
   aspect-ratio:3 / 2;
 
   display:flex;
@@ -398,13 +402,10 @@ a:hover{
   justify-content:flex-start;
   align-items:flex-start;
 
-  color:var(--fg);
-  text-decoration:none;
-
-  transition:transform .25s ease, box-shadow .25s ease;
+  background:var(--card);
 }
 
-.card-image::before{
+.card--image::before{
   content:"";
   position:absolute;
   inset:0;
@@ -417,7 +418,7 @@ a:hover{
   z-index:0;
 }
 
-.card-image::after{
+.card--image::after{
   content:"";
   position:absolute;
   inset:0;
@@ -435,24 +436,18 @@ a:hover{
   z-index:1;
 }
 
-.card-image h3,
-.card-image p{
+.card--image h3,
+.card--image p{
   position:relative;
   z-index:2;
   text-align:left;
 }
 
-.card-image:hover{
-  transform:translateY(-3px);
-  box-shadow:0 6px 18px rgba(0,0,0,0.12);
-  text-decoration:none;
-}
-
-.card-image h3{
+.card--image h3{
   transition:color .25s ease;
 }
 
-.card-image:hover h3{
+.card--image:hover h3{
   color:var(--accent);
 }
 
