@@ -15,7 +15,7 @@ title: "Research"
 
 </div>
 
-<p class="lede">We are trying to understand how life works using the tools of evolutionary and functional genetics and genomics.  We employ a variety of wet (molecular) and dry (computational) approaches to pursue the research topics below.
+<p class="lede">We are trying to understand how life works using the tools of evolutionary and functional genetics and genomics.  Currently, there are three broad areas of active research in the lab.  All three areas employ a variety of molecular and computational approaches.
 </p>
 
 <div class="cards">
