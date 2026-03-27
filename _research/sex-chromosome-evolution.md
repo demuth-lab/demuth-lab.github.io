@@ -1,10 +1,10 @@
 ---
 title: "Sex Chromosome Evolution"
-summary: "How sex chromosomes evolve and diverge"
+summary: "Sequence, structure, and expression evolution"
 hero_image: "/assets/img/research/placeholder-research.jpg"
 card_image: "/assets/img/research/sex_chr_evol.webp"
 card_title: "Sex Chromosome Evolution"
-card_blurb: "Add a short card description here."
+card_blurb: "Sequence, structure, and expression evolution"
 key_pubs:
   - title: "Add a key paper here"
     citation: "Author A, Author B (Year) Journal"
