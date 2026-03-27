@@ -3,7 +3,7 @@ title: "Comparative Genomics"
 summary: "How genomes change across evolutionary time"
 hero_image: "/assets/img/research/placeholder-research.jpg"
 card_image: "/assets/img/research/tcas_tcon_synteny.webp"
-card_title: "Evolution of Genetic and Genomic Architecture"
+card_title: "Comparative Genomics"
 card_blurb: "Dynamics of genome structure and content"
 key_pubs:
   - title: "Add a key paper here"
