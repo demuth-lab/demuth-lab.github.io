@@ -24,8 +24,9 @@ title: "Research"
     <a class="card card--image"
        href="{{ p.url | relative_url }}"
        style="--card-img:url('{{ p.card_image | default: p.hero_image | relative_url }}')">
+       
       <h3>{{ p.card_title | default: p.title }}</h3>
-      <p>{{ p.card_blurb | default: p.summary }}</p>
+
     </a>
   {% endfor %}
 </div>
