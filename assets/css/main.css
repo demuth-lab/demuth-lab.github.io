@@ -379,10 +379,6 @@ a:hover{
   color:var(--accent);
 }
 
-.card--plain p{
-  font-size:0.6rem;
-}
-
 .card-kicker{
   display:block;
   margin:0 0 10px;
@@ -445,6 +441,7 @@ Image card variant
   position:relative;
   z-index:2;
   text-align:left;
+  font-size:0.9rem;
 }
 
 .card--image h3{
