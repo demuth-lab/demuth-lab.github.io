@@ -379,6 +379,10 @@ a:hover{
   color:var(--accent);
 }
 
+.card--plain p{
+  font-size:0.9rem;
+}
+
 .card-kicker{
   display:block;
   margin:0 0 10px;
