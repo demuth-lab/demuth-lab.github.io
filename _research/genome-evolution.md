@@ -1,5 +1,5 @@
 ---
-title: "Evolution of Genetic and Genomic Architecture"
+title: "Comparative Genomics"
 summary: "How genomes change across evolutionary time"
 hero_image: "/assets/img/research/placeholder-research.jpg"
 card_image: "/assets/img/research/tcas_tcon_synteny.webp"
