@@ -5,7 +5,7 @@
   degree: PhD
   photo: /assets/img/people/GraduateStudents/Shana_Pau.jpg
   bio: Sex chromosome evolution and regulation.
-  start_year: null
+  start_year: 2020
   end_year: null
   thesis_title: null
   sort_year: null
@@ -14,19 +14,30 @@
   status: current
   role: graduate
   degree: PhD
-  photo: /assets/img/people/GraduateStudents/Olivia_Williams.png
+  photo: /assets/img/people/GraduateStudents/Olivia_Williams.webp
   bio: Neurogenetics of loser effect behavior.
-  start_year: null
+  start_year: 2022
   end_year: null
   thesis_title: null
   sort_year: null
-
+  
+- name: Oscar Cardenas
+  status: current
+  role: graduate
+  degree: PhD
+  photo: /assets/img/people/GraduateStudents/Oscar_Cardenas.webp
+  bio: Sex chromosome evolution and regulation.
+  start_year: 2026
+  end_year: null
+  thesis_title: null
+  sort_year: null
+  
 # Current_Undergrads
 - name: Katelin Ho
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.jpeg
+  photo: /assets/img/people/UndergraduateStudents/Katelin_Ho.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat.
   start_year: null
   end_year: null
@@ -37,7 +48,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.jpg
+  photo: /assets/img/people/UndergraduateStudents/Mariam_Khaleel.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -59,7 +70,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Linh_Ngo.jpg
+  photo: /assets/img/people/UndergraduateStudents/Linh_Ngo.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -70,7 +81,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Michelle_Nguyen.jpeg
+  photo: /assets/img/people/UndergraduateStudents/Michelle_Nguyen.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -81,7 +92,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Thao_Nguyen.png
+  photo: /assets/img/people/UndergraduateStudents/Thao_Nguyen.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -92,7 +103,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Blessedone_Opara.jpg
+  photo: /assets/img/people/UndergraduateStudents/Blessedone_Opara.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -103,7 +114,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Raed_Sharib.jpeg
+  photo: /assets/img/people/UndergraduateStudents/Raed_Sharib.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -114,7 +125,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.jpeg
+  photo: /assets/img/people/UndergraduateStudents/Elizabeth_Tran.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -125,7 +136,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Ava_Trinh.JPG
+  photo: /assets/img/people/UndergraduateStudents/Ava_Trinh.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
@@ -136,7 +147,7 @@
   status: current
   role: undergraduate
   degree: BS
-  photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.jpeg
+  photo: /assets/img/people/UndergraduateStudents/Polycarp_Uzoigwe.webp
   bio: Assists with behavioral assays and genomic analyses related to social defeat and sex differences.
   start_year: null
   end_year: null
