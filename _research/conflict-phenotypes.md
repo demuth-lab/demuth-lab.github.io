@@ -11,18 +11,20 @@ key_pubs:
     doi: ""
 order: 1
 ---
-<div class="video-row">
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/-wVIBtJfk74"
-            title="Beetle fight 1"
-            frameborder="0"
-            allowfullscreen></iframe>
-  </div>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/Sw_XdL2n6ls"
-            title="Beetle fight 2"
-            frameborder="0"
-            allowfullscreen></iframe>
+<div class="video-banner">
+  <div class="video-row">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/-wVIBtJfk74"
+              title="Beetle fight 1"
+              frameborder="0"
+              allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/Sw_XdL2n6ls"
+              title="Beetle fight 2"
+              frameborder="0"
+              allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
