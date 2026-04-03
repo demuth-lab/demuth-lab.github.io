@@ -577,25 +577,28 @@ video{
   display:block;
 }
 
+.video-banner {
+  background: #000;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  /* makes it feel like a full-width strip */
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
 .video-row {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1.5rem;
-  max-width: 900px;  
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-
-.video-container {
-  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .video-container iframe {
   width: 100%;
   aspect-ratio: 1 / 1;
   height: auto;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 @media (max-width: 700px) {
