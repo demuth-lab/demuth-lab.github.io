@@ -1,6 +1,6 @@
 ---
-title: "Behavior"
-summary: "Genetic mechanisms underlying male-male contest behaviors"
+title: "Genetic Basis of Conflict Associated Phenotypes"
+summary: "Evolutionary and functional studies of morphological and behavioral traits associated with intrasexual conflict"
 hero_image: null
 card_image: "/assets/img/research/gcorn_fight.webp"
 card_title: "Genetic Basis of Conflict Associated Phenotypes"
