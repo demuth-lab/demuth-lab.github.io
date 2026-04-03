@@ -602,7 +602,7 @@ Image card variant
   --hole-h: 7px;
   --hole-gap: 9px;
   --banner-pad-x: 0.65rem;
-  --banner-pad-y: 1rem;
+  --banner-pad-y: 0.65rem;
 
   display: inline-block;          /* hug the contents */
   position: relative;
