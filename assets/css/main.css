@@ -568,47 +568,49 @@ Image card variant
 }
 
 /* =========================
-   VIDEO BANNER (film strip)
+   VIDEO BANNER
    ========================= */
 
 .video-banner {
+  --film-bg: #000;
+  --page-bg: #fff;   /* change this if your page background is not white */
+  --hole-w: 14px;
+  --hole-h: 10px;
+  --hole-gap: 14px;
+
   position: relative;
-  background: #000;
+  background: var(--film-bg);
   padding: 2rem 1.5rem;
-  margin-bottom: 2rem;
-
-  /* full-width breakout */
-  margin-left: -2rem;
-  margin-right: -2rem;
-
-  /* 🎬 punch-out film holes */
-  -webkit-mask:
-    linear-gradient(#000 0 0) center/100% 100% no-repeat,
-    repeating-linear-gradient(
-      to right,
-      transparent 0 18px,
-      #000 18px 26px
-    ) top/100% 14px no-repeat,
-    repeating-linear-gradient(
-      to right,
-      transparent 0 18px,
-      #000 18px 26px
-    ) bottom/100% 14px no-repeat;
-
-  mask:
-    linear-gradient(#000 0 0) center/100% 100% no-repeat,
-    repeating-linear-gradient(
-      to right,
-      transparent 0 18px,
-      #000 18px 26px
-    ) top/100% 14px no-repeat,
-    repeating-linear-gradient(
-      to right,
-      transparent 0 18px,
-      #000 18px 26px
-    ) bottom/100% 14px no-repeat;
+  margin: 0 0 2rem 0;
+  overflow: visible;
 }
 
+/* top row of sprocket holes */
+.video-banner::before,
+/* bottom row of sprocket holes */
+.video-banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: var(--hole-h);
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--page-bg) 0 var(--hole-w),
+    transparent var(--hole-w) calc(var(--hole-w) + var(--hole-gap))
+  );
+  background-size: calc(var(--hole-w) + var(--hole-gap)) 100%;
+}
+
+/* inset from edge so they look punched into film */
+.video-banner::before {
+  top: 8px;
+}
+
+.video-banner::after {
+  bottom: 8px;
+}
 
 /* =========================
    VIDEO LAYOUT
@@ -617,8 +619,7 @@ Image card variant
 .video-row {
   display: flex;
   gap: 1rem;
-
-  max-width: 900px;
+  max-width: 900px;   /* lower this if the videos get too large */
   margin: 0 auto;
 }
 
@@ -626,26 +627,18 @@ Image card variant
   flex: 1;
 }
 
-
-/* =========================
-   VIDEO STYLE
-   ========================= */
-
 .video-container iframe {
-  width: 100%;
-  aspect-ratio: 1 / 1;   /* your square look */
-  height: auto;
-
-  border-radius: 6px;
-
-  /* subtle depth so they pop off the strip */
-  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
   display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border: 0;
+  border-radius: 0;   /* remove white-outline-looking corners */
+  box-shadow: none;   /* remove the outline/glow effect */
 }
 
-
 /* =========================
-   MOBILE STACK
+   MOBILE
    ========================= */
 
 @media (max-width: 700px) {
