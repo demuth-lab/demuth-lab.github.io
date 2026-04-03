@@ -583,7 +583,7 @@ Image card variant
   display: inline-block;          /* hug the contents */
   position: relative;
   background: var(--film-bg);
-  padding: 1rem var(--banner-pad-x) 0.6rem var(--banner-pad-x);  
+  padding: .6rem var(--banner-pad-x) 0.2rem var(--banner-pad-x);  
   margin: 0 auto 2rem auto;
   max-width: 100%;
   overflow: hidden;
