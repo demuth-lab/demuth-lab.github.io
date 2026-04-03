@@ -574,8 +574,8 @@ Image card variant
 .video-banner {
   --film-bg: #0a0a0a;
   --page-bg: #ffffff;   /* change if your page background is not white */
-  --hole-w: 11px;
-  --hole-h: 7px;
+  --hole-w: 7px;
+  --hole-h: 11px;
   --hole-gap: 9px;
   --banner-pad-x: 0.8rem;
   --banner-pad-y: 1.2rem;
@@ -592,7 +592,55 @@ Image card variant
 
 
 /* =========================
-   35mm-STYLE SPROCKET HOLES
+   VIDEO / 35mm FILM STRIP
+   ========================= */
+
+.video-banner {
+  --film-bg: #0a0a0a;
+  --page-bg: #ffffff;   /* change if your page background is not white */
+  --hole-w: 11px;
+  --hole-h: 7px;
+  --hole-gap: 9px;
+  --banner-pad-x: 0.65rem;
+  --banner-pad-y: 1rem;
+
+  display: inline-block;          /* hug the contents */
+  position: relative;
+  background: var(--film-bg);
+  padding: var(--banner-pad-y) var(--banner-pad-x);
+  margin: 0 auto 2rem auto;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.video-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  width: auto;                    /* do not force a wider row */
+  max-width: min(900px, 100%);
+}
+
+.video-container {
+  flex: 0 1 380px;                /* each video gets a natural max size */
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 8px;             /* rounded video corners */
+}
+
+.video-container iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;            /* your new ratio */
+  height: auto;
+  border: 0;
+  background: #000;
+}
+
+/* =========================
+   SPROCKET HOLES
    ========================= */
 
 .video-banner::before,
@@ -603,14 +651,13 @@ Image card variant
   right: var(--banner-pad-x);
   height: var(--hole-h);
   pointer-events: none;
-  background:
-    repeating-linear-gradient(
-      to right,
-      transparent 0,
-      transparent var(--hole-gap),
-      var(--page-bg) var(--hole-gap),
-      var(--page-bg) calc(var(--hole-gap) + var(--hole-w))
-    );
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--page-bg) 0 10px,
+    transparent 10px 19px
+  );
+  background-repeat: repeat-x;
+  filter: blur(0.15px);
 }
 
 .video-banner::before {
@@ -621,55 +668,8 @@ Image card variant
   bottom: 0.45rem;
 }
 
-/* rounded corners for each hole */
-.video-banner::before,
-.video-banner::after {
-  filter: blur(0.15px);
-  border-radius: 999px;
-}
-
-
 /* =========================
-   VIDEO ROW
-   ========================= */
-
-.video-row {
-  display: flex;
-  gap: 0.6rem;
-  width: min(800px, 100%);
-  margin: 0 auto;
-}
-
-
-/* =========================
-   VIDEO CONTAINERS
-   ========================= */
-
-.video-container {
-  flex: 1;
-  position: relative;
-  min-width: 0;
-}
-
-
-/* =========================
-   VIDEOS
-   ========================= */
-
-.video-container iframe {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  height: auto;
-  border: 0;
-  background: #000;
-  border-radius: 10px;   /* 👈 adjust this */
-  overflow: hidden;
-}
-
-
-/* =========================
-   SUBTLE FRAME DIVIDER
+   FRAME DIVIDER
    ========================= */
 
 .video-container + .video-container::before {
@@ -678,16 +678,14 @@ Image card variant
   left: -0.3rem;
   top: 0;
   bottom: 0;
-  width: 2px;  /* thicker */
-
+  width: 2px;
   background: linear-gradient(
     to bottom,
-    rgba(255,255,255,0.6),
+    rgba(255,255,255,0.55),
     rgba(255,255,255,0.2),
-    rgba(255,255,255,0.6)
+    rgba(255,255,255,0.55)
   );
 }
-
 
 /* =========================
    MOBILE
@@ -695,12 +693,19 @@ Image card variant
 
 @media (max-width: 700px) {
   .video-banner {
+    display: block;
     width: 100%;
     padding: 1rem 0.7rem;
   }
 
   .video-row {
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-container {
+    flex: 1 1 auto;
     width: 100%;
   }
 
