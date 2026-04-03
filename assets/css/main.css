@@ -585,18 +585,12 @@ video{
 
 .video-container {
   flex: 1;
-  position: relative;
-  padding-bottom: 100%; /* makes it a square */
-  height: 0;
-  overflow: hidden;
 }
 
 .video-container iframe {
-  position: absolute;
-  width: 177.78%; /* scale up to fill square (16:9 → square) */
-  height: 100%;
-  left: -38.89%; /* center crop horizontally */
-  top: 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
   border-radius: 8px;
 }
 
