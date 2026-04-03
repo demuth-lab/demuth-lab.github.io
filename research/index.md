@@ -15,7 +15,7 @@ title: "Research"
 
 </div>
 
-<p class="lede">We are trying to understand how life works using the tools of evolutionary and functional genetics and genomics.  Currently, there are three broad areas of active research in the lab.  All three areas employ a variety of molecular and computational approaches.
+<p class="lede">We study how life works using the tools of evolutionary and functional genetics and genomics.  Most of the active projects in the lab fall under one of the three broad topics below. Select a topic to find out more.
 </p>
 
 <div class="cards">
