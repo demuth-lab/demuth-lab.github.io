@@ -568,49 +568,64 @@ Image card variant
 }
 
 /* =========================
-   VIDEO / FILM STRIP BANNER
+   VIDEO / 35mm FILM STRIP
    ========================= */
 
 .video-banner {
   --film-bg: #0a0a0a;
   --page-bg: #ffffff;   /* change if your page background is not white */
-  --hole-h: 6px;
+  --hole-w: 11px;
+  --hole-h: 7px;
+  --hole-gap: 9px;
+  --banner-pad-x: 0.8rem;
+  --banner-pad-y: 1.2rem;
 
   position: relative;
   background: var(--film-bg);
-  padding: 2.6rem 1.5rem;
-  margin: 0 0 2rem 0;
+  padding: var(--banner-pad-y) var(--banner-pad-x);
+  margin: 0 auto 2rem auto;
+  width: fit-content;         /* banner hugs content */
+  max-width: 100%;
   overflow: hidden;
+  border-radius: 2px;
 }
 
 
 /* =========================
-   SPROCKET HOLES
+   35mm-STYLE SPROCKET HOLES
    ========================= */
 
 .video-banner::before,
 .video-banner::after {
   content: "";
   position: absolute;
-  left: 0;
-  width: 100%;
+  left: var(--banner-pad-x);
+  right: var(--banner-pad-x);
   height: var(--hole-h);
   pointer-events: none;
-  background-image: repeating-linear-gradient(
-    to right,
-    var(--page-bg) 0 10px,
-    transparent 10px 19px
-  );
-  background-repeat: repeat-x;
-  filter: blur(0.2px);
+  background:
+    repeating-linear-gradient(
+      to right,
+      transparent 0,
+      transparent var(--hole-gap),
+      var(--page-bg) var(--hole-gap),
+      var(--page-bg) calc(var(--hole-gap) + var(--hole-w))
+    );
 }
 
 .video-banner::before {
-  top: 12px;
+  top: 0.45rem;
 }
 
 .video-banner::after {
-  bottom: 12px;
+  bottom: 0.45rem;
+}
+
+/* rounded corners for each hole */
+.video-banner::before,
+.video-banner::after {
+  filter: blur(0.15px);
+  border-radius: 999px;
 }
 
 
@@ -621,7 +636,7 @@ Image card variant
 .video-row {
   display: flex;
   gap: 0.6rem;
-  max-width: 800px;
+  width: min(800px, 100%);
   margin: 0 auto;
 }
 
@@ -633,6 +648,7 @@ Image card variant
 .video-container {
   flex: 1;
   position: relative;
+  min-width: 0;
 }
 
 
@@ -643,7 +659,7 @@ Image card variant
 .video-container iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   height: auto;
   border: 0;
   background: #000;
@@ -651,7 +667,7 @@ Image card variant
 
 
 /* =========================
-   SUBTLE DIVIDER
+   SUBTLE FRAME DIVIDER
    ========================= */
 
 .video-container + .video-container::before {
@@ -670,8 +686,14 @@ Image card variant
    ========================= */
 
 @media (max-width: 700px) {
+  .video-banner {
+    width: 100%;
+    padding: 1rem 0.7rem;
+  }
+
   .video-row {
     flex-direction: column;
+    width: 100%;
   }
 
   .video-container + .video-container::before {
