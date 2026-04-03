@@ -11,7 +11,7 @@ key_pubs:
     doi: ""
 order: 1
 ---
-<div class="video-row">
+<div class="research-hero-videos">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/-wVIBtJfk74"
             title="Beetle fight 1"
