@@ -574,8 +574,8 @@ Image card variant
 .video-banner {
   --film-bg: #0a0a0a;
   --page-bg: #ffffff;   /* change if your page background is not white */
-  --hole-w: 11px;
-  --hole-h: 7px;
+  --hole-w: 7px;
+  --hole-h: 11px;
   --hole-gap: 9px;
   --banner-pad-x: 0.65rem;
   --banner-pad-y: 0.65rem;
@@ -583,7 +583,7 @@ Image card variant
   display: inline-block;          /* hug the contents */
   position: relative;
   background: var(--film-bg);
-  padding: .6rem var(--banner-pad-x) 0.2rem var(--banner-pad-x);  
+  padding: 1rem var(--banner-pad-x) 0.4rem var(--banner-pad-x);  
   margin: 0 auto 2rem auto;
   max-width: 100%;
   overflow: hidden;
