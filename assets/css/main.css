@@ -570,12 +570,6 @@ Image card variant
 /* =========================
    Video
    ========================= */
-video{
-  border-radius:12px;
-  margin:16px 0;
-  display:block;
-}
-
 .video-row {
   display: flex;
   gap: 1rem;
