@@ -568,26 +568,29 @@ Image card variant
 }
 
 /* =========================
-   VIDEO BANNER
+   35mm FILM STRIP BANNER
    ========================= */
 
 .video-banner {
-  --film-bg: #000;
-  --page-bg: #fff;   /* change this if your page background is not white */
-  --hole-w: 14px;
-  --hole-h: 10px;
-  --hole-gap: 14px;
+  --film-bg: #0a0a0a;   /* slightly softer than pure black */
+  --page-bg: #ffffff;   /* MUST match your page background */
+  --hole-w: 10px;
+  --hole-h: 7px;
+  --hole-gap: 9px;
 
   position: relative;
   background: var(--film-bg);
-  padding: 2rem 1.5rem;
+  padding: 2.6rem 1.5rem;
   margin: 0 0 2rem 0;
-  overflow: visible;
+  overflow: hidden;
 }
 
-/* top row of sprocket holes */
+
+/* =========================
+   SPROCKET HOLES (top + bottom)
+   ========================= */
+
 .video-banner::before,
-/* bottom row of sprocket holes */
 .video-banner::after {
   content: "";
   position: absolute;
@@ -595,37 +598,52 @@ Image card variant
   width: 100%;
   height: var(--hole-h);
   pointer-events: none;
+
   background-image: repeating-linear-gradient(
     to right,
     var(--page-bg) 0 var(--hole-w),
     transparent var(--hole-w) calc(var(--hole-w) + var(--hole-gap))
   );
+
   background-size: calc(var(--hole-w) + var(--hole-gap)) 100%;
+  background-repeat: repeat-x;
 }
 
-/* inset from edge so they look punched into film */
+/* inset from edges (like real film) */
 .video-banner::before {
-  top: 8px;
+  top: 12px;
 }
 
 .video-banner::after {
-  bottom: 8px;
+  bottom: 12px;
 }
 
+
 /* =========================
-   VIDEO LAYOUT
+   VIDEO ROW (film frame area)
    ========================= */
 
 .video-row {
   display: flex;
-  gap: 1rem;
-  max-width: 900px;   /* lower this if the videos get too large */
+  gap: 0.6rem;
+  max-width: 800px;
   margin: 0 auto;
 }
 
+
+/* =========================
+   VIDEO CONTAINERS
+   ========================= */
+
 .video-container {
   flex: 1;
+  position: relative;
 }
+
+
+/* =========================
+   VIDEOS
+   ========================= */
 
 .video-container iframe {
   display: block;
@@ -633,17 +651,46 @@ Image card variant
   aspect-ratio: 1 / 1;
   height: auto;
   border: 0;
-  border-radius: 0;   /* remove white-outline-looking corners */
-  box-shadow: none;   /* remove the outline/glow effect */
+  background: #000;
 }
 
+
 /* =========================
-   MOBILE
+   FILM FRAME DIVIDER (subtle)
+   ========================= */
+
+.video-container + .video-container::before {
+  content: "";
+  position: absolute;
+  left: -0.3rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255,255,255,0.12);
+}
+
+
+/* =========================
+   OPTIONAL: subtle inner edge shading
+   ========================= */
+
+.video-banner::after {
+  box-shadow: inset 0 8px 12px rgba(0,0,0,0.4),
+              inset 0 -8px 12px rgba(0,0,0,0.4);
+}
+
+
+/* =========================
+   MOBILE STACK
    ========================= */
 
 @media (max-width: 700px) {
   .video-row {
     flex-direction: column;
+  }
+
+  .video-container + .video-container::before {
+    display: none;
   }
 }
 
