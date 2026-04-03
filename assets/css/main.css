@@ -574,8 +574,8 @@ Image card variant
 .video-banner {
   --film-bg: #0a0a0a;
   --page-bg: #ffffff;   /* change if your page background is not white */
-  --hole-w: 7px;
-  --hole-h: 11px;
+  --hole-w: 11px;
+  --hole-h: 7px;
   --hole-gap: 9px;
   --banner-pad-x: 0.65rem;
   --banner-pad-y: 0.65rem;
