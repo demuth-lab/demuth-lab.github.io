@@ -1,5 +1,5 @@
 ---
-title: "Genetic Basis of Conflict Associated Phenotypes"
+title: "Genetics of Sexually selected traits"
 summary: "Evolutionary and functional studies of morphological and behavioral traits associated with intrasexual conflict"
 hero_image: null
 card_image: "/assets/img/research/gcorn_fight.webp"
@@ -11,10 +11,26 @@ key_pubs:
     doi: ""
 order: 1
 ---
-<video controls width="100%" preload="metadata">
-  <source src="/assets/video/beetle-fight.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="video-row">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/-wVIBtJfk74"
+            title="Beetle fight 1"
+            frameborder="0"
+            allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/Sw_XdL2n6ls"
+            title="Beetle fight 2"
+            frameborder="0"
+            allowfullscreen></iframe>
+  </div>
+</div>
+
+
+## Sex, War, and Disease: A beetle model for understanding the genetics of morphological and behavioral responses to conflict within and between sexes.
+
+Sexual selection is selection to maximize mating opportunities, and has resulted in some of nature's most outlandish physical and behavioral traits.  Sexual selection typically involves conflict, either between same-sex individuals (e.g. male-male combat to monopolize access to females or other resources) or between males and females (females choosing to mate with only the most brightly colored or loudest males).
+We use broadhorned flour beetles (Gnatocerus cornutus) as a model system to study the evolutionary and functional consequences of both kinds of sexual selection.
 
 ## Questions we ask
 - How does selection for increased male horn size generate correlated costs in female abdomen size and reproductive capacity?
