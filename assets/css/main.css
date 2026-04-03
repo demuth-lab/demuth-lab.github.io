@@ -568,15 +568,13 @@ Image card variant
 }
 
 /* =========================
-   35mm FILM STRIP BANNER
+   VIDEO / FILM STRIP BANNER
    ========================= */
 
 .video-banner {
-  --film-bg: #0a0a0a;   /* slightly softer than pure black */
-  --page-bg: #ffffff;   /* MUST match your page background */
-  --hole-w: 10px;
-  --hole-h: 7px;
-  --hole-gap: 9px;
+  --film-bg: #0a0a0a;
+  --page-bg: #ffffff;   /* change if your page background is not white */
+  --hole-h: 6px;
 
   position: relative;
   background: var(--film-bg);
@@ -587,7 +585,7 @@ Image card variant
 
 
 /* =========================
-   SPROCKET HOLES (top + bottom)
+   SPROCKET HOLES
    ========================= */
 
 .video-banner::before,
@@ -598,28 +596,15 @@ Image card variant
   width: 100%;
   height: var(--hole-h);
   pointer-events: none;
-
-  background:
-    radial-gradient(circle at center,
-      var(--page-bg) 70%,
-      transparent 72%) left / var(--hole-w) 100% repeat-x;
-
-  mask:
-    repeating-linear-gradient(
-      to right,
-      #000 0 var(--hole-w),
-      transparent var(--hole-w) calc(var(--hole-w) + var(--hole-gap))
-    );
-
-  -webkit-mask:
-    repeating-linear-gradient(
-      to right,
-      #000 0 var(--hole-w),
-      transparent var(--hole-w) calc(var(--hole-w) + var(--hole-gap))
-    );
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--page-bg) 0 10px,
+    transparent 10px 19px
+  );
+  background-repeat: repeat-x;
+  filter: blur(0.2px);
 }
 
-/* inset from edges (like real film) */
 .video-banner::before {
   top: 12px;
 }
@@ -630,7 +615,7 @@ Image card variant
 
 
 /* =========================
-   VIDEO ROW (film frame area)
+   VIDEO ROW
    ========================= */
 
 .video-row {
@@ -666,7 +651,7 @@ Image card variant
 
 
 /* =========================
-   FILM FRAME DIVIDER (subtle)
+   SUBTLE DIVIDER
    ========================= */
 
 .video-container + .video-container::before {
@@ -681,7 +666,7 @@ Image card variant
 
 
 /* =========================
-   MOBILE STACK
+   MOBILE
    ========================= */
 
 @media (max-width: 700px) {
