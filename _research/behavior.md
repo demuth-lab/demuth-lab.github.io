@@ -3,7 +3,7 @@ title: "Behavior"
 summary: "Genetic mechanisms underlying male-male contest behaviors"
 hero_image: null
 card_image: "/assets/img/research/gcorn_fight.webp"
-card_title: "Neurogenetics of Stress and Aggression"
+card_title: "Behavioral Genetics of Stress and Aggression"
 card_blurb: "The molecular basis of behavior"
 key_pubs:
   - title: "Add a key paper here"
