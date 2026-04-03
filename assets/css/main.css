@@ -659,10 +659,12 @@ Image card variant
 .video-container iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   height: auto;
   border: 0;
   background: #000;
+  border-radius: 10px;   /* 👈 adjust this */
+  overflow: hidden;
 }
 
 
@@ -676,8 +678,14 @@ Image card variant
   left: -0.3rem;
   top: 0;
   bottom: 0;
-  width: 1px;
-  background: rgba(255,255,255,0.12);
+  width: 2px;  /* thicker */
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.6),
+    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.6)
+  );
 }
 
 
