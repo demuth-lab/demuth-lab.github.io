@@ -578,7 +578,7 @@ Image card variant
 
   position: relative;
   background: var(--film-bg);
-  padding: 1.2rem var(--banner-pad-x) 1.2rem var(--banner-pad-x);
+  padding: 1.3rem var(--banner-pad-x) 1.3rem var(--banner-pad-x);
   margin: 0 auto 2rem auto;
 
   width: fit-content;
@@ -650,7 +650,7 @@ Image card variant
 .video-container iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;   /* change to 1 / 1 if you want square again */
+  aspect-ratio: 16 / 9;   /* change to 1 / 1 if you want square again */
   height: auto;
   border: 0;
   background: #000;
