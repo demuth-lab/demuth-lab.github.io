@@ -579,7 +579,7 @@ Image card variant
 
   position: relative;
   background: var(--film-bg);
-  padding: 0.85rem var(--banner-pad-x) 0.85rem var(--banner-pad-x);
+  padding: 1rem var(--banner-pad-x) 1rem var(--banner-pad-x);
   margin: 0 auto 2rem auto;
 
   width: fit-content;
