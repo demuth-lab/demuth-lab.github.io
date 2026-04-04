@@ -579,7 +579,7 @@ Image card variant
 
   position: relative;
   background: var(--film-bg);
-  padding: 1rem var(--banner-pad-x) 0.6rem var(--banner-pad-x);
+  padding: 0.85rem var(--banner-pad-x) 0.85rem var(--banner-pad-x);
   margin: 0 auto 2rem auto;
 
   width: fit-content;
@@ -627,7 +627,7 @@ Image card variant
 }
 
 .video-container {
-  width: min(540px, 45vw);
+  width: min(480px, 40vw);
   position: relative;
   overflow: hidden;
   border-radius: 8px;
