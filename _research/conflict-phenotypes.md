@@ -24,7 +24,7 @@ order: 1
     </div>
     <div class="video-container">
       <iframe
-        src="https://www.youtube.com/embed/Sw_XdL2n6ls?modestbranding=1&rel=0&controls=1"
+        src="https://www.youtube.com/embed/y68WO4WfrpQ?modestbranding=1&rel=0&controls=1"
         title="Beetle fight 2"
         frameborder="0"
         allowfullscreen>
