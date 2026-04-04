@@ -577,7 +577,7 @@ Image card variant
   --hole-w: 9px;        /* hole width */
   --hole-h: 16px;       /* hole height */
   --hole-gap: 12px;
-  --banner-pad-x: 1rem;
+  --banner-pad-x: 0.75rem;
 
   position: relative;
   background: var(--film-bg);
