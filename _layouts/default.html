@@ -7,7 +7,7 @@
   {% include nav.html %}
   <main class="site-main">
     <div class="container">
-      {% if page.title and page.show_title != false %}
+      {% if page.title and page.show_title != false and layout.show_title != false %}
         <h1 class="page-title">{{ page.title }}</h1>
       {% endif %}
       {{ content }}
