@@ -574,25 +574,22 @@ Image card variant
 .video-banner {
   --film-bg: #0a0a0a;
   --page-bg: #ffffff;   /* change if your page background is not white */
-  --hole-w: 9px;        /* hole width */
-  --hole-h: 16px;       /* hole height */
-  --hole-gap: 12px;
   --banner-pad-x: 0.75rem;
 
   position: relative;
   background: var(--film-bg);
-  padding: 1.2rem var(--banner-pad-x) 1.2rem var(--banner-pad-x);
+  padding: 1.1rem var(--banner-pad-x) 1.1rem var(--banner-pad-x);
   margin: 0 auto 2rem auto;
 
   width: fit-content;
   max-width: min(1200px, 96vw);
 
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 /* =========================
-   SPROCKET HOLES
+   ROUNDED 35mm SPROCKET HOLES
    ========================= */
 
 .video-banner::before,
@@ -601,20 +598,12 @@ Image card variant
   position: absolute;
   left: var(--banner-pad-x);
   right: var(--banner-pad-x);
-  height: var(--hole-h);
+  height: 14px;
   pointer-events: none;
 
-  background:
-    repeating-linear-gradient(
-      to right,
-      var(--page-bg) 0 var(--hole-w),
-      transparent var(--hole-w) calc(var(--hole-w) + var(--hole-gap))
-    );
-
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='14' viewBox='0 0 17 14'%3E%3Crect x='0' y='0' width='8' height='14' rx='2.5' ry='2.5' fill='white'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
-  background-size: calc(var(--hole-w) + var(--hole-gap)) var(--hole-h);
-
-  filter: none;
+  background-size: 17px 14px;
 }
 
 .video-banner::before {
@@ -625,17 +614,6 @@ Image card variant
   bottom: 0.3rem;
 }
 
-/* rounded vertical-rectangle look */
-.video-banner::before,
-.video-banner::after {
-  -webkit-mask:
-    repeating-linear-gradient(
-      to right,
-      #000 0 var(--hole-w),
-      transparent var(--hole-w) calc(var(--hole-w) + var(--hole-gap))
-    );
-}
-
 /* =========================
    VIDEO ROW
    ========================= */
@@ -644,7 +622,7 @@ Image card variant
   display: flex;
   gap: 0.75rem;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   width: fit-content;
   max-width: min(1180px, 94vw);
@@ -657,7 +635,7 @@ Image card variant
    ========================= */
 
 .video-container {
-  width: min(460px, 40vw);
+  width: min(540px, 45vw);
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -665,14 +643,22 @@ Image card variant
   flex: 0 0 auto;
 }
 
+/* =========================
+   VIDEOS
+   ========================= */
+
 .video-container iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;   /* change to 1 / 1 if you want square again */
   height: auto;
   border: 0;
   background: #000;
 }
+
+/* =========================
+   FRAME DIVIDER
+   ========================= */
 
 .video-container + .video-container::before {
   content: "";
@@ -689,12 +675,16 @@ Image card variant
   );
 }
 
+/* =========================
+   MOBILE
+   ========================= */
+
 @media (max-width: 700px) {
   .video-banner {
     display: block;
     width: 100%;
     max-width: 100%;
-    padding: 1rem 0.7rem 0.6rem 0.7rem;
+    padding: 1rem 0.7rem 1rem 0.7rem;
   }
 
   .video-row {
