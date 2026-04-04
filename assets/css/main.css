@@ -573,8 +573,10 @@ Image card variant
 
 .video-banner {
   --film-bg: #0a0a0a;
-  --page-bg: #ffffff;
-  --hole-h: 7px;
+  --page-bg: #ffffff;   /* change if your page background is not white */
+  --hole-w: 8px;        /* hole width */
+  --hole-h: 14px;       /* hole height */
+  --hole-gap: 10px;
   --banner-pad-x: 0.75rem;
 
   position: relative;
@@ -589,6 +591,10 @@ Image card variant
   border-radius: 2px;
 }
 
+/* =========================
+   SPROCKET HOLES
+   ========================= */
+
 .video-banner::before,
 .video-banner::after {
   content: "";
@@ -597,22 +603,42 @@ Image card variant
   right: var(--banner-pad-x);
   height: var(--hole-h);
   pointer-events: none;
-  background-image: repeating-linear-gradient(
-    to right,
-    var(--page-bg) 0 10px,
-    transparent 10px 19px
-  );
+
+  background:
+    repeating-linear-gradient(
+      to right,
+      var(--page-bg) 0 var(--hole-w),
+      transparent var(--hole-w) calc(var(--hole-w) + var(--hole-gap))
+    );
+
   background-repeat: repeat-x;
-  filter: blur(0.15px);
+  background-size: calc(var(--hole-w) + var(--hole-gap)) var(--hole-h);
+
+  filter: none;
 }
 
 .video-banner::before {
-  top: 0.45rem;
+  top: 0.3rem;
 }
 
 .video-banner::after {
-  bottom: 0.45rem;
+  bottom: 0.3rem;
 }
+
+/* rounded vertical-rectangle look */
+.video-banner::before,
+.video-banner::after {
+  -webkit-mask:
+    repeating-linear-gradient(
+      to right,
+      #000 0 var(--hole-w),
+      transparent var(--hole-w) calc(var(--hole-w) + var(--hole-gap))
+    );
+}
+
+/* =========================
+   VIDEO ROW
+   ========================= */
 
 .video-row {
   display: flex;
@@ -625,6 +651,10 @@ Image card variant
 
   margin: 0 auto;
 }
+
+/* =========================
+   VIDEO CONTAINERS
+   ========================= */
 
 .video-container {
   width: min(460px, 40vw);
