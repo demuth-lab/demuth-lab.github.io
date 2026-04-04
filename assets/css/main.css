@@ -627,7 +627,7 @@ Image card variant
   gap: 0.75rem;
   align-items: flex-start;
   justify-content: center;
-  width: min(1100px, 100%);
+  width: min(1200px, 100%);
   margin: 0 auto;
 }
 
@@ -636,7 +636,7 @@ Image card variant
    ========================= */
 
 .video-container {
-  flex: 0 1 520px;      /* bigger max width per video */
+  flex: 0 1 560px;      /* bigger max width per video */
   min-width: 0;
   position: relative;
   overflow: hidden;
