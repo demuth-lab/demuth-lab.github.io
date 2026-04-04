@@ -47,30 +47,40 @@ a:hover{
    ========================= */
 
 .site-header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:transparent;
-  border-bottom:none;
-  backdrop-filter:none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.96);
+  border-bottom: none;
+  backdrop-filter: blur(6px);
 }
 
 .site-header .container{
-  background:transparent;
+  background: transparent;
+}
+
+body.home .site-header{
+  background: transparent;
+  backdrop-filter: none;
+}
+
+body.home .site-header.scrolled{
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(6px);
 }
 
 .site-header + main,
 .site-header + .page-content,
 .site-header + .content{
-  margin-top:0;
+  margin-top: 0;
 }
 
 .header-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-  height:64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  height: 64px;
 }
 
 /* =========================
