@@ -574,10 +574,10 @@ Image card variant
 .video-banner {
   --film-bg: #0a0a0a;
   --page-bg: #ffffff;   /* change if your page background is not white */
-  --hole-w: 8px;        /* hole width */
-  --hole-h: 14px;       /* hole height */
-  --hole-gap: 10px;
-  --banner-pad-x: 0.75rem;
+  --hole-w: 9px;        /* hole width */
+  --hole-h: 16px;       /* hole height */
+  --hole-gap: 12px;
+  --banner-pad-x: 1rem;
 
   position: relative;
   background: var(--film-bg);
@@ -588,7 +588,7 @@ Image card variant
   max-width: min(1200px, 96vw);
 
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 6px;
 }
 
 /* =========================
