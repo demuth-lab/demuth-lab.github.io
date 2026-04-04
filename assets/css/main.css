@@ -573,25 +573,21 @@ Image card variant
 
 .video-banner {
   --film-bg: #0a0a0a;
-  --page-bg: #ffffff;   /* change if your page background is not white */
-  --hole-w: 11px;
+  --page-bg: #ffffff;
   --hole-h: 7px;
-  --hole-gap: 9px;
   --banner-pad-x: 0.75rem;
 
-  display: table;       /* shrink-wrap + center reliably */
   position: relative;
   background: var(--film-bg);
   padding: 1rem var(--banner-pad-x) 0.6rem var(--banner-pad-x);
   margin: 0 auto 2rem auto;
-  max-width: 100%;
+
+  width: fit-content;
+  max-width: min(1200px, 96vw);
+
   overflow: hidden;
   border-radius: 2px;
 }
-
-/* =========================
-   35mm-STYLE SPROCKET HOLES
-   ========================= */
 
 .video-banner::before,
 .video-banner::after {
@@ -618,48 +614,35 @@ Image card variant
   bottom: 0.45rem;
 }
 
-/* =========================
-   VIDEO ROW
-   ========================= */
-
 .video-row {
   display: flex;
   gap: 0.75rem;
-  align-items: flex-start;
   justify-content: center;
-  width: min(1200px, 100%);
+  align-items: flex-start;
+
+  width: fit-content;
+  max-width: min(1180px, 94vw);
+
   margin: 0 auto;
 }
 
-/* =========================
-   VIDEO CONTAINERS
-   ========================= */
-
 .video-container {
-  flex: 0 1 560px;      /* bigger max width per video */
-  min-width: 0;
+  width: min(540px, 45vw);
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   background: #000;
+  flex: 0 0 auto;
 }
-
-/* =========================
-   VIDEOS
-   ========================= */
 
 .video-container iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;  /* or 1 / 1 if you switch back */
+  aspect-ratio: 4 / 3;
   height: auto;
   border: 0;
   background: #000;
 }
-
-/* =========================
-   FRAME DIVIDER
-   ========================= */
 
 .video-container + .video-container::before {
   content: "";
@@ -676,14 +659,11 @@ Image card variant
   );
 }
 
-/* =========================
-   MOBILE
-   ========================= */
-
 @media (max-width: 700px) {
   .video-banner {
     display: block;
     width: 100%;
+    max-width: 100%;
     padding: 1rem 0.7rem 0.6rem 0.7rem;
   }
 
@@ -694,7 +674,6 @@ Image card variant
   }
 
   .video-container {
-    flex: 1 1 auto;
     width: 100%;
   }
 
