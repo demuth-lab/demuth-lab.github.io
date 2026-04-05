@@ -92,15 +92,9 @@ body.home .site-header.scrolled{
   display: block;
 }
 
-.brand{
-  position:relative;
-  display:inline-flex;
-  align-items:center;
-  padding-left:10px;
-  font-weight:700;
-  font-size:1.1rem;
-  letter-spacing:0.3px;
-  color:var(--fg);
+.brand {
+  position: relative;          /* IMPORTANT */
+  display: inline-block;       /* ensures proper stacking */
 }
 
 /* base logo style */
@@ -110,28 +104,34 @@ body.home .site-header.scrolled{
   display: block;
 }
 
-/* color logo sits on top but hidden by default */
+/* stack BOTH logos in same spot */
+.logo-silver,
 .logo-color {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* default: show silver */
+.logo-silver {
+  opacity: 1;
+}
+
+/* default: hide color */
+.logo-color {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
-/* on hover: reveal color logo */
+/* hover: show color */
 .brand:hover .logo-color {
   opacity: 1;
 }
 
-/* optional: fade out silver slightly */
+/* hover: hide silver */
 .brand:hover .logo-silver {
   opacity: 0;
-}
-
-.brand-accent{
-  color:var(--accent);
 }
 
 /* =========================
