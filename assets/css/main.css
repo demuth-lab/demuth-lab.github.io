@@ -103,18 +103,6 @@ body.home .site-header.scrolled{
   color:var(--fg);
 }
 
-.brand::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:50%;
-  transform:translateY(-50%);
-  width:5px;
-  height:65%;
-  background:var(--accent);
-  border-radius:2px;
-}
-
 .brand-accent{
   color:var(--accent);
 }
