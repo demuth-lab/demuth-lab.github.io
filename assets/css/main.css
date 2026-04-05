@@ -86,6 +86,11 @@ body.home .site-header.scrolled{
 /* =========================
    Brand
    ========================= */
+.brand img {
+  height: 42px;   /* good starting size */
+  width: auto;
+  display: block;
+}
 
 .brand{
   position:relative;
