@@ -102,6 +102,25 @@ body.home .site-header.scrolled{
   letter-spacing:0.3px;
   color:var(--fg);
 }
+/* color logo sits on top but hidden by default */
+.logo-color {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* on hover: reveal color logo */
+.brand:hover .logo-color {
+  opacity: 1;
+}
+
+/* optional: fade out silver slightly */
+.brand:hover .logo-silver {
+  opacity: 0;
+}
 
 .brand-accent{
   color:var(--accent);
